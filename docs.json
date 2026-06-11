@@ -110,6 +110,11 @@
           "anchor": "Documentation",
           "href": "/",
           "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Changelog",
+          "href": "/changelog",
+          "icon": "clock-rotate-left"
         }
       ]
     }
