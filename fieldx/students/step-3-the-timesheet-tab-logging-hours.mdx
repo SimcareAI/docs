@@ -3,16 +3,18 @@ title: "Step 3: The timesheet tab — logging hours"
 description: "How to log, edit, and track your field experience hours on the Timesheet tab."
 ---
 
-The Timesheet tab is where you spend most of your time in FieldX. It's where you log hours, track progress toward your requirements, and manage past entries.
+The Timesheet tab is where you spend most of your time in FieldX. It's where you log hours, track progress toward your requirements, and manage past entries. Every hour you log here feeds directly into your supervisor's reports and your program's graduation requirements — so accuracy matters.
 
 ## Logging hours
 
+<Warning>You can only log hours after your clearance is approved. If the Log Hours button does nothing or shows an error, your clearance hasn't been approved yet. Check **My Dashboard > Profile Details > Clearance Tasks** for your status.</Warning>
+
 <Steps>
   <Step title="Open the Timesheet tab">
-    Click the **Timesheet** tab from your Field Experience dashboard.
+    Click the **Timesheet** tab from your Field Experience dashboard. The default view shows the current term. Use the **period dropdown** in the toolbar to switch to a different term if needed.
   </Step>
   <Step title="Click 'Log Hours'">
-    Click the **Log Hours** button (sometimes labeled **Add Hour Logs**) in the toolbar.
+    Click the **Log Hours** button (sometimes labeled **Add Hour Logs**) in the toolbar. If this is your first time logging hours, a one-time **Timesheet Agreement** will appear — read and accept it before the entry modal opens.
   </Step>
   <Step title="Fill in the entry">
     The modal asks for:
@@ -22,38 +24,60 @@ The Timesheet tab is where you spend most of your time in FieldX. It's where you
     - **Site** — which placement site were you at?
     - **Supervisor** — who supervised this activity?
     - **Cohort** — which class should these hours count toward?
-    - **Notes** — (optional) additional context
+    - **Notes** — (optional) additional context or detail about the session
+  </Step>
+  <Step title="Save the entry">
+    Click **Save**. The entry appears in your timesheet table with an **Unapproved** status until your supervisor signs off on a report that includes it.
   </Step>
 </Steps>
 
-<Note>The first time you log hours, you may be shown a one-time timesheet agreement you need to accept before the modal opens.</Note>
-
-<Warning>You can only log hours after your clearance is approved. If the Log Hours button does nothing or shows an error, your clearance hasn't been approved yet. Check **My Dashboard > Profile Details > Clearance Tasks** for your status.</Warning>
+<Tip>If your supervisor doesn't appear in the dropdown, they may not have joined FieldX yet or you may need to add them manually. Go to **Timesheet > Tools** (the three-dots menu) **> Add Supervisor**, then enter their name and email address.</Tip>
 
 ## Tracking your progress
 
-The **hours summary bar** above the table shows your total, direct, indirect, and supervision hours. Click it (or the **Learn more** link) to open the **Hours Summary modal**, which shows:
+The **hours summary bar** above the table shows your running totals for direct, indirect, and supervision hours. Click the bar (or the **Learn more** link) to open the **Hours Summary modal**, which breaks down:
 
-- Approved vs. unapproved hours by type
-- Your required hours per type for your track
-- Remaining hours and a progress chart
+- **Approved vs. unapproved hours** by type — unapproved hours count toward your total but aren't finalized until your supervisor signs
+- **Required hours per type** for your specific track
+- **Remaining hours** needed and a visual progress chart
+
+Hours become **approved** once your supervisor signs a report that includes them. Until then, they show as unapproved in both the summary bar and the table.
 
 ## Hour types explained
 
 | Type | What counts |
 |---|---|
 | **Direct** | Face-to-face contact with a client or patient |
-| **Indirect** | Administrative or preparatory work (documentation, charting) |
-| **Supervision** | Formal supervision sessions |
+| **Indirect** | Administrative or preparatory work (documentation, charting, case prep) |
+| **Supervision** | Formal supervision sessions with your supervisor |
+
+Your program's requirements specify minimums for each type. The Hours Summary modal shows exactly where you stand against each requirement so you can prioritize which type of hours to log next.
 
 ## Managing past entries
 
-- **Edit** — click a row's edit action to change details (can't edit approved/locked entries)
-- **Delete** — remove an entry (can't delete approved entries)
-- **Duplicate** — re-log a similar entry pre-filled with the same details
+- **Edit** — click a row's edit action to change details. You cannot edit approved or locked entries directly.
+- **Delete** — remove an entry entirely. You cannot delete approved entries.
+- **Duplicate** — re-log a similar entry pre-filled with the same details, useful for recurring activities at the same site.
+
+<Tip>Use the filter and search controls in the toolbar to narrow your view by activity, supervisor, site, cohort, or date range. This is especially helpful when reconciling hours before a supervision report is due.</Tip>
 
 ### Unlocking an approved entry
 
-If an entry was approved and you need to edit it, use the row's **Unlock** action. If the entry is part of an active supervision report, you'll need to **Refresh** that report first before unlocking.
+If an entry was approved and you need to correct it:
 
-<Tip>Use the filter and search controls in the toolbar to narrow your view by activity, supervisor, site, cohort, or date range.</Tip>
+1. Find the entry in your timesheet table.
+2. Click the row's **Unlock** action.
+3. If the entry is part of an **active supervision report**, you'll need to open that report and click **Refresh** first — this removes the entry from the report so it can be unlocked.
+4. After unlocking, make your edits and save. The entry returns to unapproved status and will need to be re-included in a report.
+
+## Common issues
+
+| Problem | What to do |
+|---|---|
+| **Log Hours button does nothing** | Your clearance hasn't been approved yet. Go to **My Dashboard > Profile Details > Clearance Tasks** to check your status and complete any outstanding items. |
+| **Supervisor is missing from the dropdown** | They may not have a FieldX account yet, or you need to add them manually. Go to **Timesheet > Tools (three-dots menu) > Add Supervisor** and enter their name and email. |
+| **My hours show as unapproved** | This is normal — hours stay unapproved until your supervisor signs a report that includes them. Follow up with your supervisor to review and sign any pending reports. |
+| **I can't edit an entry** | The entry has been approved or locked. Use the **Unlock** action on the row. If grayed out, the entry is part of an active supervision report — refresh that report first, then unlock. |
+| **I don't see hours from a previous term** | The timesheet defaults to the current term. Use the **period dropdown** in the toolbar to switch to an earlier term. |
+| **The Cohorts tab is locked or shows a blocked overlay** | Your clearance hasn't been approved yet. The Cohorts tab and hour logging are both gated on clearance. Check **My Dashboard > Profile Details > Clearance Tasks**. |
+| **I need to fix hours that were already included in a signed report** | Unlock the entry (refreshing the report first if needed), make your correction, then coordinate with your supervisor to re-include the entry in a new or updated report. |

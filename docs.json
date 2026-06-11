@@ -37,6 +37,14 @@
             ]
           },
           {
+            "group": "For instructors",
+            "pages": [
+              "simulations/creating-assignments",
+              "simulations/client-builder",
+              "simulations/course-catalog"
+            ]
+          },
+          {
             "group": "Troubleshooting & FAQ",
             "pages": [
               "simulations/cant-hear-avatar",

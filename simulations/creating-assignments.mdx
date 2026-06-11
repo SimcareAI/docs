@@ -1,0 +1,88 @@
+---
+title: "Creating assignments"
+description: "How instructors create simulation assignments, set due dates and attempt limits, and manage grading."
+---
+
+Instructors use SimCare's assignment system to assign AI client cases to students, set deadlines, and track completion. Assignments live inside **Classes** — each class holds a roster of students and a set of assignments organized into modules.
+
+## Creating a case assignment
+
+<Steps>
+  <Step title="Open your class">
+    From your instructor dashboard, click into the class you want to add an assignment to.
+  </Step>
+  <Step title="Click 'Create Assignment'">
+    Click **Create Assignment** and select **Case** as the type.
+  </Step>
+  <Step title="Select the case">
+    Browse or search your case library. This includes all built-in SimCare cases plus any [custom clients](/simulations/client-builder) you've built.
+  </Step>
+  <Step title="Configure the assignment">
+    Set the following:
+
+    | Setting | Description |
+    |---|---|
+    | **Title** | Displayed to students |
+    | **Description** | Optional instructions or context |
+    | **Due date** | When the assignment closes |
+    | **Attempt limit** | Number of times students can attempt (unlimited by default) |
+    | **Require video** | Whether students must use the camera during the session |
+    | **Feedback visibility** | When AI feedback is released — immediately or after grading |
+    | **Module** | Which module to place this assignment in |
+    | **Learning outcomes** | Tag outcomes for analytics reporting |
+  </Step>
+</Steps>
+
+## Assignment types
+
+Besides case simulations, you can also assign:
+
+- **Quiz** — multiple choice, true/false, and written-answer questions with optional auto-grading
+- **Document** — share a reading (PDF, DOCX, or URL) students must review, or require them to upload a file
+
+## Follow-up / longitudinal cases
+
+To create a follow-up session where students return to the same client:
+
+1. Create a new assignment and enable **Prerequisite Assignment**
+2. Select the prior assignment as the prerequisite — students must complete it first
+3. Optionally add **Recent Developments** — new clinical information that has changed since the previous session
+
+This models real longitudinal care and is useful for practicum-level training.
+
+## Viewing submissions
+
+On the assignment page, each student row shows a status badge:
+
+| Badge | Meaning |
+|---|---|
+| **Not Started** | Student hasn't opened the assignment |
+| **In Progress** | Session started but not submitted |
+| **Submitted** | Completed and awaiting review |
+| **Graded** | Instructor has reviewed and saved a grade |
+| **Feedback Released** | AI + instructor feedback is visible to the student |
+| **Past Due** | Due date passed without submission |
+
+Click a student row to open their submission: view the session recording, read the AI feedback, and add your own written feedback and numeric grade (0–100).
+
+## Releasing feedback
+
+AI feedback generates automatically after a student submits. By default it's hidden until you release it — this lets you review and add your own notes first.
+
+To release feedback for a student:
+1. Open their submission
+2. Add your written feedback and grade (optional but recommended)
+3. Click **Publish**
+
+To release feedback for the whole class at once, use the **Bulk Release** option on the assignment page.
+
+## Class analytics
+
+The **Analytics** tab on your class shows:
+
+- Completion rates by assignment
+- Grade distribution
+- Per-student progress view
+- Competency performance (if learning outcomes are tagged)
+
+Use the period filter to focus on a specific date range. Export the full dataset as **CSV** or generate a **PDF** report for individual students or the whole class.
