@@ -3,36 +3,126 @@ title: "Step 2: Viewing student progress"
 description: "How site supervisors see their students' hours progress and find pending action items."
 ---
 
-Your **Overview** tab shows all students across your placement site(s) and highlights what needs your attention.
+Your **Overview** tab is your home base. It shows all students across your placement site(s) and surfaces exactly what needs your attention so you do not have to hunt for it.
 
 ## KPI cards
 
-- **Total documents** — all reports and forms tied to your students
-- **Pending signatures** — items awaiting your signature (Pending + In Progress)
-- **Completed documents** — fully signed documents
+At the top of the Overview tab, three summary cards give you a quick health check at a glance:
+
+| Card | What it counts |
+|------|---------------|
+| **Total Documents** | All reports and forms tied to your students, across all statuses |
+| **Pending Signatures** | Items actively waiting for your signature — includes both Pending (not yet opened) and In Progress (already in the signing flow) |
+| **Completed Documents** | Documents that have been fully signed by all required parties |
+
+These numbers update in real time as students submit work and signatures are collected.
 
 ## Student table
 
-Below the KPI cards is a table of your students, sorted so those with the most pending tasks appear first. Each row shows:
+Below the KPI cards is a table listing every student assigned to you. The table sorts automatically — students with the most pending tasks appear at the top so your highest-priority work is always visible first.
+
+Each row shows:
 
 - Student name and program
 - Site name
-- **N Tasks** button — click to jump to the Tasks tab pre-filtered for that student
+- **N Tasks** button — click it to jump directly to the Tasks tab pre-filtered for that student
 
-Use the search box to filter by student name, track, or site name.
+Use the search box above the table to filter by student name, track, or site name. This is especially useful if you supervise students at multiple sites.
+
+## Tasks tab: where you take action
+
+The Tasks tab is where you sign reports and complete forms. It has four sub-tabs:
+
+| Sub-tab | What appears here |
+|---------|------------------|
+| **Pending** | Items submitted by a student, waiting for your review and signature |
+| **In Progress** | Items you have opened in the signing flow but not yet completed |
+| **Completed** | Fully signed documents — downloadable as PDFs |
+| **Rejected** | Items you have denied |
+
+You can filter the Tasks tab by student name, track, or document type (Forms vs Reports).
+
+<Tip>If you supervise students at multiple sites, all of their tasks appear aggregated in one Tasks tab. Use the student name filter to focus on one person at a time.</Tip>
 
 ## Viewing a student's hour logs
 
-To see the individual timesheet entries behind a report before you sign:
+Before signing a report, you can review the individual timesheet entries that make it up. This is especially important for catching data entry errors before they become part of the official record.
 
-1. Go to the **Tasks** tab
-2. Click a report to open its panel
-3. Click **View Logs** to see each entry's date, type, site, duration, and notes
+<Steps>
+  <Step title="Go to the Tasks tab">
+    Click **Tasks** in the top navigation.
+  </Step>
+  <Step title="Open the report">
+    Click any report in the Pending sub-tab. Reports open in a panel on the right side of the dashboard. Forms open in a new browser tab.
+  </Step>
+  <Step title="Click View Logs">
+    Inside the report panel, click **View Logs**. You will see each individual time entry with its date, activity type, site, duration, and any notes the student added.
+  </Step>
+  <Step title="Review flagged entries">
+    Any entry longer than 1.5 hours is flagged in amber. This is a prompt to double-check — it does not block approval, but it is worth confirming with the student that the duration is correct before signing.
+  </Step>
+</Steps>
 
-Any entry longer than 1.5 hours is flagged in amber — review these before signing.
+<Warning>
+The **Sign & Approve** button will be greyed out if the report has zero approved hours. This means the student has not yet had any hours approved, or previously approved hours were unlocked or deleted. Click **View Logs** to confirm — if hours are missing, ask the student to log and submit their hours before you can sign the report.
+</Warning>
+
+## Denying a report
+
+If something is incorrect and you cannot approve the report:
+
+<Steps>
+  <Step title="Click Deny">
+    Inside the report panel, click the **Deny** button.
+  </Step>
+  <Step title="Add a reason">
+    Type your explanation in the **Comments** section. This is sent to the student so they know what to fix.
+  </Step>
+  <Step title="Confirm">
+    Confirm the denial. The report moves to your **Rejected** tab and the student is notified.
+  </Step>
+</Steps>
+
+When writing a denial comment, you can set visibility to **Everyone** (student can see it) or **Hidden from students** (internal note only). Comments support threaded replies, so you can have a back-and-forth conversation directly on the document.
 
 ## My Site tab
 
-The **My Site** tab shows a card for each site you supervise. Each card lists the first few active students placed there, plus buttons to upload the site logo, edit site details, or remove yourself from the site.
+The **My Site** tab shows a card for each placement site you supervise. Each card displays:
 
-<Note>If your My Site tab shows "No sites yet," it means no students have added you as their supervisor yet. Sites appear once a student selects you.</Note>
+- Site name, address, and logo
+- A roster of active students placed there
+
+From each card you can upload a site logo, edit site details, or remove yourself from the site.
+
+<Note>If your My Site tab shows "No sites yet," it means no students have added you as their supervisor yet. A site appears here once at least one student selects you as their supervisor during their placement setup.</Note>
+
+## Email notifications and weekly digest
+
+You do not need to log in to stay on top of your queue:
+
+- **Email notification** — when a student submits a report or form, you receive an email from `noreply@simcare.ai`. You can sign the document directly from the email link without logging into the dashboard.
+- **Weekly digest** — every Saturday you receive a summary of all outstanding signatures. Use it as a weekly checklist.
+
+<Tip>If you prefer to batch your signing, the Saturday digest is a reliable prompt. If you prefer to sign as items come in, the individual submission emails make that easy too.</Tip>
+
+---
+
+## Common issues
+
+**Sign & Approve is greyed out and I cannot click it.**
+The report has zero approved hours. Open the report, click **View Logs**, and check whether any hours are listed. If the log is empty or all entries show as unapproved, the student needs to log their hours and resubmit before you can sign. Ask the student to check their own dashboard.
+
+**I am not receiving email notifications.**
+Check your spam or junk folder. All emails come from `noreply@simcare.ai` — add this address to your contacts or safe-senders list so future messages are not filtered.
+
+**I cannot find a specific student.**
+Use the search box on the Overview tab or the Tasks tab. Type the student's name, their program track, or the site name. If the student still does not appear, they may not have added you as their supervisor yet — ask them to confirm your name is listed on their placement.
+
+**My Site tab is empty.**
+No students have selected you as their supervisor yet. Once a student adds you during their placement setup, your site will appear automatically.
+
+**I accidentally denied a report.**
+Contact the student and let them know. They will need to resubmit the report so it re-appears in your Pending tab for approval. You cannot undo a denial yourself from the dashboard.
+
+**A student's task count says 0 but I know they submitted something.**
+Try refreshing the page. If the task still does not appear, ask the student to confirm they clicked **Submit** and not just **Save**. Drafts saved by the student are not sent to you until they explicitly submit.

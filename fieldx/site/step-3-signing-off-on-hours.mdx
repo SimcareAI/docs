@@ -3,30 +3,44 @@ title: "Step 3: Signing off on hours"
 description: "How site supervisors review and e-sign student supervision reports using the Tasks tab."
 ---
 
-Signing student hours is done through the **Tasks** tab on your supervisor dashboard.
+Signing student hours is done through the **Tasks** tab on your supervisor dashboard. When a student submits a supervision report, it lands in your task queue waiting for your e-signature — nothing is finalized until you sign off.
 
 ## How to sign a report
 
 <Steps>
   <Step title="Open the Tasks tab">
-    Click the **Tasks** tab on your supervisor dashboard.
+    Click the **Tasks** tab on your supervisor dashboard. You'll see all pending reports across every student you supervise. If you supervise students at multiple sites, reports from all sites appear here in one aggregated list.
   </Step>
   <Step title="Find the pending report">
-    Pending reports appear on the **Pending** status tab. You can also filter by student using the dropdown, or search by student or report name.
+    Pending reports appear on the **Pending** status tab. You can filter by student name or track using the dropdowns, or use the search bar to find a specific student or report. Reports from students with the most outstanding tasks appear at the top.
+
+    You can also filter by type — use the **Forms vs Reports** filter to separate supervision reports from other assigned forms.
   </Step>
   <Step title="Review the hours">
-    Click the report row (or **Get Started**) to open the report panel. Click **View Logs** to see each timesheet entry — date, type, duration, and notes. Any entry over 1.5 hours is flagged in amber.
+    Click the report row (or **Get Started**) to open the report panel. Click **View Logs** to see each individual timesheet entry — date, activity type, site, duration, and any notes the student added.
+
+    Any single entry over 1.5 hours is flagged in amber. This is a prompt to confirm those hours are accurate before you sign, not an automatic rejection.
   </Step>
   <Step title="Sign & Approve">
-    Click **Sign & Approve**. An embedded DocuSeal e-signature window opens — complete your signature to finalize.
+    Click **Sign & Approve**. An embedded DocuSeal e-signature window opens — complete your signature to finalize the report. Once all required parties have signed, the report moves to **Completed** and a signed PDF becomes available for download.
   </Step>
 </Steps>
 
+<Note>**Sign & Approve is disabled (greyed out) if a report has zero approved hours.** Click **View Logs** to check whether hours are present. If no hours appear, the student needs to log and have their hours approved before you can sign off on the report.</Note>
+
 ## If you need to deny a report
 
-Click **Deny** in the report panel. Before confirming, add your reason in the **Comments** section at the bottom of the panel so the student and faculty can see it. Then click **Deny** in the confirmation dialog.
+If the hours look incorrect or the report needs revision, click **Deny** in the report panel. Before confirming, add your reason in the **Comments** section at the bottom of the panel — this message is visible to the student and their faculty supervisor so they understand what needs to change.
 
-A denied report moves to the **Rejected** tab and is not deleted. Faculty or a coordinator can issue a resubmit flow if the student needs to correct and resubmit.
+When you're ready, click **Deny** in the confirmation dialog to confirm.
+
+A denied report moves to the **Rejected** tab. It is not deleted — faculty or a coordinator can issue a resubmit flow if the student needs to correct and resubmit. You can still view the report read-only from the Rejected tab.
+
+<Tip>When writing a denial reason, be specific. "Hours look incorrect on 3/14" is more actionable for the student than "Please review." The comment thread supports replies, so the student can follow up directly if they have questions.</Tip>
+
+### Comment visibility
+
+When leaving comments, you can choose between **Everyone** (visible to the student, faculty, and coordinators) or **Hidden from students** (visible only to supervisors and faculty). Use hidden comments for internal notes that aren't meant for the student.
 
 ## Status tab meanings
 
@@ -34,13 +48,37 @@ A denied report moves to the **Rejected** tab and is not deleted. Faculty or a c
 |---|---|
 | **Pending** | Awaiting your signature |
 | **In Progress** | In the DocuSeal e-signature flow; not all parties have signed yet |
-| **Completed** | All required parties signed — download the PDF from here |
-| **Rejected** | Denied — accessible read-only |
+| **Completed** | All required parties signed — download the signed PDF from here |
+| **Rejected** | Denied — accessible read-only; can be resubmitted by faculty or coordinator |
 
 ## Approval via email
 
-When a student submits a report, you receive an email notification. You can approve directly from the email without logging into the dashboard — click **Sign / Approve** in the email.
+When a student submits a report, you receive an email notification from **noreply@simcare.ai**. You can sign directly from the email without logging into the dashboard — click **Sign / Approve** in the email to open the signature flow.
 
-<Tip>Every Saturday you'll receive a weekly digest listing all outstanding signatures. Use it to catch up on approvals in one session without monitoring the dashboard daily.</Tip>
+<Tip>Every Saturday you'll receive a weekly digest listing all outstanding signatures across all your students. Use it to catch up on approvals in one session without monitoring the dashboard daily.</Tip>
 
-<Note>Sign & Approve is disabled (greyed out) if a report has zero approved hours. Click View Logs to check whether hours are present. If no hours appear, the student needs to log and have hours approved first.</Note>
+## Common issues
+
+**Sign & Approve is greyed out**
+
+The report has zero approved hours. This usually means the student hasn't logged any hours yet, or hours that were previously approved were later unlocked or deleted. Click **View Logs** to confirm. Ask the student to log their hours and have them approved before resubmitting.
+
+**I'm not receiving email notifications**
+
+Check your spam or junk folder. Notification emails come from **noreply@simcare.ai** — add this address to your contacts or safe senders list to ensure they arrive in your inbox.
+
+**I can't find a specific student's report**
+
+Use the search bar on the Tasks tab to search by student name. Make sure the **Pending** tab is selected — reports waiting for your signature won't appear on the Completed or Rejected tabs. If the student appears nowhere, they may not have submitted a report yet, or they may not have added you as their supervisor on their profile.
+
+**A report I signed is no longer showing**
+
+Completed reports move to the **Completed** tab. Click that tab to find it and download the signed PDF.
+
+**I denied a report by mistake**
+
+Contact the student's faculty supervisor or a program coordinator — they can issue a resubmit flow so the student can resubmit without losing their original hours. You cannot undo a denial yourself.
+
+**The DocuSeal signature window isn't loading**
+
+Try opening the report in a different browser or disabling browser extensions (ad blockers sometimes interfere). If the issue persists, contact your program coordinator.
