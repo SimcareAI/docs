@@ -1,0 +1,16 @@
+---
+title: "Changelog"
+description: "New features, updates, and fixes shipped to SimCare."
+---
+
+<Update label="June 11, 2026">
+
+## Bug fixes
+
+- **FieldX supervisor invites are more reliable.** When you add a site supervisor in the [pre-application flow](/fieldx/students/step-5-my-sites), SimCare now catches a few edge cases that previously caused silent failures:
+  - You can no longer invite your own email address as your supervisor. You'll see an inline error and a toast explaining the issue.
+  - Inviting someone who already has a SimCare account in a conflicting role (student, teacher, faculty, or admin) now shows a clear, role-specific message so you know to use a different email.
+  - Inviting someone whose existing account is unused or already a supervisor still upgrades smoothly, so legitimate invites go through without extra steps.
+- In each blocked case, the invite modal stays open so you can correct the email and try again without losing your work.
+
+</Update>
