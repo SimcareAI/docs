@@ -1,78 +1,96 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "SimCare",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#4318FF",
+    "light": "#7551FF",
+    "dark": "#1B2559"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Simulations",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "simulations/what-is-simcare",
+              "simulations/creating-an-account",
+              "simulations/starting-your-first-session",
+              "simulations/talking-to-the-avatar",
+              "simulations/ending-a-session",
+              "simulations/first-time-troubleshooting"
             ]
           },
           {
-            "group": "Practice",
+            "group": "AI feedback",
             "pages": [
-              "guides/focused-scenarios"
+              "simulations/understanding-ai-feedback",
+              "simulations/high-level-feedback",
+              "simulations/annotated-transcript",
+              "simulations/advanced-skills",
+              "simulations/theory-analysis",
+              "simulations/chat-with-feedback",
+              "simulations/view-session-recording"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Troubleshooting & FAQ",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/components",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "Agent ready",
-            "pages": [
-              "agent-ready/prompt",
-              "agent-ready/visibility",
-              "agent-ready/contextual",
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "simulations/cant-hear-avatar",
+              "simulations/audio-issues",
+              "simulations/reset-password"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "FieldX",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Coordinators",
             "pages": [
-              "api-reference/introduction"
+              "fieldx/step-0-getting-started",
+              "fieldx/step-0-1-testing-fieldx-with-your-sandbox",
+              "fieldx/step-0-2-customization-settings",
+              "fieldx/step-1-adding-managing-faculty-students",
+              "fieldx/step-2-managing-established-sites",
+              "fieldx/step-3-set-up-cohorts",
+              "fieldx/step-3-1-approving-students",
+              "fieldx/step-4-create-assign-tasks",
+              "fieldx/step-5-next-semester-setup",
+              "fieldx/step-6-evaluations-reports-information",
+              "fieldx/setting-up-recurring-tasks",
+              "fieldx/building-forms"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Faculty supervisors",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "fieldx/faculty/step-1-joining-cohorts",
+              "fieldx/faculty/step-2-viewing-student-progress",
+              "fieldx/faculty/step-3-signing-off-on-hours"
+            ]
+          },
+          {
+            "group": "Site supervisors",
+            "pages": [
+              "fieldx/site/step-1-getting-started",
+              "fieldx/site/step-2-viewing-student-progress",
+              "fieldx/site/step-3-signing-off-on-hours"
+            ]
+          },
+          {
+            "group": "Students",
+            "pages": [
+              "fieldx/students/step-1-getting-started-and-clearance-tasks",
+              "fieldx/students/step-2-the-field-experience-dashboard",
+              "fieldx/students/step-3-the-timesheet-tab-logging-hours",
+              "fieldx/students/step-4-the-cohorts-tab",
+              "fieldx/students/step-5-my-sites",
+              "fieldx/students/step-6-helpful-tools-notes-to-dos"
             ]
           }
         ]
@@ -82,13 +100,8 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "/",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
     }
@@ -101,13 +114,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:hello@simcare.ai"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.simcare.ai"
     }
   },
   "contextual": {
@@ -124,9 +137,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "linkedin": "https://linkedin.com/company/simcare"
     }
   }
 }
