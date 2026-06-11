@@ -1,41 +1,60 @@
 ---
 title: "Step 2: Managing established sites"
-description: "Manage your program's approved placement sites, review pending requests, and bulk-upload site lists."
+description: "Manage approved placement sites, review pending requests, and track affiliation agreements."
 ---
 
-FieldX lets you maintain a list of established sites that don't require coordinator approval for students to begin logging hours. Sites are managed in the **Sites** tab.
+Established sites are placements you've pre-approved so students can start logging hours without coordinator review. Sites are managed in the **Sites** tab on your main dashboard.
 
 ![Sites Tab Overview](/images/established_sites_coord_1.png)
 
-## The three site subtabs
+## The three site sub-tabs
 
-**Student Sites** — All the sites your students are currently placed at and actively logging hours.
-
-**Established Program Sites** — All sites currently approved for your program.
-
-**Pending** — Sites submitted by students that are awaiting your approval.
+| Sub-tab | What's here |
+|---|---|
+| **Student Sites** | Every site your students are currently placed at and actively logging hours |
+| **Established Program Sites** | All sites approved for your program |
+| **Pending** | Sites students submitted that are awaiting your approval (yellow count badge) |
 
 ![Pending Sites Tab](/images/established_sites_coord_2.png)
 
+Each sub-tab has filters for tags, site types, and status. Program sites automatically chip as **Active**, **Expiring Soon** (≤30 days), or **Expired** based on their affiliation agreement.
+
 ## Approving new site requests
 
-When reviewing a pending site, you can **Approve**, **Reject**, or click **Edit** to modify the site details before approving.
+Click any row in the **Pending** sub-tab to open the **Site Details** modal. You can:
+
+- **Approve** — adds the site to your Established list
+- **Reject** — rejects the request with a note for the student
+- **Edit** — adjust the site details before approving
 
 ![Site Approval Actions](/images/established_sites_coord_3.png)
 
+<Tip>If you want students who request an established site to be approved instantly, toggle **Auto-Approve Site Requests** on in **My Program → Settings**.</Tip>
+
 ## Adding established sites yourself
 
-You can proactively add sites in two ways:
+Click **Add Established Site** in the top right to open the **Add Site** modal. Two tabs:
 
-1. **Manual entry** — Enter site details one by one
-2. **Bulk upload** — Upload multiple sites from any file format
+- **Single Site** — manually enter site details (name, address, type, tags, contact info)
+- **Bulk** — upload a CSV, spreadsheet, or text file with multiple sites at once
 
-<Note>The bulk upload tool uses AI to parse your data. As long as the information is clear, it works with any format — no strict template required.</Note>
+The bulk uploader uses AI to parse your file — no strict template required. Drop any reasonable list and it will extract the right fields.
 
 ![AI Bulk Upload](/images/established_sites_coord_4.png)
 
 ## Site affiliation agreements
 
-For programs that need to store and track site affiliation agreements, this is a supported feature that requires a one-time setup from the SimCare team. Contact your SimCare point of contact to get this configured.
+For programs that need to store and track signed site affiliation agreements, FieldX includes a full DocuSeal-backed workflow:
+
+1. Open **Field Experience → Affiliations** from the menu (or `/field-exp/affiliations`)
+2. The page shows KPI cards (Total, Active, Pending, Expired) and a table of every agreement with its status, signatures, dates, and actions
+3. Per-agreement actions: **Sign Now**, **Open in New Tab**, **Cancel Request**
+4. Status updates flow back to the **Established Program Sites** sub-tab — sites with expiring agreements show **Expiring Soon** chips
+
+Affiliation **templates** (reusable agreement documents) can be set up by your SimCare point of contact — contact [tiko@simcare.ai](mailto:tiko@simcare.ai) to get this configured for your program.
+
+## All-sites map view
+
+For programs with many sites, an interactive map view (with AI search and clustering) is available. Reach out to SimCare to enable it for your program.
 
 <Note>Next step: Create cohorts to organize students into classes or sections. See [Step 3: Set up cohorts](/fieldx/step-3-set-up-cohorts).</Note>

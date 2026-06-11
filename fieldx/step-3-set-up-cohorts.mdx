@@ -1,6 +1,6 @@
 ---
 title: "Step 3: Set up cohorts"
-description: "Create cohorts to organize students into class sections or academic tracks, and manage assignments per group."
+description: "Create cohorts to organize students into class sections — and copy a previous cohort to launch the next semester quickly."
 ---
 
 Cohorts are the primary way to organize students into groups — class sections, academic tracks, or placement groups. Each cohort has its own assignments, member roster, and faculty oversight.
@@ -9,40 +9,78 @@ Cohorts are the primary way to organize students into groups — class sections,
 
 ## Creating a new cohort
 
-Navigate to the **Cohorts** tab and click **Create Cohort**.
+Open the **Cohorts** tab and click **Create Cohort**.
 
 ![Create Cohort Interface](/images/coord_cohorts_2.png)
 
-You'll be prompted for:
+The create modal asks for:
 
-- **Code** — a unique identifier (e.g., `SW-101-A`)
-- **Name** — a descriptive name for the group
-- **Description** — (optional) additional context
+| Field | Notes |
+|---|---|
+| **Track Code** *(required)* | Short identifier, e.g. `COU-501-A` |
+| **Track Name** *(required)* | Descriptive name |
+| **Description** | Optional context |
+| **Copy from existing cohort** | Clone one-time assignments, recurring schedules, and settings from another cohort |
+| **First assignment date** *(when copying)* | Shifts all source assignment dates by the same offset |
+| **Academic Terms** | Multi-select — student placements are auto-created using this term |
+| **Default Signing Faculty** | Default supervisor name used for report signatures |
+| **Hours Report Template** | Choose a DocuSeal template (or **Default — standard report**). **This cannot be changed once students begin logging hours.** |
 
-## Inside the cohort
+Click **Create Cohort** to save.
 
-When you click into a cohort, you get a focused dashboard for that group.
+<Tip>The **Copy from existing cohort** + **First assignment date** combo is the fastest way to spin up a new semester — see [Step 5: Next semester setup](/fieldx/step-5-next-semester-setup).</Tip>
 
-<Note>As a Program Coordinator, your main dashboard shows program-wide tasks. Cohort-specific tasks (like reviewing assignments for a specific class) are generally handled by the Faculty Supervisor assigned to that cohort.</Note>
+## Editing a cohort
+
+Per-row actions (when you hover any cohort card) include edit, archive, unarchive, permanent delete, and generate join code. In edit mode you can also:
+
+- Upload a **Cohort Logo** (16:9, max 5MB; JPEG, PNG, WebP, or GIF) — appears in the cohort header for everyone
+- Update name, code, description, terms, and signing faculty
+
+## Inside a cohort
+
+Click a cohort card to open its dedicated dashboard.
 
 ![Cohort Dashboard](/images/coord_cohorts_3.png)
 
-### Cohort tabs
+You'll see four centered sub-tabs:
 
-| Tab | What's here |
+| Sub-tab | What's here |
 |---|---|
-| **My Tasks** | Tasks and oversight specific to this group |
-| **Assignments** | View, create, and assign forms or reports for this group |
-| **Members** | Students and faculty in this cohort — add or remove as needed |
-| **Settings** | Cohort name, term, and the **Cohort Code** for student self-registration |
+| **My Tasks** | Tasks and oversight specific to this cohort, filtered by `Pending`, `In Progress`, `Completed`, `Rejected` |
+| **Assignments** | One-time assignments and recurring schedules — create, stop, edit due dates |
+| **Members** | Students and instructors in the cohort — bulk-assign faculty, generate join code, send alerts |
+| **Settings** | General settings, hour requirements, and the hours report template |
 
-## Archiving a cohort at end of term
+Click **Back to cohorts** in the header to return.
+
+### Members sub-tab
+
+Two segments: **Students** / **Instructors**. The top-right **+ Add Student** / **+ Add Instructor** buttons open the **Add Program Members to Cohort** modal — which doubles as an **Invite to Program** flow if you need to add a brand-new email.
+
+Per-row actions include **View as Student** (impersonate read-only) and bulk **Assign same faculty to all** to set faculty for many students at once.
+
+You can also click **Send Alert** to push a one-off notification to a student.
+
+### Assignments sub-tab
+
+Two segments: **Assignments** (one-time) and **Schedules** (recurring). The **+ Create** button opens the program-wide assignments builder. Stop a schedule any time — existing emitted assignments are preserved, but no new ones are generated.
+
+### Settings sub-tab
+
+Three segments:
+
+- **General Information** — name, code, description, terms, default signing faculty, cohort logo
+- **Hour Requirements** — per-track and per-certificate hour requirements with qualifying activity types
+- **Hours Report Template** — preview the active DocuSeal hours-report template, or use the default
+
+## Archiving a cohort
 
 When a term ends, archive the cohort instead of deleting it:
 
-1. Go to the cohort's **Settings** tab
-2. Click **Archive Cohort**
+1. From the **Cohorts** tab, hover the cohort and click the archive action
+2. Click **Show Archived** in the header to see archived cohorts; **Hide Archived** to hide them again
 
-Archiving hides the cohort from your active dashboard but preserves all student data, hours, and signed forms for future reporting and compliance purposes. You can unarchive a cohort at any time.
+Archiving hides the cohort from your active dashboard but preserves all student data, hours, and signed forms. You can **Unarchive** any time. Permanent delete is also available but rarely needed.
 
-<Note>Next step: Once cohorts are set up, students will go through clearance. Learn how to approve them in [Step 3.1: Approving students](/fieldx/step-3-1-approving-students).</Note>
+<Note>Next step: Once cohorts are set up, students complete clearance and you approve them. See [Step 3.1: Approving students](/fieldx/step-3-1-approving-students).</Note>

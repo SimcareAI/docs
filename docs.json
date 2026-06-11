@@ -71,7 +71,10 @@
               "fieldx/step-5-next-semester-setup",
               "fieldx/step-6-evaluations-reports-information",
               "fieldx/setting-up-recurring-tasks",
-              "fieldx/building-forms"
+              "fieldx/building-forms",
+              "fieldx/view-as-student",
+              "fieldx/ask-ai",
+              "fieldx/todos"
             ]
           },
           {
@@ -98,7 +101,8 @@
               "fieldx/students/step-3-the-timesheet-tab-logging-hours",
               "fieldx/students/step-4-the-cohorts-tab",
               "fieldx/students/step-5-my-sites",
-              "fieldx/students/step-6-helpful-tools-notes-to-dos"
+              "fieldx/students/step-6-helpful-tools-notes-to-dos",
+              "fieldx/students/my-dashboard"
             ]
           }
         ]

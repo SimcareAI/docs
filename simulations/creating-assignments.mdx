@@ -1,58 +1,98 @@
 ---
 title: "Creating assignments"
-description: "How instructors create simulation assignments, set due dates and attempt limits, and manage grading."
+description: "How instructors create simulation assignments, configure feedback, and manage grading."
 ---
 
-Instructors use SimCare's assignment system to assign AI client cases to students, set deadlines, and track completion. Assignments live inside **Classes** — each class holds a roster of students and a set of assignments organized into modules.
+Instructors use SimCare's assignment system to assign AI client cases to students, set deadlines, and track completion. Assignments live inside **Classes** — each class holds a roster of students and a set of assignments.
 
-## Creating a case assignment
+## Finding your classes
+
+Go to **/classes** from the top navigation. You'll see all the classes you teach. Each class card shows the class image, the number of assignments and members, and a Canvas badge if it's connected to your LMS.
+
+Click a class to open it. Inside a class you have four tabs:
+
+| Tab | What's here |
+|---|---|
+| **Assignments** | All assignments in the class, with attempt counts |
+| **Members** | Students and co-instructors |
+| **Analytics** | Completion, grades, and competency performance |
+| **Settings** | Class name, enrollment, LMS connection |
+
+## Joining a class as a co-instructor
+
+From `/classes`, click **Join class as teacher** in the top right and paste the join code from the class owner.
+
+## Creating an assignment
+
+From the **Assignments** tab inside a class, click **Create assignment** and choose what type:
+
+- **Case** — an AI client simulation
+- **Quiz** — multiple choice, true/false, and written-answer questions
+- **Document** — a reading (PDF, DOCX, URL) students must review, or a file they must upload
+
+The case assignment builder has five steps:
 
 <Steps>
-  <Step title="Open your class">
-    From your instructor dashboard, click into the class you want to add an assignment to.
+  <Step title="Avatar">
+    Browse and select the AI client. This includes built-in SimCare cases, faculty-created cases from your school, and any [custom clients](/simulations/client-builder) you've built. Use **Find clients with AI** to describe what you want to practice and let the AI suggest matching clients.
   </Step>
-  <Step title="Click 'Create Assignment'">
-    Click **Create Assignment** and select **Case** as the type.
+  <Step title="Details">
+    Set the assignment title and any instructions students should see. Add **Learning Outcomes** — these power the competency reporting in your Analytics tab.
   </Step>
-  <Step title="Select the case">
-    Browse or search your case library. This includes all built-in SimCare cases plus any [custom clients](/simulations/client-builder) you've built.
-  </Step>
-  <Step title="Configure the assignment">
-    Set the following:
+  <Step title="Settings">
+    Configure the assignment behavior:
 
-    | Setting | Description |
+    | Setting | What it does |
     |---|---|
-    | **Title** | Displayed to students |
-    | **Description** | Optional instructions or context |
-    | **Due date** | When the assignment closes |
-    | **Attempt limit** | Number of times students can attempt (unlimited by default) |
-    | **Require video** | Whether students must use the camera during the session |
-    | **Feedback visibility** | When AI feedback is released — immediately or after grading |
-    | **Module** | Which module to place this assignment in |
-    | **Learning outcomes** | Tag outcomes for analytics reporting |
+    | **Publish Immediately** | Make the assignment visible to students now (or keep as draft) |
+    | **Require Camera** | Students must turn on their camera during the session |
+    | **Make Feedback Visible to Students** | Release AI feedback automatically (or hold for instructor review) |
+    | **Limit Assignment Attempts** | Cap how many times students can retry |
+    | **Allow Students to Archive Attempts** | Lets students hide attempts they don't want graded |
+    | **Set Time Limit** | Enforce a maximum session duration |
+    | **Require Student Upload** | Students must upload a file with the submission (with size and type limits) |
+  </Step>
+  <Step title="Assessments">
+    Pick written tasks students complete after the session, before they can see feedback:
+
+    - **Problem Statement**
+    - **Differential Diagnosis**
+    - **Safety Planning**
+    - **Risk Assessment**
+    - **Treatment Planning**
+    - **SOAP Note**
+    - **Reflection** (new)
+  </Step>
+  <Step title="Feedback">
+    Choose which feedback components appear on student Case Reviews:
+
+    - **Annotated Transcript**
+    - **Basic Skills** (Evaluation Checklist)
+    - **Theory Analysis** *(auto-selected if you chose a theory)*
+    - **Checklist**
+    - **Advanced Skills**
+
+    Pick a **therapy theory** for Theory Analysis — over 30 are supported across Beginner, Intermediate, and Difficult tiers (Motivational Interviewing, CBT, Narrative, Gestalt, Adlerian, Bowen Family Systems, Strategic, Structural, Solution-Focused, DBT, Psychoanalytic, and more).
   </Step>
 </Steps>
 
-## Assignment types
+## Previewing as a student
 
-Besides case simulations, you can also assign:
-
-- **Quiz** — multiple choice, true/false, and written-answer questions with optional auto-grading
-- **Document** — share a reading (PDF, DOCX, or URL) students must review, or require them to upload a file
+Open any assignment URL with `?preview=true&assignment=<id>` (or use the **Preview** action) to run the case yourself without affecting student data. A purple **Teacher Preview** banner appears throughout the session.
 
 ## Follow-up / longitudinal cases
 
-To create a follow-up session where students return to the same client:
+To create a follow-up where students return to the same client, use the **Follow-up builder**:
 
-1. Create a new assignment and enable **Prerequisite Assignment**
-2. Select the prior assignment as the prerequisite — students must complete it first
+1. Open the case template you want to base the follow-up on
+2. Click **Create follow-up assignment**
 3. Optionally add **Recent Developments** — new clinical information that has changed since the previous session
 
-This models real longitudinal care and is useful for practicum-level training.
+Follow-ups can require a prerequisite assignment, so students must complete the original session first.
 
 ## Viewing submissions
 
-On the assignment page, each student row shows a status badge:
+Each student row on the Assignments tab shows a status badge:
 
 | Badge | Meaning |
 |---|---|
@@ -63,18 +103,21 @@ On the assignment page, each student row shows a status badge:
 | **Feedback Released** | AI + instructor feedback is visible to the student |
 | **Past Due** | Due date passed without submission |
 
-Click a student row to open their submission: view the session recording, read the AI feedback, and add your own written feedback and numeric grade (0–100).
+Click a student row to open their submission. You'll see the session recording, the AI feedback, and a grading panel.
 
-## Releasing feedback
+## Grading
 
-AI feedback generates automatically after a student submits. By default it's hidden until you release it — this lets you review and add your own notes first.
+Grading runs through the same Case Review you see as a student, with an extra **Grading** step:
 
-To release feedback for a student:
-1. Open their submission
-2. Add your written feedback and grade (optional but recommended)
-3. Click **Publish**
+- Add **instructor comments** anywhere on the annotated transcript — they coexist with AI comments and are saved as a draft until you publish
+- Enter a **numeric grade** (0–100) and a written feedback summary
+- Click **Publish** to release everything to the student
 
-To release feedback for the whole class at once, use the **Bulk Release** option on the assignment page.
+For high-volume grading use **Bulk Grading** at `/grading/bulk-case` (or `/grading/bulk-quiz` for quizzes) — review and publish many submissions in one pass.
+
+## Releasing feedback to the whole class
+
+If you held feedback for instructor review, you can release it for all students at once using the **Bulk Release** option on the assignment.
 
 ## Class analytics
 
@@ -85,4 +128,4 @@ The **Analytics** tab on your class shows:
 - Per-student progress view
 - Competency performance (if learning outcomes are tagged)
 
-Use the period filter to focus on a specific date range. Export the full dataset as **CSV** or generate a **PDF** report for individual students or the whole class.
+Use the period filter to focus on a specific date range. Export the full dataset as CSV or generate a PDF report for individual students or the whole class.

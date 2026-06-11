@@ -1,21 +1,37 @@
 ---
 title: "Step 4: Create & assign tasks"
-description: "Manage hour-log reports and evaluation forms from the Assignments tab, and assign them to cohorts."
+description: "Build forms and report templates, organize them into groups, and assign them to cohorts as one-time or recurring tasks."
 ---
 
-Managing paperwork for field experience happens in the **Assignments** tab on your main dashboard. This is where you create templates — once created, a report or form can be reused and assigned to any cohort or individual.
+All paperwork in FieldX — forms, evaluations, hour-log reports, agreements — lives in the **Assignments** tab on your main dashboard. This is the program-wide template library; once created, anything here can be assigned to any cohort or individual.
 
 ![Assignments Tab Overview](/images/create_assign_1.png)
 
+## The Assignments tab
+
+The tab has two primary actions in the top right:
+
+- **New Group** — create a folder to bundle related forms together (e.g., "Mid-term evaluations")
+- **Create Assignment** — open the assignment builder
+
+Filter the table by **Type** (`All Types | Group | Form | Report`), creator, and cohort. With groups in use the table columns are `Name | Type | Created By | Assigned to Cohort | Actions`; without groups it's `Name | Type | Created By | Contents / Cohorts | Actions`.
+
 ![Main Dashboard Interface](/images/create_assign_2.png)
 
-## Reports: managing hour logs & signatures
+## Creating an assignment
 
-A **Report** in FieldX defines the schedule for logging hours — when hours need to be submitted and who needs to sign them.
+Click **Create Assignment** to open the assignment builder. It has three tabs:
 
-### Creating a report template
+### Form
 
-Click **Create Report** to build a new template.
+Two ways to build a form:
+
+- **Build New** — start with a blank canvas and drag-and-drop fields in the [form builder](/fieldx/building-forms)
+- **Upload** — *Convert document to form with AI*. Upload an existing PDF or Word doc (e.g., your current Mid-Term Evaluation) and SimCare parses it into a FieldX form, with a live progress indicator while it runs
+
+### Timesheet (Report)
+
+A **Report** in FieldX is the schedule for logging hours — when hours are submitted and who needs to sign them.
 
 ![Creating a Report Template](/images/create_assign_3.png)
 
@@ -23,47 +39,69 @@ Configure:
 
 | Setting | Description |
 |---|---|
-| **Title & description** | Give it a clear name (e.g., "Weekly Hour Log" or "Month 1 Summary") |
-| **Signature workflow** | Choose who must sign: Student, Site Supervisor, and/or Faculty Supervisor |
+| **Title & description** | Clear name like "Weekly Hour Log" or "Month 1 Summary" |
+| **Student signature required** | Switch — whether the student signs |
+| **Supervisor signature required** | Switch — whether the site supervisor signs |
+| **Faculty signature required** | Switch — whether the faculty supervisor signs |
 
-<Tip>While many programs require a student signature, FieldX lets you remove this step if you only need supervisor approval.</Tip>
+<Tip>You don't have to require a student signature — some programs only collect supervisor approval.</Tip>
 
-### Assigning a report
+### Templates
 
-Click the **three dots** (⋯) on the right side of a report and select **Assign**.
+A grid of built-in templates (`BUILTIN_TEMPLATES`) you can use as a starting point — each has a **Use template** action.
+
+## Assigning a form or report
+
+Click the actions menu (⋯) on any row and choose **Assign**.
 
 ![Report Actions Menu](/images/create_assign_4.png)
 
-In the assignment dialog:
+The **Assign** modal has two tabs:
+
+- **Create** — make a new assignment from this template
+- **Current** — view existing assignments using this template
+
+In the Create tab, pick the assignment target:
+
+- **Cohorts** — assign to one or more cohorts (all students in those cohorts get it)
+- **Individuals** — assign to specific people (ideal for targeted evaluations)
 
 ![Assignment Pop-up](/images/create_assign_5.png)
 
-- **Select cohorts** — choose which cohorts receive this report
-- **Set schedule** — set a due date, or enable **Repeating Assignment** to auto-assign on a schedule (e.g., every Friday)
+Then set a due date and (optionally) make it recurring. See [Setting up recurring tasks](/fieldx/setting-up-recurring-tasks) for the full schedule options.
 
-## Forms: evaluations & surveys
+If a student has a conflicting assignment (e.g., same form already assigned), the modal surfaces a conflict dialog so you can resolve it.
 
-Forms work similarly to Google Forms but are built specifically for field experience and are **fully HIPAA compliant**.
+## Forms vs. reports
 
-### Creating a form
+| Type | Use for |
+|---|---|
+| **Forms** | Evaluations, surveys, agreements, custom questionnaires — Google-Forms-like with HIPAA-compliant storage |
+| **Reports** | Hour logs and supervision sign-off forms — multi-signer DocuSeal workflow |
 
-Two ways to build a form:
+## Form creation options
+
+Forms can be built two ways:
 
 ![Form Creation Options](/images/create_assign_6.png)
 
-- **Create from scratch** — drag-and-drop fields in the form builder
-- **AI import** — upload an existing PDF or Word document (e.g., your current Mid-Term Evaluation) and AI converts it into a FieldX form automatically
+- **Build New** — drag-and-drop in the form builder
+- **AI import** — upload a PDF or Word document and let AI convert it
 
-### Assigning a form
+You can also bundle multiple forms and reports into a **Group** (using the **New Group** button) and assign the whole group at once.
 
-Forms offer more flexible assignment options than reports:
+## Per-row actions
 
-- **Assign to groups** — send to an entire cohort
-- **Assign to individuals** — assign to specific students, faculty, or site supervisors (ideal for targeted evaluations)
+Each row in the table has actions for:
 
-### Form settings
+- **View** — preview the form/report
+- **Assign** — assign to cohorts or individuals
+- **Regenerate form** — re-run AI parsing if the source doc has changed
+- **Add to group** / **Manage group**
+- **Delete** (single or bulk)
 
-- **Repeating** — like reports, forms can recur on a schedule
-- **Edit responses** — toggle whether users can edit their response after submitting
+## Editing an existing assignment
+
+To change just the due date of an already-emitted assignment (or to adjust who's on a multi-signer form), open the assignment row inline and click **Edit**. The dedicated edit page lets you change the due date and, for multi-person assignments tied to a cohort, exclude specific student/supervisor pairs.
 
 <Note>For details on building complex forms, see [Building forms](/fieldx/building-forms). For recurring assignments, see [Setting up recurring tasks](/fieldx/setting-up-recurring-tasks).</Note>
