@@ -3,27 +3,64 @@ title: "Step 1: Adding & managing faculty & students"
 description: "How to invite coordinators, faculty supervisors, and students to your FieldX program."
 ---
 
-FieldX uses the same invitation process for all user roles: Site Coordinators, Faculty Supervisors, and Students.
+All program members (students, instructors, and admins) are managed from the **Members** tab inside **My Program**.
 
-## Invitation process
+## Opening the Members tab
+
+Click **My Program** in the top-right of any page, then select the **Members** tab in the sidebar.
 
 ![Invitation Process - Select Members](/images/step-1-adding-students-1.png)
 
-<Steps>
-  <Step title="Open Members">
-    Select **Members** from the sidebar. You'll see a list of all students and faculty currently in your FieldX program.
+The Members area splits into two sub-tabs:
 
-    ![User List](/images/step-1-adding-students-2.png)
-  </Step>
-  <Step title="Add users">
-    Click **Add Users** in the top right.
+- **Students** — every student in your program with their track, term, clearance status, insurance status, and last activity
+- **Instructors/Admin** — faculty and admin accounts with an inline role selector
 
-    ![Add Users Button](/images/step-1-adding-students-3.png)
-  </Step>
-  <Step title="Select role and enter emails">
-    Choose a role and invite users by entering their emails (separated by commas) or uploading a CSV. The CSV is parsed by AI so it can be in any format.
-  </Step>
-</Steps>
+Use the search bar, sort menu (Last Name, First Name, Email), and the **Show/Hide Insurance** and **Show/Hide Clearance** column toggles to focus the view.
+
+![User List](/images/step-1-adding-students-2.png)
+
+## Adding new users
+
+Click **Add Users** in the top right.
+
+![Add Users Button](/images/step-1-adding-students-3.png)
+
+The **Add Users** modal lets you:
+
+- Paste a list of emails (comma, semicolon, or newline separated)
+- Or **upload a CSV or text file** — AI parses it so any format works
+- Pick a **Default Role**: `Student`, `Teacher`, or `Admin`
+- Toggle **Send credentials email to new accounts** — when enabled SimCare creates the account and emails the user a login link; when off the user must self-sign-up using the email you added
+
+The modal shows per-email results when it runs (success / error / warning) so you can correct typos right away.
+
+## Bulk actions
+
+Select multiple students using the row checkboxes to open the bulk action bar:
+
+- **Assign Term** — move a group of students into a different academic term
+- **Assign Track** — change their student track
+- **Assign Certs** — add or remove program certificates
+- **Assign Role** — switch their role
+- **Remove** — remove from the program (preserves their historical data)
+
+## Per-row actions
+
+Click any student row's actions menu for:
+
+- **Create To-do** — assign a task to that student
+- **View Profile** — open the full Student Details modal (Overview, Insights, Sites, Timesheet, Learning Contract, Journal, Documents, Run Report)
+- **View as Student** — impersonate the student read-only for up to 30 minutes ([more →](/fieldx/view-as-student))
+- **Remove** — remove from program
+
+## Switching a user's role
+
+In the Instructors/Admin sub-tab, use the inline **Role** dropdown to flip a user between Instructor and Admin without removing them.
+
+## Pending invitations
+
+Outstanding invitations appear in their own widget (Pending Invitations) at the bottom of cohort views. Each row has a **Resend** action that re-sends the original email.
 
 ## Recommended onboarding order for new programs
 
@@ -31,7 +68,7 @@ FieldX uses the same invitation process for all user roles: Site Coordinators, F
 2. Invite Faculty Supervisors
 3. [Add established sites](/fieldx/step-2-managing-established-sites)
 4. [Create cohorts and invite faculty supervisors to them](/fieldx/step-3-set-up-cohorts)
-5. Invite Students — they can be sent an invitation that automatically connects them to their faculty supervisor and cohort, or given a cohort code to self-enroll
+5. Invite students — either via direct email invitation (auto-connects them to a track and faculty supervisor) or by sharing the cohort enrollment code
 6. [Manage and assign forms and reports](/fieldx/step-4-create-assign-tasks)
 
 <Note>Next step: Set up your field placement sites so students can select them. See [Step 2: Managing established sites](/fieldx/step-2-managing-established-sites).</Note>

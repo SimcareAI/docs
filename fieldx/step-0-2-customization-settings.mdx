@@ -1,53 +1,98 @@
 ---
 title: "Step 0.2: Customization settings"
-description: "Configure academic terms, student tracks, hour requirements, and the clearance process for your program."
+description: "Configure academic terms, student tracks, certificates, clearance, notifications, and program behavior."
 ---
 
-Before you start adding students, take a few minutes to configure FieldX for your program. Navigate to **My Program** from the navigation menu.
+Before you start adding students, take a few minutes to configure FieldX for your program. Click **My Program** in the top-right of any page to open the program settings sidebar.
 
 ![Customization Overview](/images/customization-1.png)
 
-## Organization settings
+## The sidebar tabs
+
+| Tab | What you configure |
+|---|---|
+| **General Information** | Program name, description, logo |
+| **Terms and Tracks** | Academic terms, student tracks, certificates and hour requirements |
+| **Clearance Tasks** | The pre-application steps each student must complete before logging hours |
+| **Members** | Students, faculty, and admin roster — with bulk actions, term and track assignment |
+| **Notifications** | Faculty daily digest, insurance expiration alerts, form due-date reminders |
+| **Settings** | Program-wide behavior toggles |
+| **Activity Log** | A searchable log of every form, report, timesheet, and page visit in your program |
+
+*A **DocuSeal Templates** tab is also available to a small group of allow-listed accounts for building reusable signature templates.*
+
+## General Information
+
+Set your program name, description, and upload your program logo. The logo appears in the navigation header for everyone in your program.
+
+## Terms and Tracks
 
 ![Organization Settings](/images/customization-2.png)
 
-### Edit info
-
-Update your program name, domain, and address.
-
 ### Academic terms
 
-Academic terms control how student progress is tracked across a semester. Here you can:
+Academic terms control how student progress is tracked across a semester. Each term has a start and end date and is labeled **Active**, **Past**, or **Upcoming** automatically.
 
-- Set the start and end dates of the current term
-- Create multiple terms for cohorts running on different schedules
+Click **+ Add Term** to create one. You can have multiple terms running side-by-side for cohorts on different schedules.
 
 ### Student tracks
 
-Student tracks define hour requirements. You can:
+Student tracks define hour requirements for each kind of placement (e.g., Internship, Pre-Practicum, Practicum, Apprenticeship, PhD, Certificate). For each track you can:
 
-- Enable and disable tracks (e.g., remote vs. in-person) — this determines what students see during the clearance process
-- Set total, direct, indirect, and supervision hour requirements per track
+- Enable or disable the track (this controls what students see in clearance)
+- Set required total, direct, indirect, and supervision hours
+- Choose **qualifying activity types** — granular control over which activities count toward each hour bucket
+- Configure site requirements
 
-## Clearance / application process
+The track editor is a 4-step modal: **Category Requirements** → **Hour Requirements** → **Site Requirements**, plus any extra steps based on enabled categories.
 
-The clearance process determines what students must complete before they can log hours. By default, students are asked to:
+### Certificates
 
-- Select their track
-- Review and sign standard agreements
-- Select at least one site and supervisor (or request a placement)
-- Upload a liability insurance form
+Set up **Program Certificates** with their own hour requirements (e.g., a Trauma certificate that requires N hours of trauma-related direct service). Certificates can be assigned to students individually.
+
+## Clearance Tasks (Application Process)
+
+The clearance process determines what students must complete before they can log hours. By default the steps are:
+
+1. **Choose Track** — pick their student track
+2. **Review Agreements** — read and sign program agreements
+3. **Select Sites** — pick an established site or request a new one
+4. **Add Supervisors** — provide a supervisor's name, email, and credentials (triggers the supervisor invite email)
+5. **Upload Insurance** — upload a liability insurance form
+6. **Final Review** — submit for coordinator approval
 
 ![Liability Form Upload](/images/customization-3.png)
 
-Programs commonly customize this to:
+### Customizing the process
 
-1. Require additional documents (background checks, site affiliation forms, expiration dates)
-2. Change the required agreements
-3. Remove the site selection requirement from initial clearance
+Click **Configure Application Process** to add, remove, or reorder steps. Available step types include `Track Selection`, `Agreement`, `Site Selection`, `Supervisor Contact`, `Liability Upload`, **`Custom Question`**, and embedded forms or quizzes.
+
+Click **Configure Agreement Requirements** to manage the agreements students sign — set which agreements apply to which tracks, mark them required or optional, and connect them to DocuSeal templates.
 
 ![Clearance Configuration View](/images/customization-4.png)
 
-For customizations not covered here, contact [tiko@simcare.ai](mailto:tiko@simcare.ai).
+## Members
+
+The Members tab is the canonical roster for your program. See [Step 1: Adding & managing faculty & students](/fieldx/step-1-adding-managing-faculty-students).
+
+## Notifications
+
+Toggle the program-wide email automation:
+
+- **Daily Assignment Digest** — track faculty get a morning email summarizing what their students completed yesterday. Pick the send time and what to include (assignments, clearance forms).
+- **Insurance Expiration Alerts** — students and admins get alerts at 30, 7, and 0 days before insurance expires.
+- **Form Due-Date Reminders** — students and signers are emailed 7 days and 1 day before a form deadline. Only the person blocking the form is emailed.
+
+## Settings
+
+Currently a single toggle:
+
+- **Auto-Approve Site Requests** — when on, students who request an established program site are approved immediately without coordinator review.
+
+## Activity Log
+
+A complete audit trail of program activity, with filters for type (Forms, Reports, Timesheets, Application Forms, Page Visits, Supervision Notes, Report Signatures), student, cohort, and date range. Export to CSV.
 
 <Note>Next step: With your program configured, you're ready to add users. See [Step 1: Adding & managing faculty & students](/fieldx/step-1-adding-managing-faculty-students).</Note>
+
+For customizations not covered here, contact [tiko@simcare.ai](mailto:tiko@simcare.ai).

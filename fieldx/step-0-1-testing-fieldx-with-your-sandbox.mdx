@@ -1,27 +1,43 @@
 ---
-title: "Step 0.1: Testing with your sandbox"
-description: "Use sandbox accounts to try out FieldX as a student, supervisor, and faculty member before going live."
+title: "Step 0.1: Testing with View as Student"
+description: "Use View as Student to experience FieldX exactly as your students do — without leaving your admin account."
 ---
 
-When you first start with FieldX you'll be provided sandbox accounts. These let you easily switch roles and try things out as a Site Supervisor, Faculty Supervisor, and Student without affecting your live program.
+The old "sandbox" workflow has been replaced by **View as Student**. Instead of switching between dummy accounts, coordinators can now impersonate any real student in their program for up to 30 minutes — read-only, safe, and fully audit-logged.
 
-## Your sandbox accounts
+<Note>Looking for the dedicated "View as Student" guide? See [View as Student](/fieldx/view-as-student) for the full reference.</Note>
 
-When your program onboards with SimCare, you'll receive credentials for:
+## What it replaces
 
-- 1 Program Coordinator
-- 2 Faculty Supervisors
-- 2 Site Supervisors
-- 4 Student accounts
+| Old workflow | New workflow |
+|---|---|
+| Sandbox accounts for student, faculty supervisor, site supervisor | **View as Student** (covers the student view directly) |
+| Test cohort in a separate sandbox program | Create a test cohort in your real program — `Show Archived` lets you hide it later |
+| Manual context switching between accounts | One-click impersonation from the Members tab, cohort, or student details |
 
-## Recommended things to test
+You can still invite faculty supervisors and site supervisors to your real program — they have their own views and you can join cohorts as faculty whenever you want to test the faculty side.
 
-- **Clearance tasks** — Follow the student guide to see what students experience before they can log hours: [Getting started & clearance tasks](/fieldx/students/step-1-getting-started-and-clearance-tasks)
-- **Create a new cohort** — Invite students and assign tasks: [Set up cohorts](/fieldx/step-3-set-up-cohorts)
-- **Log hours as a student** — See how the timesheet flow works end to end
-- **Approve hours as a supervisor** — Experience the sign-off process from the supervisor's perspective
-- **Create and assign a form** — [Building forms](/fieldx/building-forms)
+## Recommended things to try
 
-Most importantly — click around and explore! Try sending tasks, reviewing an evaluation, or leaving comments. There's a lot to discover and nothing in the sandbox will affect real students.
+- **The full clearance flow** — start View as Student on a real student who's in clearance, and walk through what they see step by step. See [Getting started & clearance tasks](/fieldx/students/step-1-getting-started-and-clearance-tasks).
+- **Log hours as a student** — open the Timesheet tab inside View as Student to confirm the agreement modal, activity types, and supervisor options match your program settings.
+- **Create a new cohort** — invite students, generate the join code, and try enrolling. See [Set up cohorts](/fieldx/step-3-set-up-cohorts).
+- **Create and assign a form** — use the Assignments tab to build a form (or use an AI-converted upload). See [Building forms](/fieldx/building-forms).
+- **Trigger a Run Report** — pick HRS-01 (Weekly Activity Ledger) and run it against a placeholder student.
 
-<Tip>After testing the platform, customize FieldX for your program's specific needs. See [Customization settings](/fieldx/step-0-2-customization-settings) to configure academic terms, hour requirements, and more.</Tip>
+Most importantly — explore! Try the Ask AI tab, the Todos system, the Notifications settings, and the program-management page. Nothing you do as a coordinator on the program side will affect a student's data unless you're acting through View as Student (which is read-only by design).
+
+## Read-only protections
+
+While View as Student is active, the impersonation banner stays at the top of the screen and **all actions are tagged as impersonation** in your activity log. The student can't tell you logged in as them — the events you see are theirs, not yours.
+
+<Tip>Once you're done testing, click **Exit Student View** in the amber banner at the top of the screen to return to your coordinator account. Sessions auto-expire after 30 minutes.</Tip>
+
+## What about faculty and site supervisor accounts?
+
+There's no "view as faculty" feature. To test those flows:
+
+- **Join a cohort as faculty** by generating the join code from the cohort and pasting it into the **Join Cohort as Instructor** modal under a faculty account
+- **Site supervisor onboarding** happens via the magic-link invite that fires when a student adds a supervisor during clearance — to test it, complete the supervisor step inside View as Student using an email you own
+
+<Note>Next step: With testing in place, customize FieldX for your program. See [Customization settings](/fieldx/step-0-2-customization-settings) to configure academic terms, hour requirements, and clearance.</Note>

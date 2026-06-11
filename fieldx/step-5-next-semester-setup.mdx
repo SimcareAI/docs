@@ -1,51 +1,87 @@
 ---
 title: "Step 5: Next semester setup"
-description: "A three-step process to transition your program to a new term: create the term, archive old cohorts, and roll over students."
+description: "Roll your program into a new term using cohort copy, bulk member moves, and archive."
 ---
 
-Transitioning to a new semester in FieldX is a quick, bulk process. You don't need to re-invite continuing students — just follow these three steps.
+Transitioning to a new semester in FieldX is a quick, bulk process. You don't need to re-invite continuing students — just follow these steps.
 
 ## Step 1: Create the new term
 
 <Steps>
-  <Step title="Navigate to My Program">
-    Go to the **Overview** tab and select **My Program**.
+  <Step title="Open My Program">
+    Click **My Program** in the top-right of any page, then go to the **Terms and Tracks** tab in the sidebar.
   </Step>
   <Step title="Add the new term">
-    Scroll to the **Academic Terms** section and add your new term (e.g., Spring 2026) with its start and end dates.
+    Scroll to the **Academic Terms** section and click **+ Add Term**. Enter the term name (e.g., Spring 2026), start date, and end date. Click **Create Term**.
+
+    Your new term shows up with an **Upcoming** chip until its start date, then flips to **Active**.
   </Step>
 </Steps>
 
-## Step 2: Archive previous cohorts
+## Step 2: Copy the previous cohort
+
+Instead of building each cohort from scratch, use **Copy from existing cohort** in the create modal.
 
 <Steps>
-  <Step title="Open completed cohorts">
-    Go to your **Cohorts** tab and click into a cohort that has ended.
+  <Step title="Create a new cohort">
+    From the **Cohorts** tab, click **Create Cohort**.
   </Step>
-  <Step title="Archive it">
-    Go to the cohort's **Settings** tab and select **Archive Cohort**. Repeat for all finished cohorts.
+  <Step title="Pick the source cohort">
+    In the form, use **Copy from existing cohort** to select last term's version. This carries over:
+    - One-time assignments
+    - Recurring schedules
+    - Settings (default signing faculty, hours report template)
+
+    Past-emitted assignments aren't copied — the new cohort's schedule starts fresh.
+  </Step>
+  <Step title="Shift dates">
+    Set the **First assignment date** to the new term's start date. Every source assignment's due date is shifted by the same offset, so the rhythm of the semester is preserved.
+  </Step>
+  <Step title="Pick the new academic term">
+    Select your new term in the **Academic Terms** field. Student placements are auto-created using this term.
+  </Step>
+  <Step title="Create">
+    Click **Create Cohort**.
   </Step>
 </Steps>
 
-<Note>Archiving does not delete data. It moves the cohort out of your active view while preserving all student hours, forms, and reports. You can access archived cohort data at any time.</Note>
-
-## Step 3: Roll over students to the new term
+## Step 3: Move continuing students to the new term
 
 <Steps>
-  <Step title="Open the Members tab">
-    Go to the **Members** tab on the main sidebar.
+  <Step title="Open Members">
+    From **My Program → Members**, switch to the **Students** sub-tab.
   </Step>
   <Step title="Filter by the previous term">
     Filter the list to show students from the term that just ended (e.g., Fall 2025).
   </Step>
   <Step title="Select all">
-    Click the checkbox at the top left of the table to **Select All**.
+    Click the checkbox at the top of the table to **Select All**.
   </Step>
-  <Step title="Assign to new term">
-    Click the **Assign Term** button that appears, then select the new term (e.g., Spring 2026) from the dropdown.
+  <Step title="Assign new term">
+    Click **Assign Term** in the bulk actions bar, then pick the new term (e.g., Spring 2026). You can also click **Assign Track** if students are moving to a different track.
   </Step>
 </Steps>
 
-Your students are now active in the new term. You can proceed to create their new cohorts and assign them accordingly.
+Your students are now active in the new term.
+
+## Step 4: Archive previous cohorts
+
+<Steps>
+  <Step title="Open the Cohorts tab">
+    Find any cohort that has ended.
+  </Step>
+  <Step title="Archive it">
+    Hover the cohort row and click the **archive** action. Repeat for each finished cohort.
+  </Step>
+  <Step title="Hide archived cohorts">
+    Click **Hide Archived** in the header to clean up your view. Use **Show Archived** any time to see them again.
+  </Step>
+</Steps>
+
+<Note>Archiving does not delete data. It moves the cohort out of your active view while preserving all student hours, forms, and reports. You can **Unarchive** any time, or **Permanently Delete** when you're sure you don't need the data.</Note>
+
+## Step 5: Re-enroll faculty if needed
+
+If faculty supervisors are joining new cohorts for the new semester, generate the cohort's join code (from the cohort's Members sub-tab → **Generate join code**) and send it to them.
 
 <Tip>Next step: Learn how to generate reports and track program-wide data in [Step 6: Evaluations & reports](/fieldx/step-6-evaluations-reports-information).</Tip>

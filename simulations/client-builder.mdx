@@ -1,72 +1,69 @@
 ---
 title: "Client builder"
-description: "Create custom AI client avatars for simulation practice using the five-step Patient Builder wizard."
+description: "Create custom AI clients — individual or group cases — that you can use in assignments or practice on your own."
 ---
 
-The **Client Builder** (also called Patient Builder) lets instructors and administrators create custom AI clients tailored to their program's specific training goals. Once published, a client can be used in assignments just like any built-in SimCare case.
+The **Client Builder** (also called Patient Builder) lets instructors and admins create custom AI clients tailored to their program's training goals. You can build either a single-client scenario or a group case (family, couples, or support group). Once published, your client can be used in assignments just like any built-in SimCare case.
 
-<Note>Client Builder is available to instructors and program admins. Students use the clients created here but cannot build their own.</Note>
+<Note>Client Builder is available to paid accounts (instructors and program admins). Free-tier accounts are redirected to the plan page.</Note>
 
-## Starting a new client
+## Finding the builder
 
-Navigate to **Admin** (or **Faculty Simulations**) and click **Create New Client**. This opens the five-step wizard.
+From the Discover page, click **Create Custom Client** in the feature banner, or go directly to **My Cases** from your profile menu. You'll land on the Client Builder dashboard.
 
-## Step 1: Basic profile
+## Dashboard overview
 
-| Field | Required |
+The dashboard shows every case you've built or are in the middle of building.
+
+- **Search** — find a case by name
+- **Tabs:** `All Cases`, `Individual`, `Group`
+- **Build New Case** button (top right) — opens a dropdown to start a new case
+
+Each card on the dashboard shows the case's name, status of each AI-generated variant (prompt, voice, image, etc.), and quick actions.
+
+## Building a new case
+
+Click **Build New Case** and choose what kind of case to create:
+
+- **Individual Client** — one-on-one therapy session
+- **Group Case** — family, couples, or support group with multiple speakers
+
+You'll land in the case editor — fill out the details, then save. SimCare generates the AI client in the background — this typically takes a few minutes.
+
+## What you'll provide
+
+For both types of cases you'll define:
+
+| Field | Notes |
 |---|---|
-| **Name** | Yes |
-| **Age** | Yes |
-| **Gender** | Yes |
-| **Race / ethnicity** | Yes |
+| **Name** | Display name for the client |
+| **Demographics** | Age, gender, race / ethnicity |
+| **Presenting issues** | What the client is seeking help for |
+| **Relevant history** | Background context the AI draws on |
+| **Training goals** | Specific skills or competencies you want students to practice |
+| **Voice** | Preview and select a voice with style, accent, and age filters |
+| **Image** | Pick an avatar image that matches the demographic profile |
 
-These fields shape the avatar's demographic presentation and inform how the AI responds.
+Group cases add fields for each speaker (name, role in the group, dynamic with other members).
 
-## Step 2: Clinical details
+<Tip>Be specific with presenting issues and history — the richer the context, the more realistic and educationally useful the AI client will be.</Tip>
 
-| Field | Required |
-|---|---|
-| **Presenting issues** | Yes — what the client is seeking help for |
-| **Relevant history** | Yes — background context the AI draws on |
-| **Training goals** | Yes — specific skills or competencies you want students to practice |
+## After publishing
 
-Be specific with presenting issues and history — the richer the context, the more realistic and educationally useful the AI client will be.
+Once the AI finishes generating, the client moves from draft to **active** and appears in your case library. You can:
 
-## Step 3: Image selection
-
-Browse the avatar image library and filter by:
-
-- Gender presentation
-- Age range
-- Race / ethnicity
-
-Select the image that best matches the profile you built. The image appears during video sessions and in the case card.
-
-## Step 4: Voice selection
-
-Choose and preview a voice for your client. Filter by:
-
-- **Style** — professional, casual, distressed, etc.
-- **Accent** — regional and international accents available
-- **Age** — younger vs. older vocal qualities
-
-Click the play button to hear a sample before selecting.
-
-## Step 5: Review & activation
-
-Review all your selections. When you're ready, click **Publish**. SimCare generates the AI client in the background — this typically takes a few minutes.
-
-Once generation completes, the client appears as an active case on your dashboard and can be assigned to students.
-
-<Tip>Save a draft at any step — your progress is preserved so you can come back and finish later. Drafts appear in your dashboard under **My Clients**.</Tip>
+- Use it directly from your dashboard
+- Assign it to a class — see [Creating assignments](/simulations/creating-assignments)
+- Edit it any time (changes regenerate the affected variants)
 
 ## Troubleshooting generation failures
 
-If your client fails to generate, the most common causes are:
+If a part of your case (prompt, voice, or image) fails to generate, the card shows a red error state with guidance:
 
-- **Conflicting clinical details** — overly contradictory history can confuse the AI model; simplify and try again
-- **Platform issue** — click **Retry Generation** on the client card; if it fails again contact [hello@simcare.ai](mailto:hello@simcare.ai)
+- **Try regenerating again** — most failures are transient
+- **Check your case details are complete** — missing or contradictory fields confuse the AI
+- **Contact support if the issue persists** — reach us at [hello@simcare.ai](mailto:hello@simcare.ai)
 
-## Assigning a custom client
+## Sharing your case
 
-Once published, assign your client like any other case — go to your class, click **Create Assignment**, and select the client from your case library. See [Creating assignments](/simulations/creating-assignments) for the full flow.
+Custom cases stay private to your program by default. To share a case across multiple instructors at your school, or to make it available program-wide, contact your program admin or SimCare support.
