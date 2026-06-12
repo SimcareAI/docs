@@ -1,0 +1,66 @@
+---
+title: "Ask AI"
+description: "Use natural-language queries to analyze your program data, generate reports, and draft bulk assignments."
+---
+
+The **Ask AI** tab gives Program Coordinators a conversational interface to query FieldX data in plain English. Under the hood it generates SQL, runs it against your program's data, and returns results as tables, summaries, or exportable files — no SQL knowledge required.
+
+<Note>Ask AI is available to Program Coordinators only. The tab appears with a **New** badge in your navigation.</Note>
+
+## Opening Ask AI
+
+Click the **Ask AI** tab in your FieldX navigation. A chat interface opens with a text input at the bottom and suggested prompts above it.
+
+## What you can ask
+
+Ask AI understands questions about your program's students, hours, cohorts, sites, and compliance data. Examples:
+
+| Question | What you get |
+|----------|-------------|
+| "How many students are off pace this semester?" | Count with names and their hours gap |
+| "Show me all students who haven't submitted a supervision report yet" | Filterable table |
+| "Which sites have the most students this term?" | Ranked site list |
+| "Export hours for all internship students to CSV" | Downloadable CSV file |
+| "Draft a bulk assignment for all cohort 2025 students" | Pre-filled assignment template |
+
+## Suggested prompts
+
+When you open a new conversation, Ask AI shows several suggested prompts based on your program's current state — for example, "Who is behind on hours?" or "Show clearance status for all students." Click any suggestion to use it directly.
+
+## Exporting results
+
+Ask AI can generate exports in three formats:
+
+| Format | How to get it |
+|--------|--------------|
+| **CSV** | Ask "export as CSV" or click the export button on any table result |
+| **PDF** | Ask "generate a PDF report" |
+| **Word (.doc)** | Ask "download as Word document" |
+
+<Note>Excel (.xlsx) is not supported. Use CSV and open it in Excel.</Note>
+
+## Managing conversations
+
+Each chat thread is a saved conversation. You can:
+
+- **Pin** a conversation to keep it at the top of your list
+- **Rename** a conversation to something descriptive
+- **Delete** a conversation when you no longer need it
+- **Start a new conversation** to begin fresh (click the pencil / new chat icon)
+
+Conversations persist between sessions so you can return to a previous query at any time.
+
+## Bulk assignment drafting
+
+Ask AI can draft bulk assignments for cohorts. Example prompt: *"Create a supervision report assignment for all Fall 2025 cohort students due November 15."* Ask AI will generate a pre-filled assignment that you can review and confirm before it's actually created.
+
+## Common issues
+
+**Ask AI isn't showing data I expect.**  
+Make sure your Overview tab is set to the correct term — Ask AI uses the same term scope. Switch the term dropdown on Overview and try your query again.
+
+**The response seems wrong or incomplete.**  
+Try rephrasing your question more specifically (add a cohort name, date range, or student type). You can also ask Ask AI to "show your SQL" to see what query it ran.
+
+**"Ask AI is unavailable" message.**  
+This occasionally happens during high load. Wait a moment and try again, or contact [hello@simcare.ai](mailto:hello@simcare.ai).

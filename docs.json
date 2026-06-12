@@ -18,6 +18,7 @@
             "pages": [
               "simulations/what-is-simcare",
               "simulations/creating-an-account",
+              "simulations/my-learning",
               "simulations/starting-your-first-session",
               "simulations/talking-to-the-avatar",
               "simulations/ending-a-session",
@@ -49,7 +50,8 @@
             "pages": [
               "simulations/cant-hear-avatar",
               "simulations/audio-issues",
-              "simulations/reset-password"
+              "simulations/reset-password",
+              "simulations/accessibility"
             ]
           }
         ]
@@ -57,6 +59,12 @@
       {
         "tab": "FieldX",
         "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "fieldx/fieldx-overview"
+            ]
+          },
           {
             "group": "Coordinators",
             "pages": [
@@ -73,7 +81,7 @@
               "fieldx/setting-up-recurring-tasks",
               "fieldx/building-forms",
               "fieldx/view-as-student",
-              "fieldx/ask-ai",
+              "fieldx/coordinator-ask-ai",
               "fieldx/todos"
             ]
           },
@@ -90,7 +98,8 @@
             "pages": [
               "fieldx/site/step-1-getting-started",
               "fieldx/site/step-2-viewing-student-progress",
-              "fieldx/site/step-3-signing-off-on-hours"
+              "fieldx/site/step-3-signing-off-on-hours",
+              "fieldx/site/step-4-my-profile"
             ]
           },
           {
@@ -101,8 +110,7 @@
               "fieldx/students/step-3-the-timesheet-tab-logging-hours",
               "fieldx/students/step-4-the-cohorts-tab",
               "fieldx/students/step-5-my-sites",
-              "fieldx/students/step-6-helpful-tools-notes-to-dos",
-              "fieldx/students/my-dashboard"
+              "fieldx/students/step-6-helpful-tools-notes-to-dos"
             ]
           }
         ]
