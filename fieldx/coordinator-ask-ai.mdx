@@ -1,9 +1,9 @@
 ---
 title: "Ask AI"
-description: "Use natural-language queries to analyze your program data, generate reports, and draft bulk assignments."
+description: "Chat with an AI assistant that knows your program data — ask questions, generate reports, and surface compliance issues without writing a query."
 ---
 
-The **Ask AI** tab gives Program Coordinators a conversational interface to query FieldX data in plain English. Under the hood it generates SQL, runs it against your program's data, and returns results as tables, summaries, or exportable files — no SQL knowledge required.
+The **Ask AI** tab puts a natural-language assistant on top of your entire program. It can read your students, cohorts, sites, hours, forms, and reports — and answer questions, build ad-hoc reports, and flag compliance issues in seconds. No SQL or spreadsheet skills required.
 
 <Note>Ask AI is available to Program Coordinators only. The tab appears with a **New** badge in your navigation.</Note>
 
@@ -13,54 +13,66 @@ Click the **Ask AI** tab in your FieldX navigation. A chat interface opens with 
 
 ## What you can ask
 
-Ask AI understands questions about your program's students, hours, cohorts, sites, and compliance data. Examples:
+Ask AI is grounded in your program's live data. Examples:
 
-| Question | What you get |
-|----------|-------------|
-| "How many students are off pace this semester?" | Count with names and their hours gap |
-| "Show me all students who haven't submitted a supervision report yet" | Filterable table |
-| "Which sites have the most students this term?" | Ranked site list |
-| "Export hours for all internship students to CSV" | Downloadable CSV file |
-| "Draft a bulk assignment for all cohort 2025 students" | Pre-filled assignment template |
+- "Which students are off pace this term?"
+- "Show me everyone in the Spring 2026 cohort who hasn't completed clearance."
+- "Which sites have the highest pending sign-off counts?"
+- "How many students are missing liability insurance in the next 30 days?"
+- "Generate a Weekly Activity Ledger for Jordan Lee for the last 4 weeks and export as PDF."
+- "Build a table of every student, their site, faculty supervisor, and total approved hours — export to CSV."
+- "Find any students with hour logs longer than 1.5 hours in the past 7 days."
+- "Draft a supervision report assignment for all Fall 2025 cohort students due November 15."
+
+When the answer is a table, Ask AI renders it inline and gives you export options.
 
 ## Suggested prompts
 
-When you open a new conversation, Ask AI shows several suggested prompts based on your program's current state — for example, "Who is behind on hours?" or "Show clearance status for all students." Click any suggestion to use it directly.
+When you open a new conversation, Ask AI shows suggested prompts based on your program's current state — e.g., "Who is behind on hours?" or "Show clearance status for all students." Click any to use it directly.
 
 ## Exporting results
-
-Ask AI can generate exports in three formats:
 
 | Format | How to get it |
 |--------|--------------|
 | **CSV** | Ask "export as CSV" or click the export button on any table result |
+| **Google Drive** | Ask "export to Google Drive" — saves directly to your connected Drive |
 | **PDF** | Ask "generate a PDF report" |
 | **Word (.doc)** | Ask "download as Word document" |
 
 <Note>Excel (.xlsx) is not supported. Use CSV and open it in Excel.</Note>
 
+## Tips for better answers
+
+- **Be specific** — "all students in Spring 2026" beats "my students"
+- **Mention the term** when you want a specific window
+- **Ask for a format** — say "as a table" or "as a list" if it matters
+- **Follow up** — the conversation persists, so you can ask "now filter to off-pace only" after the first result
+- **Ask it to show its work** — say "show your SQL" to see the exact query it ran
+
 ## Managing conversations
 
-Each chat thread is a saved conversation. You can:
+Each chat thread is saved. You can:
 
 - **Pin** a conversation to keep it at the top of your list
 - **Rename** a conversation to something descriptive
 - **Delete** a conversation when you no longer need it
-- **Start a new conversation** to begin fresh (click the pencil / new chat icon)
+- **Start a new conversation** with the pencil icon
 
-Conversations persist between sessions so you can return to a previous query at any time.
+Conversations persist between sessions — return to a previous query at any time.
 
-## Bulk assignment drafting
+## Privacy
 
-Ask AI can draft bulk assignments for cohorts. Example prompt: *"Create a supervision report assignment for all Fall 2025 cohort students due November 15."* Ask AI will generate a pre-filled assignment that you can review and confirm before it's actually created.
+Conversations stay private to your account. They aren't shared with students, faculty, or other coordinators, and they aren't used to train SimCare's models. Every query is scoped to **your program only** — Ask AI cannot see other programs' data.
 
 ## Common issues
 
-**Ask AI isn't showing data I expect.**  
-Make sure your Overview tab is set to the correct term — Ask AI uses the same term scope. Switch the term dropdown on Overview and try your query again.
+**Ask AI isn't showing data I expect.**
+Make sure your Overview tab is set to the correct term — Ask AI uses the same term scope. Switch the term dropdown and try again.
 
-**The response seems wrong or incomplete.**  
-Try rephrasing your question more specifically (add a cohort name, date range, or student type). You can also ask Ask AI to "show your SQL" to see what query it ran.
+**The response seems wrong or incomplete.**
+Try rephrasing with more specifics (cohort name, date range, student type). Ask it to "show your SQL" to verify what query ran. If the data itself looks wrong, flag it inline or email [tiko@simcare.ai](mailto:tiko@simcare.ai).
 
-**"Ask AI is unavailable" message.**  
-This occasionally happens during high load. Wait a moment and try again, or contact [hello@simcare.ai](mailto:hello@simcare.ai).
+**"Ask AI is unavailable" message.**
+This occasionally happens during high load. Wait a moment and try again.
+
+<Note>Ask AI is in active development. If you'd like a new capability added, email [tiko@simcare.ai](mailto:tiko@simcare.ai).</Note>
