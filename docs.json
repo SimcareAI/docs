@@ -26,6 +26,12 @@
             ]
           },
           {
+            "group": "NCMHCE exam prep",
+            "pages": [
+              "simulations/ncmhce-exam-prep"
+            ]
+          },
+          {
             "group": "AI feedback",
             "pages": [
               "simulations/understanding-ai-feedback",
