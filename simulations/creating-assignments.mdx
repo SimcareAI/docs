@@ -118,13 +118,48 @@ Open any assignment URL with `?preview=true&assignment=<id>` (or use the **Previ
 
 ## Follow-up / longitudinal cases
 
-To create a follow-up where students return to the same client, use the **Follow-up builder**:
+Follow-ups let students return to the same client across multiple sessions. Each follow-up is tied to a **parent assignment** (the earlier session) and a **scenario** (the clinical situation the client is in when they come back).
 
-1. Open the case template you want to base the follow-up on
-2. Click **Create follow-up assignment**
-3. Optionally add **Recent Developments** — new clinical information that has changed since the previous session
+### Turning on follow-up mode
 
-Follow-ups can require a prerequisite assignment, so students must complete the original session first.
+In the case assignment builder's **Avatar** step, toggle **This is a follow-up** after selecting a case. Two new fields appear:
+
+- **Parent assignment** — the previous assignment in this class that students must complete first.
+- **Follow-up scenario** — the storyline for this session.
+
+The assignment is automatically labeled **Follow Up #N** in the class assignment table for both teachers and students, so the order is clear at a glance.
+
+### Picking a scenario
+
+Each case template ships with a set of numbered scenarios (1, 2, 3…) plus any custom scenarios your school has built (shown as C1, C2…). The picker shows a short summary and a one-line clinical goal for each.
+
+- Scenarios already used by another follow-up in the same class show a **Used** badge so you don't accidentally duplicate them.
+- Scenario 6 is reserved as a termination session — selecting it auto-sets the session type to **Termination**.
+- The session type defaults to **Intervention** on follow-ups (since intake has already happened).
+
+### Creating a custom scenario
+
+If none of the built-in scenarios fit, select **Not a fit? Create your own** under the scenario picker. The **Follow-up builder** opens in a new tab.
+
+<Steps>
+  <Step title="Describe the situation">
+    Write 20–3,000 characters describing what has changed for the client since the previous session — life events, symptom changes, relationship updates, anything the AI client should be aware of.
+  </Step>
+  <Step title="Generate">
+    Select **Generate scenario**. SimCare uses AI to structure your free-text into the three fields a scenario needs:
+
+    - A 3–5 word summary
+    - A one-sentence clinical goal
+    - A 100–120 word vignette that primes the AI client
+
+    Your draft is saved to your school library so any teacher creating a follow-up on the same case can reuse it.
+  </Step>
+  <Step title="Return to the assignment">
+    Close the tab to return to the assignment builder. Your new scenario appears in the picker tagged **C1**, **C2**, and so on.
+  </Step>
+</Steps>
+
+Each case template can hold up to 10 custom scenarios. Delete ones you no longer need from the Follow-up builder.
 
 ## Viewing submissions
 
