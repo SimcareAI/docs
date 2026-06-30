@@ -30,7 +30,7 @@ From the **Assignments** tab inside a class, click **Create assignment** and cho
 - **Quiz** — multiple choice, true/false, and written-answer questions
 - **Document** — a reading (PDF, DOCX, URL) students must review, or a file they must upload
 
-The case assignment builder has five steps:
+The case assignment builder has six steps:
 
 <Steps>
   <Step title="Avatar">
@@ -61,7 +61,41 @@ The case assignment builder has five steps:
     - **Risk Assessment**
     - **Treatment Planning**
     - **SOAP Note**
-    - **Reflection** (new)
+    - **Reflection**
+  </Step>
+  <Step title="Evaluation">
+    Choose how the AI scores the session. You have three mutually exclusive options:
+
+    - **General Counseling Skills Assessment** *(default)* — case-specific feedback generated for this client.
+    - **Microskills** — turn off the general assessment toggle to reveal a tiered list of counseling skills (for example, *Basic Attending & Empathy* → *Minimal Encouragers*). Pick the skills and individual microskills you want evaluated; each is scored against a shared rubric and checklist. Click **Preview** on any skill to see the rubric students will be graded against.
+    - **Custom evaluation template** — pick a saved rubric/checklist template from your program. Click **Preview** to open the template in a new tab before assigning. If none is selected, the default case-specific feedback format is used.
+
+    Microskills and custom templates can't be used together on the same assignment.
+  </Step>
+  <Step title="Evaluation">
+    Choose how the AI scores student performance. Pick one of the modes below — they're mutually exclusive.
+
+    **General Counseling Skills Assessment (default)**
+
+    Leave the **General Counseling Skills Assessment** toggle on to use SimCare's default case-specific feedback. The AI evaluates the session against the standard counseling competencies tied to the client you picked.
+
+    **Microskills**
+
+    Turn the toggle off to scope feedback to specific microskills. You'll see SimCare's skill taxonomy organized as **Tier → Skill → Microskill**. Enable the skills you want assessed and, if you only care about a subset, toggle individual microskills underneath. Use this when an assignment targets a specific competency (for example, reflective listening or open-ended questions) and you want feedback to ignore the rest.
+
+    **Saved evaluation template**
+
+    Select a saved evaluation template to score students against your own **rubrics** and **checklists**:
+
+    - **Rubrics** — criteria scored on a column scale (for example, *Excellent / Good / Needs Work*). Each cell carries display text for students and hidden evaluation instructions for the AI.
+    - **Checklists** — pass/fail items each worth a fixed point value.
+    - **Theory analysis** — enabled per template; when on, the AI also analyzes the session through the theory tied to the template.
+
+    Click **Preview** next to the selected template to open the student-facing view in a new tab.
+
+    Templates can be marked **public** (available to every program) or scoped to specific programs via program access. Only templates your program has access to appear in the picker.
+
+    Selecting a saved template hides the microskills picker and replaces the default per-case feedback in the next step.
   </Step>
   <Step title="Feedback">
     Choose which feedback components appear on student Case Reviews:
@@ -73,6 +107,8 @@ The case assignment builder has five steps:
     - **Advanced Skills**
 
     Pick a **therapy theory** for Theory Analysis — over 30 are supported across Beginner, Intermediate, and Difficult tiers (Motivational Interviewing, CBT, Narrative, Gestalt, Adlerian, Bowen Family Systems, Strategic, Structural, Solution-Focused, DBT, Psychoanalytic, and more).
+
+    When a saved evaluation template is selected in the previous step, this step is reduced to the theory picker — the template controls the rubric and checklist sections automatically.
   </Step>
 </Steps>
 
