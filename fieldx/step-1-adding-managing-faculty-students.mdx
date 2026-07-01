@@ -56,6 +56,19 @@ Students cannot change their selected track on their own after it has been set. 
 
 You can select more than one student before choosing **Assign Track** if a whole group needs to move to the same track.
 
+### Re-clearance after a placement change
+
+If your program has **Require Re-Clearance on Placement Change** enabled in [Customization → Settings](/fieldx/step-0-2-customization-settings#settings), reassigning a student to a new level (for example Practicum → Internship) or a new track type (for example CODAC → Clinical Mental Health) automatically re-locks that student's Field Experience until they redo the clearance flow for the new placement.
+
+What happens when it fires:
+
+- The student's previous clearance task is marked outdated and a fresh clearance draft is created for the new placement.
+- The student sees a blocked overlay in Field Experience explaining that their placement changed and prompting them to complete clearance again.
+- Handbook acknowledgements and agreements reset for the new placement; already-uploaded sites and insurance carry over.
+- The change is recorded in the **Activity Log** as `preapp_reclear_required`.
+
+The trigger only runs when the new placement differs from the current one and the student was previously approved. Students who have not yet cleared, or whose approved placement already matches the new one, are unaffected.
+
 ## Per-row actions
 
 Click any student row's actions menu for:
