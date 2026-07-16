@@ -27,6 +27,23 @@ The builder has your form canvas on the left and a toolbox of field types on the
 | **Date & time** | Date pickers and time log entries |
 | **File upload** | Let users attach documents or PDFs |
 | **Section headers** | Organize long forms with clear headings and dividers |
+| **Accumulate numbers** | Auto-calculated field that totals numeric answers from earlier questions |
+
+## Accumulate numbers
+
+Use the **Accumulate numbers** field when you need a running total (or average, min, max, or count) of numeric answers a respondent has already given elsewhere on the form. Common examples include totaling weekly hours, averaging rating scores, or counting completed items.
+
+The field is read-only for the person completing the form — the value updates automatically as they type numbers into the source questions.
+
+To configure it:
+
+1. Add one or more **Text input** questions earlier in the form to collect the numbers you want to aggregate.
+2. Add an **Accumulate numbers** field below them.
+3. In the field editor, select which source questions to include.
+4. Choose an aggregation: **Sum**, **Average**, **Min**, **Max**, or **Count**.
+5. Set the number of decimal places to display (0–6).
+
+<Note>Only **Text input** questions that appear above the accumulate field can be used as sources. Blank or non-numeric answers are skipped rather than counted as zero, so the total reflects only real responses.</Note>
 
 ## Field properties
 
