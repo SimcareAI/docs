@@ -1,0 +1,76 @@
+---
+title: "Peer review assignments"
+description: "Have students review each other's simulation sessions — comment on the transcript, give a grade, and (optionally) grade the reviewer's effort."
+---
+
+Peer review is an assignment type that lets students review a classmate's simulation session. A reviewer watches the recording, leaves timestamped comments on the transcript, and can give a grade with written feedback — the same UI instructors use to grade cases, minus the AI feedback.
+
+Use peer review when you want students to practice giving clinical feedback, learn by evaluating classmates' work, or add a second layer of review on top of AI and instructor grading.
+
+## How it works
+
+A peer review assignment always points at an existing **case assignment** — the "target." Students who have submitted the target case are the pool of reviewees.
+
+- Reviewers open the assignment and either see a **pre-assigned classmate** (if you paired them) or **pick a classmate's session** from the graded pool.
+- The reviewer watches the recording, comments on the transcript, and — if you enabled grading — enters a numeric grade and written feedback.
+- Comments are visible to the reviewed student **as soon as the reviewer submits** — there is no separate release step.
+- You can optionally grade the reviewer's effort separately in the teacher view.
+
+<Note>Peer review does not use AI feedback. Reviewers see only the raw video, transcript, and their classmates' comments — not SimCare's AI evaluations of the session.</Note>
+
+## Creating a peer review assignment
+
+Open a class, go to the **Assignments** tab, and select **Create assignment**. Choose **Peer review** as the type. The builder has four steps.
+
+<Steps>
+  <Step title="Target">
+    Pick the case assignment that reviewers will review. Only case assignments already in this class can be targets — create the case assignment first if it doesn't exist yet.
+  </Step>
+  <Step title="Details">
+    Set the title, description, optional due date, and whether to publish immediately. Same fields as a case assignment.
+  </Step>
+  <Step title="Components">
+    Choose what the reviewer does. At least one is required:
+
+    | Component | What the reviewer does |
+    |---|---|
+    | **Video & Transcript** | Watches the recording and leaves timestamped comments on the transcript |
+    | **Grading** | Enters a numeric grade (0–100) and written feedback on the classmate's session |
+
+    Enable both for a full review, or just one to keep the scope tight (for example, comments-only for a low-stakes practice pass).
+  </Step>
+  <Step title="Pairing">
+    Optionally assign explicit reviewer → reviewee pairs. Anyone left unpaired self-selects a classmate's session from the graded pool when they open the assignment.
+
+    Pairing targets a **student**, not a specific attempt — the reviewer will always see that student's most recent submitted attempt. If the paired reviewee hasn't submitted yet, the reviewer sees a "not submitted yet" state until they do.
+  </Step>
+</Steps>
+
+## Student experience
+
+When a student opens a peer review assignment from **My Learning**:
+
+- **If you paired them**, the assignment opens straight into the review screen for their assigned classmate's session.
+- **If they're unpaired**, they see a picker listing classmates who have submitted the target case, and they choose one.
+
+The review screen shows the video and transcript on one side and, if grading is enabled, a grading panel on the other. Peer comments appear on the transcript tagged as **Peer** so the reviewed student can tell them apart from instructor or AI comments.
+
+## Reviewing peer work as an instructor
+
+Open the peer review assignment from the class **Assignments** tab. The teacher view is organized by **reviewer**, not by reviewee:
+
+- Left rail — every reviewer, with the classmates they reviewed nested underneath.
+- Main area — the selected review, showing the reviewee's transcript with the reviewer's comments and grade in read-only mode.
+- Optional **review grade** — give the reviewer a numeric grade and written feedback on how well they reviewed. This is separate from the grade the reviewer gave the reviewee's session.
+
+You can jump between a reviewer's reviews without leaving the page to see their whole body of peer feedback at once.
+
+## Where peer feedback appears for the reviewed student
+
+The student being reviewed sees peer comments on their case review, alongside AI and instructor feedback. Peer comments are tagged with the reviewer's name and a **Peer** badge, and are timestamped to the moment in the session they're anchored to.
+
+## Limits
+
+- The target must be a **case assignment** — you can't peer review a quiz, document, or another peer review.
+- Existing pairs can't be edited from the builder after creation. Add new pairs to layer on top; leave a student unpaired to let them self-select.
+- Peer review is not yet available in the **Course Builder** for course-level templates — create peer review assignments directly on the class.

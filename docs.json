@@ -41,6 +41,7 @@
             "group": "For instructors",
             "pages": [
               "simulations/creating-assignments",
+              "simulations/peer-review-assignments",
               "simulations/client-builder",
               "simulations/course-catalog"
             ]
