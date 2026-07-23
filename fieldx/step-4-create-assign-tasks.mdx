@@ -108,4 +108,31 @@ Each row in the table has actions for:
 
 To change just the due date of an already-emitted assignment (or to adjust who's on a multi-signer form), open the assignment row inline and click **Edit**. The dedicated edit page lets you change the due date and, for multi-person assignments tied to a cohort, exclude specific student/supervisor pairs.
 
+## Editing a form template after it's been assigned
+
+Editing a form template in the form builder updates the template only — assignments that have already been sent out keep the version of the form the respondent originally saw. Two safeguards make this predictable.
+
+### Adding a new role to a form that already has assignments
+
+If you edit a form's **required roles** — for example, changing a faculty-only evaluation into one that also needs a student signature — and the form already has open assignments, an **Update existing assignments?** modal appears when you click Save.
+
+The modal previews how many assignment instances are affected and gives you two choices:
+
+- **Save template only** — the template updates. Existing assignments keep the old role configuration, so anyone already partway through won't suddenly see a new required signer. Every *new* assignment created from this form uses the updated roles.
+- **Save and update existing assignments** — the template updates, and every live assignment for this form is backfilled with the new role. Any instance that was already marked complete under the old configuration is reopened to `Pending` so the new role can also complete it. Previously submitted responses are preserved, not deleted.
+
+No notification emails are sent when you update existing assignments — send a reminder from the cohort's **Send Alert** action once you've reviewed who's affected.
+
+<Warning>Reopening a submitted instance means it counts as incomplete again until the newly required role finishes their part. Make sure your students and supervisors expect the update before choosing **Save and update existing assignments**.</Warning>
+
+### Form versioning for past responses
+
+Every content-changing save of a form creates an immutable snapshot of the form's questions. Each response is pinned to the version that was live when the respondent opened the fill page, so:
+
+- Adding a question to a form later never causes it to appear as blank on old responses.
+- Renaming an option or reordering choices doesn't retroactively change how a previously submitted response reads.
+- The submission detail view, CSV export, and PDF export all render each response against its own version's question list.
+
+You don't need to configure anything — this happens automatically for every form save. Coordinators viewing a mixed set of responses in the **Submissions** tab will see the union of questions across every version present in that assignment, so nothing gets hidden.
+
 <Note>For details on building complex forms, see [Building forms](/fieldx/building-forms). For recurring assignments, see [Setting up recurring tasks](/fieldx/setting-up-recurring-tasks).</Note>

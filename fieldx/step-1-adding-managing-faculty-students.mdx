@@ -35,6 +35,26 @@ The **Add Users** modal lets you:
 
 The modal shows per-email results when it runs (success / error / warning) so you can correct typos right away.
 
+## Self sign-up by email domain
+
+Students whose email address matches one of your program's registered domains are enrolled automatically the first time they sign up — no invite, no join code. This is the fastest onboarding path for large first-year cohorts where you don't want to pre-load every student in advance.
+
+You can see your program's registered domains at the top of **My Program → Overview**, in the **Domain** card of the program header.
+
+How it works:
+
+- A student self-signs up at [app.simcare.ai/sign-up](https://app.simcare.ai/sign-up) with an email like `student@university.edu`.
+- If `university.edu` is a domain for your program, the new account is enrolled as a student in that program on their very first authenticated request — before they see the pre-application flow.
+- The student then continues straight into the standard clearance tasks (see [Step 3.1: Approving students](/fieldx/step-3-1-approving-students)). You'll see them appear in **Members → Students** with clearance status `Not Started`.
+
+Two guardrails protect against accidental re-enrollment:
+
+- If you previously **removed** a student from your program (via the bulk **Remove** action), they are never re-enrolled by domain match — you must add them back explicitly.
+- If a student is already an active or inactive member of any other program, domain-based enrollment is skipped so they aren't silently moved between programs.
+
+<Note>To register or change the email domain(s) linked to your program, contact your SimCare rep. Adding a new domain is a one-time setup step.</Note>
+
+
 ## Bulk actions
 
 Select multiple students using the row checkboxes to open the bulk action bar:
