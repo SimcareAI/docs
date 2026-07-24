@@ -1,0 +1,75 @@
+---
+title: "View as Supervisor"
+description: "Impersonate any site supervisor in your program — read-only, audit-logged, and time-boxed to 1 hour."
+---
+
+**View as Supervisor** lets coordinators and admins see FieldX exactly as a specific site supervisor sees it. Use it to verify a supervisor's dashboard, tasks, and sites without asking them to screen-share — and without any risk of changing their data.
+
+## When to use it
+
+- Confirming a supervisor sees the right students and cohorts before the semester starts
+- Debugging why a supervisor reports missing tasks, sites, or hours to sign off on
+- Previewing how a new evaluation form appears in the supervisor's queue
+- Onboarding new coordinators by showing them what supervisors actually see
+
+## Starting a session
+
+1. Go to **My Program → Members** and open the **Supervisors** tab.
+2. Find the supervisor you want to view as.
+3. In the row actions, click **View as Supervisor**.
+
+A confirmation toast appears, then SimCare opens the supervisor's Field Experience dashboard in your current window.
+
+## The amber banner
+
+While impersonation is active, a sticky amber banner stays pinned to the top of every page. The banner shows:
+
+- The supervisor's name
+- The **Read-only** label
+- A live **countdown timer** (default 1 hour)
+- An **Exit Supervisor View** button — click to return to your coordinator account immediately
+
+You'll see the supervisor's Overview KPIs, tasks, sites, and profile exactly as they would.
+
+## What's read-only
+
+View as Supervisor is a strict read-only mode. You can navigate freely, but **you cannot**:
+
+- Sign off, approve, or deny hours or tasks
+- Post comments on student submissions
+- Save changes to the supervisor's profile
+- Modify sites, students, or any supervisor-owned data
+
+If you try, the write is blocked and a small toast explains why.
+
+## Audit log
+
+Every impersonation session is recorded in your **Activity Log** (My Program → Activity Log):
+
+- Who started the session
+- Which supervisor they impersonated
+- Start time and exit time
+- Whether the session timed out or was exited manually
+
+Coordinators can review past impersonations to satisfy security or accreditation requirements.
+
+## Session lifetime
+
+- **Auto-expires after 1 hour** — the session ends automatically and you're returned to your coordinator account
+- **Single active session** — starting a new impersonation ends the previous one, whether it was a student or supervisor session
+- **Browser-tab scoped** — the impersonation cookie applies only to the tab you started it in
+
+<Tip>If your hour runs out and you still need to debug, just click **View as Supervisor** again on the same supervisor. A fresh session starts.</Tip>
+
+## View as Supervisor vs. View as Student
+
+Both flows use the same read-only, audit-logged pattern, but target different roles:
+
+| | View as Student | View as Supervisor |
+|---|---|---|
+| Where to start | Members → Students, Cohorts → Members, or Student Details | Members → Supervisors |
+| Session length | 30 minutes | 1 hour |
+| Read-only | Yes | Yes |
+| Audit-logged | Yes | Yes |
+
+Only one impersonation session can be active at a time — starting one automatically ends the other.
