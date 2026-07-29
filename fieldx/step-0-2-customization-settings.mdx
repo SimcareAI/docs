@@ -108,6 +108,33 @@ Choose which changes require a student to redo the clearance flow. Existing clea
 
 Level and track changes always block until re-clearance is complete. Term changes only block students who are not currently in an active placement.
 
+## Learning Contract variants
+
+If your program uses Learning Contracts, you can define **named variants** — each variant pairs a specific draft form with its own final sign-off form. Cohorts then pick which variant their students complete, so a single program can run different Learning Contracts for different tracks or student populations (for example, a standard practicum contract and a separate advanced MSW contract) without maintaining separate programs.
+
+<Note>Learning Contract variants only appear for programs that have the Learning Contract feature turned on. If you don't see this section, contact [tiko@simcare.ai](mailto:tiko@simcare.ai) to enable it.</Note>
+
+### Defining variants
+
+From **My Program → Settings**, scroll to **Learning Contract Variants** and click **Add variant**. Each variant needs four fields:
+
+| Field | What it is |
+|---|---|
+| **Key** | Short identifier used to link a cohort to this variant, e.g. `advanced_msw`. Lowercase, no spaces. |
+| **Label** | Human-readable name shown to admins when picking a variant for a cohort, e.g. `Advanced MSW Practicum Learning Contract`. |
+| **Draft form** | The form students fill out as the initial draft. Pick from any form owned by a program admin or teacher. |
+| **Final sign-off form** | The form used for the final signature step after the draft is approved. |
+
+Click **Save** at the bottom of the page to persist the list. Every variant needs all four fields filled in before you can save.
+
+Cohorts you don't explicitly assign a variant to fall back to the **standard Learning Contract** for your program — you don't need to add a variant just to keep existing behavior.
+
+### Assigning a variant to a cohort
+
+Once a variant exists at the program level, open the cohort, go to **Settings → Learning Contract**, and choose the variant from the **Learning Contract Variant** dropdown. Leave it on **Program default** to use the standard contract. The forms used by the selected variant are listed below the dropdown with a preview link.
+
+Changing a cohort's variant affects Learning Contracts students start from that point on. Contracts already in progress continue with the forms they were started on.
+
 ## Activity Log
 
 A complete audit trail of program activity, with filters for type (Forms, Reports, Timesheets, Application Forms, Page Visits, Supervision Notes, Report Signatures), student, cohort, and date range. Export to CSV.
