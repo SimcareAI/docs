@@ -10,7 +10,7 @@ Before you start adding students, take a few minutes to configure FieldX for you
 ## The sidebar tabs
 
 | Tab | What you configure |
-|---|---|
+| --- | --- |
 | **General Information** | Program name, description, logo |
 | **Terms and Tracks** | Academic terms, student tracks, certificates and hour requirements |
 | **Clearance Tasks** | The pre-application steps each student must complete before logging hours |
@@ -19,7 +19,7 @@ Before you start adding students, take a few minutes to configure FieldX for you
 | **Settings** | Program-wide behavior toggles |
 | **Activity Log** | A searchable log of every form, report, timesheet, and page visit in your program |
 
-*A **DocuSeal Templates** tab is also available to a small group of allow-listed accounts for building reusable signature templates.*
+_A **DocuSeal Templates** tab is also available to a small group of allow-listed accounts for building reusable signature templates._
 
 ## General Information
 
@@ -33,7 +33,7 @@ Set your program name, description, and upload your program logo. The logo appea
 
 Academic terms control how student progress is tracked across a semester. Each term has a start and end date and is labeled **Active**, **Past**, or **Upcoming** automatically.
 
-Click **+ Add Term** to create one. You can have multiple terms running side-by-side for cohorts on different schedules.
+Click **\+ Add Term** to create one. You can have multiple terms running side-by-side for cohorts on different schedules.
 
 #### Submission windows (optional)
 
@@ -67,7 +67,7 @@ The clearance process determines what students must complete before they can log
 3. **Select Sites** — pick an established site or request a new one
 4. **Add Supervisors** — provide a supervisor's name, email, and credentials (triggers the supervisor invite email)
 5. **Upload Insurance** — upload a liability insurance form
-6. **Final Review** — submit for coordinator approval
+6. **Final Review** — submit for Program Admin approval
 
 ![Liability Form Upload](/images/customization-3.png)
 
@@ -95,7 +95,7 @@ Toggle the program-wide email automation:
 
 Program-wide behavior toggles:
 
-- **Auto-Approve Site Requests** — when on, students who request an established program site are approved immediately without coordinator review.
+- **Auto-Approve Site Requests** — when on, students who request an established program site are approved immediately without Program Admin review.
 - **Restrict Applications by Submission Window** — when on, each academic term can have its own **Applications Open From** and **Applications Close On** dates (set on the term under **Terms and Tracks**). A closed term is still shown to students but cannot be selected for a new application, and you can grant a specific student an extension past a closed date. When off (default), every term is always open for new applications regardless of any dates set on it — the per-term dates are inert until you turn this on.
 
 ### Re-clearance requirements
@@ -112,14 +112,16 @@ Level and track changes always block until re-clearance is complete. Term change
 
 If your program uses Learning Contracts, you can define **named variants** — each variant pairs a specific draft form with its own final sign-off form. Cohorts then pick which variant their students complete, so a single program can run different Learning Contracts for different tracks or student populations (for example, a standard practicum contract and a separate advanced MSW contract) without maintaining separate programs.
 
-<Note>Learning Contract variants only appear for programs that have the Learning Contract feature turned on. If you don't see this section, contact [tiko@simcare.ai](mailto:tiko@simcare.ai) to enable it.</Note>
+<Note>
+  Learning Contract variants only appear for programs that have the Learning Contract feature turned on. If you don't see this section, contact [tiko@simcare.ai](mailto:tiko@simcare.ai) to enable it.
+</Note>
 
 ### Defining variants
 
 From **My Program → Settings**, scroll to **Learning Contract Variants** and click **Add variant**. Each variant needs four fields:
 
 | Field | What it is |
-|---|---|
+| --- | --- |
 | **Key** | Short identifier used to link a cohort to this variant, e.g. `advanced_msw`. Lowercase, no spaces. |
 | **Label** | Human-readable name shown to admins when picking a variant for a cohort, e.g. `Advanced MSW Practicum Learning Contract`. |
 | **Draft form** | The form students fill out as the initial draft. Pick from any form owned by a program admin or teacher. |
@@ -139,6 +141,8 @@ Changing a cohort's variant affects Learning Contracts students start from that 
 
 A complete audit trail of program activity, with filters for type (Forms, Reports, Timesheets, Application Forms, Page Visits, Supervision Notes, Report Signatures), student, cohort, and date range. Export to CSV.
 
-<Note>Next step: With your program configured, you're ready to add users. See [Step 1: Adding & managing faculty & students](/fieldx/step-1-adding-managing-faculty-students).</Note>
+<Note>
+  Next step: With your program configured, you're ready to add users. See [Step 1: Adding & managing faculty & students](/fieldx/step-1-adding-managing-faculty-students).
+</Note>
 
 For customizations not covered here, contact [tiko@simcare.ai](mailto:tiko@simcare.ai).

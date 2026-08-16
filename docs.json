@@ -63,11 +63,27 @@
           {
             "group": "Overview",
             "pages": [
-              "fieldx/fieldx-overview"
+              "fieldx/fieldx-overview",
+              "fieldx/accessing-fieldx",
+              "support"
             ]
           },
           {
-            "group": "Coordinators",
+            "group": "Students",
+            "pages": [
+              "fieldx/students/fieldx-for-students",
+              "fieldx/students/step-1-getting-started-and-clearance-tasks",
+              "fieldx/students/step-2-the-field-experience-dashboard",
+              "fieldx/students/step-3-the-timesheet-tab-logging-hours",
+              "fieldx/students/step-4-the-cohorts-tab",
+              "fieldx/students/step-5-my-sites",
+              "fieldx/students/step-7-running-reports",
+              "fieldx/students/step-6-helpful-tools-notes-to-dos",
+              "fieldx/students/my-dashboard"
+            ]
+          },
+          {
+            "group": "Program Admins",
             "pages": [
               "fieldx/step-0-getting-started",
               "fieldx/step-0-1-testing-fieldx-with-your-sandbox",
@@ -103,19 +119,6 @@
               "fieldx/site/step-3-signing-off-on-hours",
               "fieldx/site/step-4-my-profile"
             ]
-          },
-          {
-            "group": "Students",
-            "pages": [
-              "fieldx/students/step-1-getting-started-and-clearance-tasks",
-              "fieldx/students/step-2-the-field-experience-dashboard",
-              "fieldx/students/step-3-the-timesheet-tab-logging-hours",
-              "fieldx/students/step-4-the-cohorts-tab",
-              "fieldx/students/step-5-my-sites",
-              "fieldx/students/step-6-helpful-tools-notes-to-dos",
-              "fieldx/students/my-dashboard",
-              "fieldx/students/multi-person-forms"
-            ]
           }
         ]
       }
@@ -143,7 +146,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hello@simcare.ai"
+        "href": "/support"
       }
     ],
     "primary": {
@@ -168,5 +171,18 @@
     "socials": {
       "linkedin": "https://linkedin.com/company/simcare"
     }
+  },
+  "redirects": [
+    {
+      "source": "/fieldx/students/multi-person-forms",
+      "destination": "/fieldx/students/step-1-getting-started-and-clearance-tasks#multi-person-forms-signers",
+      "permanent": true
+    }
+  ],
+  "appearance": {
+    "default": "light"
+  },
+  "background": {
+    "decoration": "gradient"
   }
 }

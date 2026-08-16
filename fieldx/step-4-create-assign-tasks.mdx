@@ -27,7 +27,7 @@ Click **Create Assignment** to open the assignment builder. It has three tabs:
 Two ways to build a form:
 
 - **Build New** — start with a blank canvas and drag-and-drop fields in the [form builder](/fieldx/building-forms)
-- **Upload** — *Convert document to form with AI*. Upload an existing PDF or Word doc (e.g., your current Mid-Term Evaluation) and SimCare parses it into a FieldX form, with a live progress indicator while it runs
+- **Upload** — _Convert document to form with AI_. Upload an existing PDF or Word doc (e.g., your current Mid-Term Evaluation) and SimCare parses it into a FieldX form, with a live progress indicator while it runs
 
 ### Timesheet (Report)
 
@@ -38,13 +38,15 @@ A **Report** in FieldX is the schedule for logging hours — when hours are subm
 Configure:
 
 | Setting | Description |
-|---|---|
+| --- | --- |
 | **Title & description** | Clear name like "Weekly Hour Log" or "Month 1 Summary" |
 | **Student signature required** | Switch — whether the student signs |
 | **Supervisor signature required** | Switch — whether the site supervisor signs |
 | **Faculty signature required** | Switch — whether the faculty supervisor signs |
 
-<Tip>You don't have to require a student signature — some programs only collect supervisor approval.</Tip>
+<Tip>
+  You don't have to require a student signature — some programs only collect supervisor approval.
+</Tip>
 
 ### Templates
 
@@ -75,7 +77,7 @@ If a student has a conflicting assignment (e.g., same form already assigned), th
 ## Forms vs. reports
 
 | Type | Use for |
-|---|---|
+| --- | --- |
 | **Forms** | Evaluations, surveys, agreements, custom questionnaires — Google-Forms-like with HIPAA-compliant storage |
 | **Reports** | Hour logs and supervision sign-off forms — multi-signer DocuSeal workflow |
 
@@ -118,12 +120,14 @@ If you edit a form's **required roles** — for example, changing a faculty-only
 
 The modal previews how many assignment instances are affected and gives you two choices:
 
-- **Save template only** — the template updates. Existing assignments keep the old role configuration, so anyone already partway through won't suddenly see a new required signer. Every *new* assignment created from this form uses the updated roles.
+- **Save template only** — the template updates. Existing assignments keep the old role configuration, so anyone already partway through won't suddenly see a new required signer. Every _new_ assignment created from this form uses the updated roles.
 - **Save and update existing assignments** — the template updates, and every live assignment for this form is backfilled with the new role. Any instance that was already marked complete under the old configuration is reopened to `Pending` so the new role can also complete it. Previously submitted responses are preserved, not deleted.
 
 No notification emails are sent when you update existing assignments — send a reminder from the cohort's **Send Alert** action once you've reviewed who's affected.
 
-<Warning>Reopening a submitted instance means it counts as incomplete again until the newly required role finishes their part. Make sure your students and supervisors expect the update before choosing **Save and update existing assignments**.</Warning>
+<Warning>
+  Reopening a submitted instance means it counts as incomplete again until the newly required role finishes their part. Make sure your students and supervisors expect the update before choosing **Save and update existing assignments**.
+</Warning>
 
 ### Form versioning for past responses
 
@@ -133,6 +137,8 @@ Every content-changing save of a form creates an immutable snapshot of the form'
 - Renaming an option or reordering choices doesn't retroactively change how a previously submitted response reads.
 - The submission detail view, CSV export, and PDF export all render each response against its own version's question list.
 
-You don't need to configure anything — this happens automatically for every form save. Coordinators viewing a mixed set of responses in the **Submissions** tab will see the union of questions across every version present in that assignment, so nothing gets hidden.
+You don't need to configure anything — this happens automatically for every form save. Program Admins viewing a mixed set of responses in the **Submissions** tab will see the union of questions across every version present in that assignment, so nothing gets hidden.
 
-<Note>For details on building complex forms, see [Building forms](/fieldx/building-forms). For recurring assignments, see [Setting up recurring tasks](/fieldx/setting-up-recurring-tasks).</Note>
+<Note>
+  For details on building complex forms, see [Building forms](/fieldx/building-forms). For recurring assignments, see [Setting up recurring tasks](/fieldx/setting-up-recurring-tasks).
+</Note>
