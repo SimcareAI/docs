@@ -64,8 +64,7 @@
             "group": "Overview",
             "pages": [
               "fieldx/fieldx-overview",
-              "fieldx/accessing-fieldx",
-              "support"
+              "fieldx/accessing-fieldx"
             ]
           },
           {
@@ -92,11 +91,11 @@
               "fieldx/step-2-managing-established-sites",
               "fieldx/step-3-set-up-cohorts",
               "fieldx/step-3-1-approving-students",
+              "fieldx/building-forms",
               "fieldx/step-4-create-assign-tasks",
+              "fieldx/setting-up-recurring-tasks",
               "fieldx/step-5-next-semester-setup",
               "fieldx/step-6-evaluations-reports-information",
-              "fieldx/setting-up-recurring-tasks",
-              "fieldx/building-forms",
               "fieldx/view-as-student",
               "fieldx/view-as-supervisor",
               "fieldx/coordinator-ask-ai",
@@ -121,6 +120,12 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Support",
+        "pages": [
+          "support"
+        ]
       }
     ],
     "global": {
@@ -129,43 +134,22 @@
           "anchor": "Documentation",
           "href": "/",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Changelog",
-          "href": "/changelog",
-          "icon": "clock-rotate-left"
         }
       ]
     }
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://app.simcare.ai/"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "/support"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
       "label": "Dashboard",
       "href": "https://app.simcare.ai"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
