@@ -42,8 +42,10 @@
             "pages": [
               "simulations/creating-assignments",
               "simulations/peer-review-assignments",
+              "simulations/curriculum-builder",
               "simulations/client-builder",
-              "simulations/course-catalog"
+              "simulations/course-catalog",
+              "simulations/canvas-lti-integration"
             ]
           },
           {
