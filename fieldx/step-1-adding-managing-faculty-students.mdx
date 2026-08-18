@@ -1,6 +1,6 @@
 ---
-title: "Step 1: Adding & managing faculty & students"
-description: "How to invite coordinators, faculty supervisors, and students to your FieldX program."
+title: "Adding & Managing Faculty & Students"
+description: "How to invite Program Admins, faculty supervisors, and students to your FieldX program."
 ---
 
 All program members (students, instructors, and admins) are managed from the **Members** tab inside **My Program**.
@@ -45,15 +45,16 @@ How it works:
 
 - A student self-signs up at [app.simcare.ai/sign-up](https://app.simcare.ai/sign-up) with an email like `student@university.edu`.
 - If `university.edu` is a domain for your program, the new account is enrolled as a student in that program on their very first authenticated request — before they see the pre-application flow.
-- The student then continues straight into the standard clearance tasks (see [Step 3.1: Approving students](/fieldx/step-3-1-approving-students)). You'll see them appear in **Members → Students** with clearance status `Not Started`.
+- The student then continues straight into the standard clearance tasks (see [Approving Students](/fieldx/step-3-1-approving-students)). You'll see them appear in **Members → Students** with clearance status `Not Started`.
 
 Two guardrails protect against accidental re-enrollment:
 
 - If you previously **removed** a student from your program (via the bulk **Remove** action), they are never re-enrolled by domain match — you must add them back explicitly.
 - If a student is already an active or inactive member of any other program, domain-based enrollment is skipped so they aren't silently moved between programs.
 
-<Note>To register or change the email domain(s) linked to your program, contact your SimCare rep. Adding a new domain is a one-time setup step.</Note>
-
+<Note>
+  To register or change the email domain(s) linked to your program, contact your SimCare rep. Adding a new domain is a one-time setup step.
+</Note>
 
 ## Bulk actions
 
@@ -111,7 +112,9 @@ For members you invited with **Send credentials email to new accounts** on, but 
 
 Use this when a member says they never received the original invite, lost the email, or can't get past the sign-in screen. Because the previous password stops working the moment you resend, only click **Resend Credentials** if you actually want the old one revoked.
 
-<Note>**Resend Credentials** only appears for members who have never signed in — once a member has an active session on record, they should use the standard [password reset](/simulations/reset-password) flow instead.</Note>
+<Note>
+  **Resend Credentials** only appears for members who have never signed in — once a member has an active session on record, they should use the standard [password reset](/simulations/reset-password) flow instead.
+</Note>
 
 ## Pending invitations
 
@@ -121,9 +124,12 @@ Outstanding invitations appear in their own widget (Pending Invitations) at the 
 
 When you add a site supervisor (either manually or when a student requests them during clearance), SimCare automatically sends them an invitation email.
 
-<Note>**The email comes from "SimCare"** — not "FieldX." Supervisors who search their inbox for "FieldX" won't find it. Ask them to search for **"SimCare"** or check their spam folder. The sender address is `hello@mail.simcare.ai`.</Note>
+<Note>
+  **The email comes from "SimCare"** — not "FieldX." Supervisors who search their inbox for "FieldX" won't find it. Ask them to search for **"SimCare"** or check their spam folder. The sender address is `hello@mail.simcare.ai`.
+</Note>
 
 Key details supervisors need to know:
+
 - The invitation subject line is **"You've Been Added as a Supervisor"**
 - Clicking the link creates their account and gives them immediate dashboard access
 - Once a supervisor has signed in, the invitation link expires — resending creates a new link
@@ -140,4 +146,6 @@ If a supervisor says they never got an email: ask them to search for "SimCare" i
 5. Invite students — either via direct email invitation (auto-connects them to a track and faculty supervisor) or by sharing the cohort enrollment code
 6. [Manage and assign forms and reports](/fieldx/step-4-create-assign-tasks)
 
-<Note>Next step: Set up your field placement sites so students can select them. See [Step 2: Managing established sites](/fieldx/step-2-managing-established-sites).</Note>
+<Note>
+  Next step: Set up your field placement sites so students can select them. See [Managing Established Sites](/fieldx/step-2-managing-established-sites).
+</Note>

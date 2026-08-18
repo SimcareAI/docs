@@ -1,5 +1,5 @@
 ---
-title: "Step 3: Set up cohorts"
+title: "Setting Up Cohorts"
 description: "Create cohorts to organize students into class sections — and copy a previous cohort to launch the next semester quickly."
 ---
 
@@ -16,19 +16,25 @@ Open the **Cohorts** tab and click **Create Cohort**.
 The create modal asks for:
 
 | Field | Notes |
-|---|---|
-| **Track Code** *(required)* | Short identifier, e.g. `COU-501-A` |
-| **Track Name** *(required)* | Descriptive name |
+| --- | --- |
+| **Track Code** _(required)_ | Short identifier, e.g. `COU-501-A` |
+| **Track Name** _(required)_ | Descriptive name |
 | **Description** | Optional context |
 | **Copy from existing cohort** | Clone one-time assignments, recurring schedules, and settings from another cohort |
-| **First assignment date** *(when copying)* | Shifts all source assignment dates by the same offset |
+| **First assignment date** _(when copying)_ | Shifts all source assignment dates by the same offset |
 | **Academic Terms** | Multi-select — student placements are auto-created using this term |
 | **Default Signing Faculty** | Default supervisor name used for report signatures |
-| **Hours Report Template** | Pre-selected with your program's newest template. Choose **Default — standard report** only if your program does not use custom hour categories (e.g. direct, indirect, supervision). **This cannot be changed once students begin logging hours.** |
+| **Hours Report Template** | Pre-selected with your program's newest template. Choose **Default — standard report** only if your program does not use custom hour categories (e.g. direct, indirect, supervision). |
+
+<Warning>
+  **Need to change the hours template?** Contact [hello@simcare.ai](mailto:hello@simcare.ai) before students start logging hours. Once students have begun logging hours for a cohort, the assigned hours report template cannot be changed.
+</Warning>
 
 Click **Create Cohort** to save.
 
-<Tip>The **Copy from existing cohort** + **First assignment date** combo is the fastest way to spin up a new semester — see [Step 5: Next semester setup](/fieldx/step-5-next-semester-setup).</Tip>
+<Tip>
+  The **Copy from existing cohort** \+ **First assignment date** combo is the fastest way to spin up a new semester — see [Next Semester Setup](/fieldx/step-5-next-semester-setup).
+</Tip>
 
 ## Editing a cohort
 
@@ -46,7 +52,7 @@ Click a cohort card to open its dedicated dashboard.
 You'll see four centered sub-tabs:
 
 | Sub-tab | What's here |
-|---|---|
+| --- | --- |
 | **My Tasks** | Tasks and oversight specific to this cohort, filtered by `Pending`, `In Progress`, `Completed`, `Rejected` |
 | **Assignments** | One-time assignments and recurring schedules — create, stop, edit due dates |
 | **Members** | Students and instructors in the cohort — bulk-assign faculty, generate join code, send alerts |
@@ -56,7 +62,7 @@ Click **Back to cohorts** in the header to return.
 
 ### Members sub-tab
 
-Two segments: **Students** / **Instructors**. The top-right **+ Add Student** / **+ Add Instructor** buttons open the **Add Program Members to Cohort** modal — which doubles as an **Invite to Program** flow if you need to add a brand-new email.
+Two segments: **Students** / **Instructors**. The top-right **\+ Add Student** / **\+ Add Instructor** buttons open the **Add Program Members to Cohort** modal — which doubles as an **Invite to Program** flow if you need to add a brand-new email.
 
 Per-row actions include **View as Student** (impersonate read-only) and bulk **Assign same faculty to all** to set faculty for many students at once.
 
@@ -64,7 +70,7 @@ You can also click **Send Alert** to push a one-off notification to a student.
 
 ### Assignments sub-tab
 
-Two segments: **Assignments** (one-time) and **Schedules** (recurring). The **+ Create** button opens the program-wide assignments builder. Stop a schedule any time — existing emitted assignments are preserved, but no new ones are generated.
+Two segments: **Assignments** (one-time) and **Schedules** (recurring). The **\+ Create** button opens the program-wide assignments builder. Stop a schedule any time — existing emitted assignments are preserved, but no new ones are generated.
 
 ### Settings sub-tab
 
@@ -72,8 +78,8 @@ The available segments are:
 
 - **General Information** — name, code, description, terms, default signing faculty, cohort logo
 - **Hour Requirements** — per-track and per-certificate hour requirements with qualifying activity types
-- **Hours Report Template** — preview the active DocuSeal hours-report template, or use the default
-- **Learning Contract** *(programs with Learning Contracts enabled)* — pick which Learning Contract variant students in this cohort complete, or leave on **Program default** to use the standard contract. Variants are defined at the program level under **My Program → Settings → Learning Contract Variants**. See [Learning Contract variants](/fieldx/step-0-2-customization-settings#learning-contract-variants).
+- **Hours Report Template** — preview the active DocuSeal hours-report template, or use the default. Professors and admins can request a template change before students start logging hours; after that, the cohort's assigned template is locked. Contact [hello@simcare.ai](mailto:hello@simcare.ai) if you need a change before logging begins.
+- **Learning Contract** _(programs with Learning Contracts enabled)_ — pick which Learning Contract variant students in this cohort complete, or leave on **Program default** to use the standard contract. Variants are defined at the program level under **My Program → Settings → Learning Contract Variants**. See [Learning Contract variants](/fieldx/step-0-2-customization-settings#learning-contract-variants).
 
 ## Archiving a cohort
 
@@ -84,4 +90,6 @@ When a term ends, archive the cohort instead of deleting it:
 
 Archiving hides the cohort from your active dashboard but preserves all student data, hours, and signed forms. You can **Unarchive** any time. Permanent delete is also available but rarely needed.
 
-<Note>Next step: Once cohorts are set up, students complete clearance and you approve them. See [Step 3.1: Approving students](/fieldx/step-3-1-approving-students).</Note>
+<Note>
+  Next step: Once cohorts are set up, students complete clearance and you approve them. See [Approving Students](/fieldx/step-3-1-approving-students).
+</Note>
