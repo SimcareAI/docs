@@ -45,7 +45,8 @@
               "simulations/curriculum-builder",
               "simulations/client-builder",
               "simulations/course-catalog",
-              "simulations/canvas-lti-integration"
+              "simulations/canvas-lti-integration",
+              "untitled-page"
             ]
           },
           {
