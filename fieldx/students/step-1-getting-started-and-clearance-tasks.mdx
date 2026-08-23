@@ -158,6 +158,7 @@ From the **Waiting for signer(s)** screen, each pending signer row has three act
 - **Resend email** — sends a fresh invitation link to the signer. Use this if they say they never received it or the link expired.
 - **Change signer** — replace the pending signer with a different person. For supervisor slots you can pick a different supervisor from your site or enter a new name/email; for custom slots you enter a new name/email. The old invitation is invalidated and a new one is sent.
 - **Clear signer** — remove the signer from this form. If they're the only signer on that form instance, the whole instance is reset; you'll be warned before this happens.
+- **Add signer** — appears on a custom signer row that is required by the step but has no one assigned yet (for example, if an external signer slot didn't get invited when you submitted). Enter a name and email to fill the slot and send the invitation.
 
 Signers who have already completed their portion can't be changed or cleared — their submission stays locked in.
 
@@ -166,6 +167,16 @@ Signers who have already completed their portion can't be changed or cleared —
 On staggered multi-site forms, if a signer at one of your sites doesn't actually need to complete this form (for example one placement doesn't require this signature), open that site's step and click **This signer doesn't need to complete this form — remove it**. The instance is removed and the stepper collapses to the remaining sites.
 
 This action is only available on instances where no signer has finished yet.
+
+### Starting over one form (multi-supervisor steps)
+
+If a step generates one form per supervisor and you need to redo just one of them, each form card on the waiting screen has a **Start over this form** action. Use it when the answers or signers on a single reviewer's form need to be reset without touching the others.
+
+A confirmation modal warns you before the reset runs. If any signer has already completed that form, the warning also notes that their signature will be discarded and they'll need to sign again. After you confirm, that one form drops back into form-fill for the same supervisor; resubmit creates a fresh copy while every other supervisor's form stays as-is.
+
+<Note>
+  This is different from the step-level **Start Over** described below, which resets every reviewer's form on the step at once.
+</Note>
 
 ### Starting over
 
