@@ -20,6 +20,7 @@ The create modal asks for:
 | **Track Code** _(required)_ | Short identifier, e.g. `COU-501-A` |
 | **Track Name** _(required)_ | Descriptive name |
 | **Description** | Optional context |
+| **This is a template cohort** | Marks the cohort as a term-less template used as a copy source for each real intake — see [Template cohorts](#template-cohorts) |
 | **Copy from existing cohort** | Clone one-time assignments, recurring schedules, and settings from another cohort |
 | **First assignment date** _(when copying)_ | Shifts all source assignment dates by the same offset |
 | **Academic Terms** | Multi-select — student placements are auto-created using this term |
@@ -27,7 +28,7 @@ The create modal asks for:
 | **Hours Report Template** | Pre-selected with your program's newest template. Choose **Default — standard report** only if your program does not use custom hour categories (e.g. direct, indirect, supervision). |
 
 <Warning>
-  **Need to change the hours template?** Contact [hello@simcare.ai](mailto:hello@simcare.ai) before students start logging hours. Once students have begun logging hours for a cohort, the assigned hours report template cannot be changed.
+  **Need to change the hours template?** You can change it yourself from the cohort's **Settings → Hours Report Template** until students start logging hours — see [Changing the hours report template](#changing-the-hours-report-template). Once any hours are logged or reports are generated, the template is locked.
 </Warning>
 
 Click **Create Cohort** to save.
@@ -35,6 +36,20 @@ Click **Create Cohort** to save.
 <Tip>
   The **Copy from existing cohort** \+ **First assignment date** combo is the fastest way to spin up a new semester — see [Next Semester Setup](/fieldx/step-5-next-semester-setup).
 </Tip>
+
+## Template cohorts
+
+Toggle **This is a template cohort** in the create or edit modal to mark a cohort as a template. A template is a term-less cohort you build once and copy from for each real intake — assign your standard forms, recurring schedules, and report templates to it, then use **Copy from existing cohort** each term to stamp out the real cohort.
+
+Template cohorts follow a few rules:
+
+- **No academic terms.** Turning the toggle on clears any term selection, and terms cannot be attached later. The term is chosen when you create a real cohort from the template.
+- **Flagging an existing cohort requires detaching its terms first.** If the cohort still has terms attached, the save is rejected and the error names the terms — remove them before flagging.
+- **Copies are normal cohorts.** Copying from a template never carries the template flag over, so the new cohort behaves like any other.
+- **Excluded from competency attainment.** A template is not a student population, so it never appears in competency attainment cohort pickers or figures.
+- **Always visible.** The cohort grid's term filter skips templates, so a term-less template never disappears from your management view.
+
+A **Template** tag appears on the cohort card, the cohort breadcrumb, Cohort Settings, and the form and report assignment pickers so templates are easy to tell apart. Templates stay selectable in those pickers — assigning forms and report templates to the template is how you build out its content.
 
 ## Editing a cohort
 
@@ -78,8 +93,26 @@ The available segments are:
 
 - **General Information** — name, code, description, terms, default signing faculty, cohort logo
 - **Hour Requirements** — per-track and per-certificate hour requirements with qualifying activity types
-- **Hours Report Template** — preview the active DocuSeal hours-report template, or use the default. Professors and admins can request a template change before students start logging hours; after that, the cohort's assigned template is locked. Contact [hello@simcare.ai](mailto:hello@simcare.ai) if you need a change before logging begins.
+- **Hours Report Template** — preview the active DocuSeal hours-report template, or change it while the cohort is unstarted. See [Changing the hours report template](#changing-the-hours-report-template).
 - **Learning Contract** _(programs with Learning Contracts enabled)_ — pick which Learning Contract variant students in this cohort complete, or leave on **Program default** to use the standard contract. Variants are defined at the program level under **My Program → Settings → Learning Contract Variants**. See [Learning Contract variants](/fieldx/step-0-2-customization-settings#learning-contract-variants).
+
+## Changing the hours report template
+
+You can change a cohort's hours report template yourself, as long as no one has started logging hours. Open the cohort's **Settings** sub-tab and select **Hours Report Template**.
+
+If the cohort is unstarted, a panel shows the current template with a note that it can still be changed:
+
+1. Click **Change template**.
+2. Pick the new template from the list — active templates from your program, public templates, and **Default — standard report**.
+3. Click **Continue**, review the confirmation, then click **Confirm change**.
+
+The confirmation reminds you what the change affects: students see the new template's activity types when logging hours, and generated reports use its layout.
+
+Once students begin logging hours or reports are generated, the tab shows a **Template locked** banner with the entry, student, and report counts, and the template can no longer be changed.
+
+<Note>
+  Choose **Default — standard report** only if your program does not use custom hour categories (e.g. direct, indirect, supervision).
+</Note>
 
 ## Archiving a cohort
 
