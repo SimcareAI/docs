@@ -40,11 +40,16 @@
           {
             "group": "For instructors",
             "pages": [
+              "simulations/navigating-classes",
+              "simulations/my-courses",
+              "simulations/course-catalog",
+              "simulations/find-clients-with-ai",
+              "simulations/forms",
+              "simulations/program-courses",
               "simulations/creating-assignments",
               "simulations/peer-review-assignments",
               "simulations/curriculum-builder",
               "simulations/client-builder",
-              "simulations/course-catalog",
               "simulations/canvas-lti-integration",
               "blackboard"
             ]
