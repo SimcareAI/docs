@@ -3,41 +3,29 @@ title: "Creating assignments"
 description: "How instructors create simulation assignments, configure feedback, and manage grading."
 ---
 
-Instructors use SimCare's assignment system to assign AI client cases to students, set deadlines, and track completion. Assignments live inside **Classes** — each class holds a roster of students and a set of assignments.
+Assignments live inside a class. Open **Courses** → **My Courses**, click a class, then use the **Assignments** tab.
 
-## Finding your classes
-
-In the top navigation, click **Courses**. You'll land on **My Courses** (`/classes?tab=courses`) with every class you teach. Each class card shows the class image, enrollment, and a menu for edit, duplicate, and Canvas export.
-
-For the other tabs on this page (catalog, Find Clients with AI, forms, program courses), see [Navigating your classes](/simulations/navigating-classes).
+Need to create the class, invite students, or change class defaults first? See [My Courses](/simulations/my-courses).
 
 <Tip>
-  If your class is connected to Canvas, assignments, rosters, and grading work a bit differently, everything is still built in SimCare, but linking, roster sync, and grading happen through Canvas. See [Canvas LTI integration](/simulations/canvas-lti-integration) for the full workflow.
+  If the class is connected to Canvas, students often launch and get graded from Canvas. The assignment is still built here. See [Canvas LTI integration](/simulations/canvas-lti-integration).
 </Tip>
 
-Click a class to open it. Inside a class you have four tabs:
+## Pick an assignment type
 
-| Tab | What's here |
+Click **Create assignment** and choose:
+
+| Type | What students do |
 | --- | --- |
-| **Assignments** | All assignments in the class, with attempt counts |
-| **Members** | Students and co-instructors |
-| **Analytics** | Completion, grades, and competency performance |
-| **Settings** | Class name, enrollment, LMS connection |
+| **Case** | Live session with an AI client (walkthrough below) |
+| **Quiz** | Multiple choice, true/false, and written questions |
+| **Document** | Read a file or URL, and optionally upload their own file |
+| **Form** | Complete a form you already created. See [Forms](/simulations/forms) |
+| **Peer review** | Review a classmate's case. See [Peer review assignments](/simulations/peer-review-assignments) |
 
-## Joining a class as a co-instructor
+## Case assignments
 
-From `/classes`, click **Join class as teacher** in the top right and paste the join code from the class owner.
-
-## Creating an assignment
-
-From the **Assignments** tab inside a class, click **Create assignment** and choose what type:
-
-- **Case** — an AI client simulation
-- **Quiz** — multiple choice, true/false, and written-answer questions
-- **Document** — a reading (PDF, DOCX, URL) students must review, or a file they must upload
-- **Peer review** — students review a classmate's case submission. See [Peer review assignments](/simulations/peer-review-assignments) for the full walkthrough.
-
-The case assignment builder has six steps:
+The case builder has these steps:
 
 <Steps>
   <Step title="Avatar">
@@ -69,15 +57,6 @@ The case assignment builder has six steps:
     - **Treatment Planning**
     - **SOAP Note**
     - **Reflection**
-  </Step>
-  <Step title="Evaluation">
-    Choose how the AI scores the session. You have three mutually exclusive options:
-
-    - **General Counseling Skills Assessment** _(default)_ — case-specific feedback generated for this client.
-    - **Microskills** — turn off the general assessment toggle to reveal a tiered list of counseling skills (for example, _Basic Attending & Empathy_ → _Minimal Encouragers_). Pick the skills and individual microskills you want evaluated; each is scored against a shared rubric and checklist. Click **Preview** on any skill to see the rubric students will be graded against.
-    - **Custom evaluation template** — pick a saved rubric/checklist template from your program. Click **Preview** to open the template in a new tab before assigning. If none is selected, the default case-specific feedback format is used.
-
-    Microskills and custom templates can't be used together on the same assignment.
   </Step>
   <Step title="Evaluation">
     Choose how the AI scores student performance. Pick one of the modes below — they're mutually exclusive.
@@ -118,6 +97,26 @@ The case assignment builder has six steps:
     When a saved evaluation template is selected in the previous step, this step is reduced to the theory picker — the template controls the rubric and checklist sections automatically.
   </Step>
 </Steps>
+
+## Quiz assignments
+
+Builder steps: **Details** → **Settings** → **Questions**.
+
+On **Questions**, add:
+
+- **Multiple choice** and **True/False** — auto-graded
+- Short written answers (up to 200 characters) or longer written answers (up to 1,000) — you grade these
+
+Set a due date and attempt limit on **Settings**, then create the assignment and **Publish** it when students should see it.
+
+## Document assignments
+
+Builder steps: **Details** → **Settings** → **Content**.
+
+- On **Content**, add the reading (file or URL) students should see.
+- On **Settings**, optionally turn on **Require Student Upload** so they must submit their own file (with instructions and type/size limits).
+
+Document assignments do not use attempt limits — students can re-upload if you required a file.
 
 ## Trying an assignment
 
@@ -168,6 +167,19 @@ If none of the built-in scenarios fit, select **Not a fit? Create your own** und
 
 Each case template can hold up to 10 custom scenarios. Delete ones you no longer need from the Follow-up builder.
 
+## Publish, edit, and delete
+
+On the assignment row:
+
+| Action | What it does |
+| --- | --- |
+| **Publish** / **Unpublish** | Published assignments are visible to students (they get a notification). Unpublished drafts are hidden so you can revise |
+| **Edit** | Opens the same builder. Changes to a published assignment apply immediately |
+| **Delete** | Removes the assignment for students. If it has follow-up sessions, those follow-ups are deleted too and their submissions are hidden |
+| **⋯** | **Try assignment**, **Copy assignment**, or **Copy LTI link** |
+
+Use **View Submissions** on the row to open the student list for that assignment.
+
 ## Viewing submissions
 
 Each student row on the Assignments tab shows a status badge:
@@ -181,21 +193,41 @@ Each student row on the Assignments tab shows a status badge:
 | **Feedback Released** | AI \+ instructor feedback is visible to the student |
 | **Past Due** | Due date passed without submission |
 
-Click a student row to open their submission. You'll see the session recording, the AI feedback, and a grading panel.
+Click a student row (or **View Submissions**) to open their work.
 
 ## Grading
 
-Grading runs through the same Case Review you see as a student, with an extra **Grading** step:
+### Case submissions
 
-- Add **instructor comments** anywhere on the annotated transcript — they coexist with AI comments and are saved as a draft until you publish
-- Enter a **numeric grade** (0–100) and a written feedback summary
-- Click **Publish** to release everything to the student
+Click **Grade Case** on a submitted row. You'll see the recording, AI feedback, and a grading panel:
 
-For high-volume grading use **Bulk Grading** at `/grading/bulk-case` (or `/grading/bulk-quiz` for quizzes) — review and publish many submissions in one pass.
+1. Optionally add **instructor comments** on the annotated transcript.
+2. Enter a **numeric grade** (0–100) and written feedback.
+3. Click **Save** to keep a draft the student cannot see yet.
+4. Click **Publish Grade** when they should see it.
 
-## Releasing feedback to the whole class
+If the student has more than one attempt, use the **attempt switcher** at the top of the grading view.
 
-If you held feedback for instructor review, you can release it for all students at once using the **Bulk Release** option on the assignment.
+**Re-grade** runs a fresh AI analysis of that submission. Give it up to a minute; if it's still stuck, email [hello@simcare.ai](mailto:hello@simcare.ai).
+
+**Unpublish Grade** hides the grade again so you can revise.
+
+**Reset Submission** (on the student row) lets the student start over.
+
+### Quizzes
+
+Open the student's quiz. Auto-graded items are filled in; override scores or add feedback on written answers, then **Publish Grade**.
+
+For the whole class, open **View Submissions** and use **Grade All Quizzes** (or **Grade All Cases** for simulations).
+
+### Releasing feedback
+
+If you held AI feedback for instructor review:
+
+- Per student: **Release Feedback** (or **Unrelease**) on their row
+- Whole class: **Release All Feedback** at the bottom of **View Submissions**
+
+High-volume grading also lives at `/grading/bulk-case` and `/grading/bulk-quiz`.
 
 ## Class analytics
 
@@ -207,3 +239,16 @@ The **Analytics** tab on your class shows:
 - Competency performance (if learning outcomes are tagged)
 
 Use the period filter to focus on a specific date range. Export the full dataset as CSV or generate a PDF report for individual students or the whole class.
+
+## Troubleshooting
+
+| Problem | What to try |
+| --- | --- |
+| Students can't enroll | Share the 8-character **Join Code** from **Members → Invite → Add Student**. Same code is on the course-card **⋯** menu |
+| Assignment not visible | Confirm it is **Published**. Drafts are hidden from students |
+| Student used all attempts | **Edit** the assignment and raise the attempt limit |
+| Grade not showing in Canvas | Confirm the assignment is linked as an External Tool, then publish the grade again. See [Canvas LTI integration](/simulations/canvas-lti-integration) |
+| Quiz auto-grade looks wrong | Override the score in the grading view and **Publish Grade** |
+| Re-grade didn't update | Wait about a minute, then refresh. If it stays stuck, email [hello@simcare.ai](mailto:hello@simcare.ai) |
+
+Need more help? Email [hello@simcare.ai](mailto:hello@simcare.ai).
