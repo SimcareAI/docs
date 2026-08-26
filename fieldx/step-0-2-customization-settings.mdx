@@ -75,6 +75,19 @@ The clearance process determines what students must complete before they can log
 
 Click **Configure Application Process** to add, remove, or reorder steps. Available step types include `Track Selection`, `Agreement`, `Site Selection`, `Supervisor Contact`, `Liability Upload`, **`Custom Question`**, and embedded forms or quizzes.
 
+#### How changes affect existing applications
+
+Each time you save the application process, FieldX snapshots it as a new version. Every student application is pinned to the version that was current when the student created it, so:
+
+- **New applications** use your latest configuration.
+- **In-progress and submitted applications** keep the requirements the student started with. Your edit never retroactively changes an application mid-flight.
+- Students with an in-progress or submitted application can pull in your changes themselves via **Update to latest requirements** in the Clearance Tasks menu. Their saved answers are kept, new steps are added as required, and steps you removed stay visible to them marked "No longer required."
+- **Approved students** pick up the latest requirements automatically if they later use **Update Application**.
+
+<Tip>
+  If you add a required step mid-term, tell affected students to run **Update to latest requirements** so the new step appears in their application.
+</Tip>
+
 Click **Configure Agreement Requirements** to manage the agreements students sign — set which agreements apply to which tracks, mark them required or optional, and connect them to DocuSeal templates.
 
 ![Clearance Configuration View](/images/customization-4.png)
