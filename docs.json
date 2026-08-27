@@ -107,7 +107,8 @@
               "fieldx/view-as-student",
               "fieldx/view-as-supervisor",
               "fieldx/coordinator-ask-ai",
-              "fieldx/todos"
+              "fieldx/todos",
+              "fieldx/canvas-lti-integration"
             ]
           },
           {
