@@ -1,0 +1,142 @@
+---
+title: "First-Term Support & Data Cleanup"
+description: "Diagnose member, invitation, clearance, signer, migration, and LMS issues during the first live term."
+icon: "life-buoy"
+---
+
+The first live term exposes data and workflow problems that cannot appear in an empty environment. Use this guide to diagnose the most common issues without deleting historical records or rebuilding the program unnecessarily.
+
+## Run a proactive first-week audit
+
+Check:
+
+- Members in the wrong role
+- Invitations that were created but never delivered
+- Students stuck in clearance
+- Students connected to the wrong site or supervisor
+- Multi-signer forms waiting on an earlier signer
+- Missing recurring assignments
+- Incorrect term, track, or level
+- Activity types students misunderstand
+- Expired insurance or supervisor credentials
+- LMS links connected to the institution but not the FieldX program
+
+## Student added as an instructor
+
+Symptoms:
+
+- Student does not appear in the Students search
+- Re-adding the email reports that the person already belongs to the program
+- The person appears under Instructors/Admin
+
+Fix:
+
+1. Open the Instructors/Admin segment.
+2. Find the user.
+3. Remove or change the incorrect role.
+4. Add or reactivate the user as a student.
+5. Assign the correct term, track, and cohort.
+6. Verify clearance status.
+
+## Invitation was never received
+
+Before debugging passwords:
+
+1. Confirm credentials email was enabled when the user was added.
+2. Check the email address.
+3. Search spam and institutional quarantine.
+4. Filter members by **Never logged in**.
+5. Resend credentials when appropriate.
+6. Use password reset for someone who has already signed in.
+
+Resending credentials may invalidate the previous temporary password.
+
+## Unexpected pending application
+
+A student with existing hours may have a pending application because they updated a site or placement, not because their original approval disappeared.
+
+Ask what the student changed, then compare the pending version with the approved version before taking action.
+
+## Stuck multi-signer form
+
+Open **Assignments → form → Submissions** and determine:
+
+- Which attempt is current
+- Which signer is responsible now
+- Whether earlier signers have completed
+- Whether the expected final signer was included
+- Whether the student actually reached the step
+- Whether the task appears in the signer's account
+
+Sequential routing means the final signer receives nothing until earlier signatures are complete.
+
+## Student says a link does nothing
+
+Diagnose in this order:
+
+1. Use View as Student or a controlled account to inspect the same destination.
+2. Confirm the student used the correct email.
+3. Ask for the exact link and action.
+4. Confirm the link belongs to the correct term or cohort.
+5. Check LMS configuration and recent incident windows.
+6. Review logs or escalate with the student's email, timestamp, and screenshot.
+
+## Migrating prior hours
+
+For mid-program migrations, collect prior totals by:
+
+- Student
+- Track
+- Level
+- Direct hours
+- Indirect hours
+- Supervision hours
+- Total hours
+
+Preserve the source export and have SimCare load the approved totals. Verify a sample student before treating the migration as complete.
+
+## Waived clearance and manual placement
+
+When clearance is waived:
+
+1. Find or create the site.
+2. Confirm the supervisor belongs to the site.
+3. Add the student to the site.
+4. Select the correct supervisor.
+5. Verify the student's term, track, level, and cohort.
+
+The waiver bypasses the normal placement links, so they must be recreated manually.
+
+## On-pace and off-pace
+
+A student may be flagged because of hours progress or overdue assignments. Open the student's detail rather than assuming the flag means only insufficient hours.
+
+Use the indicator as a prompt for investigation, especially in large programs, not as the sole compliance decision.
+
+## Structure the support call
+
+A productive support call is client-led:
+
+- Ask for their issue list first
+- Have the client share their screen when teaching a workflow
+- Bring at least one proactive item of your own
+- Fix safe configuration issues while explaining each action
+- Name known limitations honestly
+- Record short videos for complex procedures
+- Schedule the next check-in near a term boundary or reporting deadline
+
+## Escalation package
+
+When escalating, include:
+
+- Program name
+- User email
+- Role
+- Cohort, term, track, site, and supervisor
+- Exact action attempted
+- Timestamp and time zone
+- Screenshot or recording
+- Whether the problem reproduces in View as Student or View as Supervisor
+- Recent configuration changes
+
+Use [Ask AI](/fieldx/coordinator-ask-ai) for large but reviewable administrative chores, and use the program's support route for product errors or data corrections.

@@ -3,94 +3,135 @@ title: "Next Semester Setup"
 description: "Roll your program into a new term using cohort copy, bulk member moves, and archive."
 ---
 
-Transitioning to a new semester in FieldX is a quick, bulk process. You don't need to re-invite continuing students — just follow these steps.
+A term rollover is more than creating a new term. Complete the steps in order so student levels, cohorts, assignments, recurring hour logs, and faculty oversight stay aligned.
 
-## Step 1: Create the new term
+## Before you begin
 
-<Steps>
-  <Step title="Open My Program">
-    Click **My Program** in the top-right of any page, then go to the **Terms and Tracks** tab in the sidebar.
-  </Step>
-  <Step title="Add the new term">
-    Scroll to the **Academic Terms** section and click **\+ Add Term**. Enter the term name (e.g., Spring 2026), start date, and end date. Click **Create Term**.
+Collect:
 
-    Your new term shows up with an **Upcoming** chip until its start date, then flips to **Active**.
-  </Step>
-</Steps>
+- New term name, start date, and end date
+- Which students remain in their current level
+- Which students move from practicum to internship or another level
+- Students with incomplete hours who must not move yet
+- The cohort or template to copy
+- First assignment date
+- Hour-log cadence and schedule end date
+- Faculty assignments for the new cohort
+- LMS-linked course or template information, when applicable
 
-## Step 2: Copy the previous cohort
+For Canvas-linked programs, also review [Canvas LTI Integration](/fieldx/canvas-lti-integration) before publishing the new course link.
 
-Instead of building each cohort from scratch, use **Copy from existing cohort** in the create modal.
+## 1. Create the academic term
 
-<Tip>
-  If you re-run the same structure every term, consider building a term-less **template cohort** and copying from it each semester instead of last term's cohort. See [Template cohorts](/fieldx/step-3-set-up-cohorts#template-cohorts).
-</Tip>
+Go to **My Program → Terms and Tracks**, select **\+ Add Term**, and enter the term name, start date, and end date.
 
-<Steps>
-  <Step title="Create a new cohort">
-    From the **Cohorts** tab, click **Create Cohort**.
-  </Step>
-  <Step title="Pick the source cohort">
-    In the form, use **Copy from existing cohort** to select last term's version. This carries over:
+If application submission windows are enabled, also set the open and close dates and review any level- or track-specific overrides.
 
-    - One-time assignments
-    - Recurring schedules
-    - Settings (default signing faculty, hours report template)
+## 2. Move students to the correct level or track
 
-    Past-emitted assignments aren't copied — the new cohort's schedule starts fresh.
-  </Step>
-  <Step title="Shift dates">
-    Set the **First assignment date** to the new term's start date. Every source assignment's due date is shifted by the same offset, so the rhythm of the semester is preserved.
-  </Step>
-  <Step title="Pick the new academic term">
-    Select your new term in the **Academic Terms** field. Student placements are auto-created using this term.
-  </Step>
-  <Step title="Create">
-    Click **Create Cohort**.
-  </Step>
-</Steps>
+Students who are continuing at the same level do not need an unnecessary change. For students moving from practicum to internship:
 
-## Step 3: Move continuing students to the new term
+1. Open **My Program → Members → Students**.
+2. Clear any text left in the search field.
+3. Filter by the current level.
+4. Also filter by the specific track.
+5. Select the correct students.
+6. Choose **Assign Track**.
+7. Select the destination track and level.
+8. Confirm the change.
+9. Repeat for each track.
 
-<Steps>
-  <Step title="Open Members">
-    From **My Program → Members**, switch to the **Students** sub-tab.
-  </Step>
-  <Step title="Filter by the previous term">
-    Filter the list to show students from the term that just ended (e.g., Fall 2025).
-  </Step>
-  <Step title="Select all">
-    Click the checkbox at the top of the table to **Select All**.
-  </Step>
-  <Step title="Assign new term">
-    Click **Assign Term** in the bulk actions bar, then pick the new term (e.g., Spring 2026). You can also click **Assign Track** if students are moving to a different track.
-  </Step>
-</Steps>
+<Warning>
+  Do not combine different tracks into one bulk change. The confirmation applies one destination to every selected student.
+</Warning>
 
-Your students are now active in the new term.
+Check pagination before continuing. **Select all** may select only the visible page. Increase the page size or repeat the operation on every page.
 
-## Step 4: Archive previous cohorts
+Leave a student in practicum if they still need to complete practicum hours. Moving levels closes the old log and starts the new level's hour tracking.
 
-<Steps>
-  <Step title="Open the Cohorts tab">
-    Find any cohort that has ended.
-  </Step>
-  <Step title="Archive it">
-    Hover the cohort row and click the **archive** action, then confirm in the prompt that appears. Repeat for each finished cohort.
-  </Step>
-  <Step title="Hide archived cohorts">
-    Click **Hide Archived** in the header to clean up your view. Use **Show Archived** any time to see them again.
-  </Step>
-</Steps>
+If re-clearance is enabled for level or track changes, affected students will be prompted to complete the new clearance requirements.
 
-<Note>
-  Archiving does not delete data. It moves the cohort out of your active view while preserving all student hours, forms, and reports. You can **Unarchive** any time, or **Permanently Delete** when you're sure you don't need the data.
-</Note>
+## 3. Create the new cohort by copying
 
-## Step 5: Re-enroll faculty if needed
+<Warning>
+  **Copy from existing is available only while the cohort is being created.** A cohort created without choosing a copy source cannot be populated from that source afterward.
+</Warning>
 
-If faculty supervisors are joining new cohorts for the new semester, generate the cohort's join code (from the cohort's Members sub-tab → **Generate join code**) and send it to them.
+1. Open **Cohorts → Create Cohort**.
+2. Enter the new cohort name and code.
+3. Select **Copy from existing cohort**.
+4. Choose the previous cohort or a term-less template cohort.
+5. Set **First assignment date**, usually to the term start.
+6. Select the new academic term.
+7. Leave **Default Signing Faculty** blank if faculty varies by student.
+8. Select the correct hours report template.
+9. Create the cohort.
 
-<Tip>
-  Next step: Learn how to generate reports and track program-wide data in [Evaluations & Reports](/fieldx/step-6-evaluations-reports-information).
-</Tip>
+After creation, change the cohort filter to **All terms** if the new cohort is not immediately visible.
+
+## 4. Verify what copied
+
+Ordinary one-time assignments copy with due dates shifted relative to the new first assignment date. Open the new cohort and verify several dates rather than assuming the shift worked.
+
+Recurring hour-log schedules require separate attention:
+
+- Do not assume the previous hour-log schedule copied
+- Open the new cohort's **Assignments → Schedules** segment
+- Recreate the schedule using the new term start and end dates
+- Set an end date
+- Confirm the first generated assignment after the schedule runs
+
+A schedule is a generator, so it appears under **Schedules** before its first assignment is emitted.
+
+See [8. Setting Up Recurring Tasks](/fieldx/setting-up-recurring-tasks).
+
+## 5. Move students into the new cohort
+
+There is no reason to remove students from the overall program when changing cohorts.
+
+For a small roster, add students from the new cohort's **Members** segment.
+
+For a large roster, use **Ask AI**:
+
+> Add the students in \[old cohort\] to \[new cohort\].
+
+Review the proposed roster, remove anyone who should not move, and approve the action. Allow the operation time to finish, then compare the old and new rosters.
+
+## 6. Add faculty and configure signing responsibility
+
+Inside the new cohort:
+
+1. Open **Members**.
+2. Add the faculty or instructors responsible for the cohort.
+3. Assign faculty to students where needed.
+4. Set default or per-student signing faculty.
+
+Some faculty-assignment controls remain unavailable until at least one faculty member belongs to the cohort.
+
+## 7. Archive the previous cohort
+
+Archive completed cohorts instead of deleting them. Archiving removes them from the active view while preserving:
+
+- Student hours
+- Forms and responses
+- Reports and signatures
+- Site history
+- Audit records
+
+Use **Show Archived** to find or restore an archived cohort.
+
+## Rollover checklist
+
+- [ ] Create the new term
+- [ ] Clear stale search text before filtering members
+- [ ] Move students level by level and track by track
+- [ ] Leave incomplete students in the prior level
+- [ ] Check every pagination page
+- [ ] Create cohorts using **Copy from existing**
+- [ ] Set first assignment date to the intended anchor
+- [ ] Verify copied due dates
+- [ ] Recreate the hour-log schedule with an end date
+- [ ] Move the correct students into the new cohort
+- [ ] Add faculty before assigning signing responsibility
+- [ ] Confirm the cohort belongs to the correct term
+- [ ] Archive the previous cohort only after verification

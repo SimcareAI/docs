@@ -4,98 +4,87 @@ description: "How to review and approve student clearance tasks before they can 
 sidebarTitle: "10. Approving Students"
 ---
 
-Once a student completes all their required **Clearance Tasks** (liability forms, site selection, supervisor contacts, etc.), their application appears in your approval queue.
+A student cannot begin logging hours until the required clearance process is complete and a Program Admin approves the submission.
 
-## Finding pending approvals
+Step 10 is the launch gate: review the first submissions carefully because they validate the terms, tracks, sites, agreements, supervisor routing, and insurance requirements configured in the previous steps.
 
-A few ways to find students waiting for approval:
+## Find students waiting for approval
 
-1. **Overview tab → Pending Tasks KPI card** — click to filter the student table
-2. **Overview tab → student row** — students with a pending clearance status are flagged in the table
-3. **Activity Log** (My Program → Activity Log) — filter by **Type: Application Forms**
+Use any of these paths:
 
-You can also filter the Overview student table by **Application Status** (under **More filters**) to see every student in a specific stage — App: Not Started, App: Started, App: Pending Approval, App: Approved, or App: Rejected.
+1. **Overview → Pending Tasks**
+2. **Overview → More filters → Application Status → App: Pending Approval**
+3. Open a flagged student row
+4. **My Program → Activity Log → Type: Application Forms**
 
-## Reviewing a student's submission
+## Review the complete submission
 
-Click any student to open their **Student Details** modal, then go to the **Documents** tab. The full pre-application appears with every field they entered and every document they uploaded during clearance, including:
+Open the student's **Student Details → Documents** tab. Confirm:
 
-- Track selection
-- Signed agreements
-- Selected sites with supervisor contacts
-- Liability insurance upload
-- Any custom questions, forms, or quizzes you added
+- Correct academic term
+- Correct track and level
+- Required agreements completed
+- Appropriate established or requested site
+- Correct supervisor name and email
+- Liability insurance or other required uploads
+- Track-specific and level-specific requirements
+- Custom questions, quizzes, and embedded forms
+- Any conditional step was completed only when applicable
 
-![Student Clearance Review Screen](/images/approving_students_1.png)
+<Warning>
+  Do not approve a submission simply because every row has a checkmark. Confirm that the data is internally consistent and that the site, supervisor, track, and signer routing match the intended placement.
+</Warning>
 
-## Taking action
+## Approve or reject
 
-If the application is in `Pending` status, the Documents tab shows two buttons:
+When the submission is pending:
 
-- **Approve** — grants the student full access to begin logging hours and participating in their assigned cohorts
-- **Reject** — sends the application back. You'll be prompted to leave a note explaining what needs to be fixed
+- **Approve** — unlocks Field Experience so the student can log hours and participate in assigned cohorts
+- **Reject** — returns the submission to the student with a required correction note
 
-If the application has already been approved, a **Revert to Rejected** action becomes available — useful if you need to put a student back into clearance after a credential expires.
+Write a specific rejection note such as “Upload the liability policy showing the expiration date” instead of “Insurance is wrong.”
 
-<Note>
-  The student sees your specific feedback the next time they log in, so they know exactly what to correct before re-submitting.
-</Note>
+An approved application can later be changed to **Rejected** if a credential expires or the placement must be corrected.
 
-### Approving an updated application
+## Updated applications
 
-Students can also update their own approved application from the **Clearance Tasks** page (for example, to add a new site or fix a detail). When that happens, a new pending submission from that student appears in your queue while their previous approval stays active — the student keeps full Field Experience access until you review the update. Review it the same way as a first-time application; on approval, the update replaces the previously approved version.
+A student may update an approved application, for example to add a site or change placement information. The existing approval remains active while the update is pending.
 
-## Granting a term extension
+Review the new version like a first submission. Approval replaces the previously approved version without unnecessarily blocking an active student.
 
-If your program uses [submission windows](/fieldx/step-0-2-customization-settings#submission-windows-optional) to close new applications after a term's cutoff date, you can grant a specific student an extension so they can still select or continue that term — no link or token, they just log in normally.
+## Before approving the first student
 
-You can start a grant from three places:
+Complete this check once for every newly configured program:
 
-- **Clearance & Placement tab → Grant Extension** — pick the term, the student, and a deadline.
-- **My Program → Terms and Tracks → term row → Extensions** — pre-fills the term; pick the student and deadline.
-- **My Program → Members → student row → ⋮ → Manage Clearance** — pre-fills the student; pick the term and deadline.
+- [ ] Terms and tracks are correct
+- [ ] Total, direct, indirect, and supervision requirements are correct
+- [ ] The student's site and supervisor are correct
+- [ ] Every agreement reached the intended signer
+- [ ] Required insurance and credentials are visible
+- [ ] The cohort uses the correct hours report template
+- [ ] Recurring schedules have the intended dates and signers
+- [ ] View as Student shows the expected post-approval dashboard
+- [ ] Faculty and supervisor access has been tested
 
-Set an **Extended Until** date — the student can select or continue that term through end of day on that date. Only one active extension can exist per student per term; granting a new one replaces the old.
+Use the [Launch Readiness & QA Checklist](/fieldx/launch-readiness-qa) for the complete program-level review.
 
-To end an extension early, open the same modal, switch to the **Past** list, and revoke it. Revoked and expired extensions stay in the list as an audit trail.
+## Submission windows and extensions
 
-Extensions never affect students already placed in the term — they only unlock term selection during a new pre-application.
+Programs can restrict new applications using term submission windows and grant individual extensions when needed. Level- and track-specific overrides are also available.
 
-## Managing submission windows in bulk
+Keep those rules separate from the approval decision itself. See [Designing Clearance & Agreements](/fieldx/designing-clearance-agreements#submission-windows-and-extensions) for configuration and precedence.
 
-To adjust several terms' open and close dates without editing each term individually, open the **Clearance & Placement** tab and click **Manage Submission Windows** in the header. Every active term appears with editable date fields and a **Save** button per row. Both buttons only appear when **Restrict Applications by Submission Window** is enabled under **My Program → Settings**.
+## Handling a large approval queue
 
-## Per-level and per-track submission windows
+For large cohorts:
 
-By default, a term's submission window applies to every program level (pre-practicum, practicum, internship, and so on) and every track. If you need to open or close a term for one level while leaving the others alone — for example, closing new practicum applications on Aug 1 but keeping internship open until Sep 15 — you can set a distinct window per level on that term. You can narrow the override further to a specific track when only some specialties need different dates.
+- Filter the Overview table by application status, track, and term
+- Review students in consistent batches
+- Do not treat a bulk filter as a substitute for reviewing each placement
+- Use the Activity Log as the exportable record of decisions
 
-To set per-level windows:
-
-1. Open **My Program → Terms and Tracks** and click a term to open **Manage Term**.
-2. Save the term first if it's new — per-level windows can only be edited on an existing term.
-3. In the **Submission Window** section, switch the mode toggle from **Same for all levels** to **Set per level**.
-4. Click **Manage Level Windows** to open the level-window editor.
-5. Set open and close dates on the **All Tracks** row to apply an override to every track, or expand a specific track to set dates on that track's row instead. Expand a track further to override individual levels within it.
-6. Click **Save Changes**.
-
-The editor resolves in a fixed precedence: a track-and-level override wins over an all-tracks override for the same level, which wins over the term's own window. Leave any row's dates blank to fall back to the next level up.
-
-Switching back to **Same for all levels** and saving the term does not clear existing level-window overrides — reopen **Manage Level Windows** and clear the rows you no longer want.
-
-<Note>
-  Per-level and per-track windows only take effect when **Restrict Applications by Submission Window** is enabled under **My Program → Settings**. Until then, every level in every term is open regardless of the dates you set.
-</Note>
-
-In the **Terms and Tracks** list, a term where at least one level is closed but others are still open displays a **Some Levels Closed** badge so you can spot the mismatch at a glance.
-
-## Bulk handling
-
-For programs with large cohorts coming through clearance at the same time:
-
-- Use the **Members** tab in My Program to sort students by clearance status
-- Group students by track or term and review them in batches
-- The Activity Log gives you a sortable, exportable history of every approval decision
+If a student already completed clearance outside FieldX during a migration, a Program Admin can waive that individual's clearance from the member record. After a waiver, manually connect the student to the correct site and supervisor because the normal clearance flow did not create those links.
 
 <Note>
-  Next step: Create and assign forms and reports for your students. See [Building Forms](/fieldx/building-forms).
+  Approval is complete when the student can reach the Field Experience dashboard, sees the correct cohort and placement, and can begin the intended hour-logging workflow.
 </Note>
