@@ -126,6 +126,28 @@
         "pages": [
           "support"
         ]
+      },
+      {
+        "tab": "Meet",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "meet/what-is-meet",
+              "meet/scheduling-and-starting-a-meeting",
+              "meet/ai-note-taker"
+            ]
+          },
+          {
+            "group": "Managing Your Meetings",
+            "pages": [
+              "meet/participants-and-invites",
+              "meet/past-sessions",
+              "meet/sharing-documents-and-comments",
+              "meet/uploading-a-recorded-session"
+            ]
+          }
+        ]
       }
     ],
     "global": {
