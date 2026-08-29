@@ -4,47 +4,115 @@ description: "Use View as Student to experience FieldX exactly as your students 
 sidebarTitle: "9. Testing With View as Student"
 ---
 
-The old "sandbox" workflow has been replaced by **View as Student**. Instead of switching between dummy accounts, Program Admins can now impersonate any real student in their program for up to 30 minutes — read-only, safe, and fully audit-logged.
+Before students begin using FieldX, test the setup from their perspective and complete a final Program Admin QA pass.
+
+## Use the right testing method
+
+FieldX has two complementary testing methods:
+
+| Method | Best for | Limitation |
+| --- | --- | --- |
+| **View as Student** | Checking navigation, clearance instructions, track and term choices, visible sites, assigned work, and locked or unlocked states | Strictly read-only: you cannot submit forms, log hours, sign, approve, or change student data |
+| **Populated demo data** | Reviewing completed forms, multi-signer progress, hour graphs, generated reports, PDFs, and faculty or supervisor queues | Demo records may be staged or stale; confirm what is representative before relying on it |
+
+<Warning>
+  View as Student does **not** replace a populated demo environment for end-to-end workflow testing. It replaces the need to switch into a separate student login when you only need to inspect what a student can see.
+</Warning>
+
+## Start View as Student
+
+Launch it from any of these locations:
+
+1. **My Program → Members → Students** — open a student's actions menu and select **View as Student**
+2. **Cohorts → cohort → Members** — open a student's actions menu and select **View as Student**
+3. **Student Details** — select **View as Student** at the top of the modal
+
+An amber banner shows the student's name, the remaining session time, and **Exit Student View**. The session is audit-logged and expires automatically after 30 minutes.
+
+## Required pre-launch test sequence
+
+### 1. Check the clearance experience
+
+Confirm that the student sees:
+
+- The correct program, level, and track names
+- The correct academic term choices
+- Clear instructions for every clearance step
+- Only the agreements and requirements that apply to that student
+- The correct site-selection and supervisor-contact behavior
+- A clear final-review and submission step
+
+If a requirement is conditional, state the condition in both the step description and the form itself.
+
+### 2. Check sites and supervisors
+
+Verify that:
+
+- Established sites are available and deduplicated
+- Expired or inactive sites are not presented as active choices
+- New-site requests follow the intended approval rule
+- The supervisor instructions name the correct email sender: **SimCare**
+- The person authorized to sign an agreement is not being automatically replaced by the site supervisor
+
+### 3. Check forms and assignments
+
+Open every required form and confirm:
+
+- The correct person completes every question
+- Student, site supervisor, faculty, and custom signer roles are correctly labeled
+- Required signatures appear in the intended sequence
+- Instructions, due dates, and assignment names are understandable
+- No duplicated or orphaned questions remain
+
+View as Student lets you inspect the form, but it will not let you submit it. Use populated demo data or a controlled test account when you must verify a completed multi-signer workflow.
+
+### 4. Check hours and recurring schedules
+
+Confirm the student's dashboard shows the correct:
+
+- Total, direct, indirect, and supervision requirements
+- Activity types and qualifying-hour rules
+- Hours report template
+- Site and supervisor choices
+- First recurring assignment date, frequency, due date, and schedule end date
+
+A recurring schedule is a generator. If it has not reached its first run date, look under **Schedules**, not completed assignments.
+
+### 5. Check the populated outputs
+
+Using populated demo data, verify:
+
+- Overview KPI cards and progress graphs
+- A completed weekly hour report
+- The generated PDF
+- Multi-signer status and the person currently blocking completion
+- Faculty and site supervisor task queues
+- At least one standard report from **Run Report**
+
+If a demo artifact is stale, say so clearly and identify what differs in the current version.
+
+### 6. Check invitations and account access
+
+Before launch:
+
+- Confirm newly added members received credentials or know they must self-sign up
+- Search for users accidentally added under the wrong role
+- Confirm SSO or LMS access works for the school's domain
+- Test one supervisor invitation and confirm the message arrives from **SimCare**
+- Verify the institution and the FieldX program are both connected to the LMS, when applicable
+
+## Faculty and supervisor perspectives
+
+There is no dedicated View as Faculty mode. To test faculty workflows, use a faculty account or join a controlled cohort as faculty.
+
+For site supervisors, use [View as Supervisor](/fieldx/view-as-supervisor). To test the invitation and first-login experience itself, use a controlled supervisor email and complete the supervisor step from a controlled student account.
+
+## Final launch decision
+
+Do not launch based only on whether the pages open. The program is ready when its terms, tracks, hour rules, sites, forms, signature routes, recurring schedules, invitations, and approval flow have all been checked.
+
+Use the [Launch Readiness & QA Checklist](/fieldx/launch-readiness-qa) for the full sign-off list.
 
 <Note>
-  Looking for the dedicated "View as Student" guide? See [View as Student](/fieldx/view-as-student) for the full reference.
-</Note>
-
-## What it replaces
-
-| Old workflow | New workflow |
-| --- | --- |
-| Sandbox accounts for student, faculty supervisor, site supervisor | **View as Student** (covers the student view directly) |
-| Test cohort in a separate sandbox program | Create a test cohort in your real program — `Show Archived` lets you hide it later |
-| Manual context switching between accounts | One-click impersonation from the Members tab, cohort, or student details |
-
-You can still invite faculty supervisors and site supervisors to your real program — they have their own views and you can join cohorts as faculty whenever you want to test the faculty side.
-
-## Recommended things to try
-
-- **The full clearance flow** — start View as Student on a real student who's in clearance, and walk through what they see step by step. See [Getting started & clearance tasks](/fieldx/students/step-1-getting-started-and-clearance-tasks).
-- **Log hours as a student** — open the Timesheet tab inside View as Student to confirm the agreement modal, activity types, and supervisor options match your program settings.
-- **Create a new cohort** — invite students, generate the join code, and try enrolling. See [Set up cohorts](/fieldx/step-3-set-up-cohorts).
-- **Create and assign a form** — use the Assignments tab to build a form (or use an AI-converted upload). See [Building forms](/fieldx/building-forms).
-- **Trigger a Run Report** — pick HRS-01 (Weekly Activity Ledger) and run it against a placeholder student.
-
-Most importantly — explore! Try the Ask AI tab, the Todos system, the Notifications settings, and the program-management page. Nothing you do as a Program Admin on the program side will affect a student's data unless you're acting through View as Student (which is read-only by design).
-
-## Read-only protections
-
-While View as Student is active, the impersonation banner stays at the top of the screen and **all actions are tagged as impersonation** in your activity log. The student can't tell you logged in as them — the events you see are theirs, not yours.
-
-<Tip>
-  Once you're done testing, click **Exit Student View** in the amber banner at the top of the screen to return to your Program Admin account. Sessions auto-expire after 30 minutes.
-</Tip>
-
-## What about faculty and site supervisor accounts?
-
-There's no "view as faculty" feature. To test those flows:
-
-- **Join a cohort as faculty** by generating the join code from the cohort and pasting it into the **Join Cohort as Instructor** modal under a faculty account
-- **Site supervisor onboarding** happens via the magic-link invite that fires when a student adds a supervisor during clearance — to test it, complete the supervisor step inside View as Student using an email you own
-
-<Note>
-  Next step: With testing in place, customize FieldX for your program. See [Customization Settings](/fieldx/step-0-2-customization-settings) to configure academic terms, hour requirements, and clearance.
+  Next step: once the setup passes QA, review and approve the first student submissions in [10. Approving Students](/fieldx/step-3-1-approving-students).
 </Note>

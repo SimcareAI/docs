@@ -1,0 +1,127 @@
+---
+title: "Designing Clearance & Agreements"
+description: "Design clearance steps, conditional requirements, signer routing, submission windows, extensions, and re-clearance."
+icon: "file-signature"
+---
+
+Clearance controls what a student must complete before FieldX unlocks hour logging. Design it as a student journey, not merely a list of documents.
+
+## Start with the decision map
+
+For every proposed step, answer:
+
+- Who completes it?
+- Which tracks and levels require it?
+- Is it always required, optional, or conditional?
+- Does it need a signature?
+- Who is authorized to sign?
+- What information must exist before the step appears?
+- What should carry forward during re-clearance?
+
+## Recommended sequence
+
+A common sequence is:
+
+1. Select academic term, track, and level
+2. Review program requirements and agreements
+3. Select an established site or request a new one
+4. Add the supervisor
+5. Upload insurance and other credentials
+6. Complete track-specific or conditional forms
+7. Review and submit
+8. Program Admin approval
+
+The correct order depends on routing. For example, an agreement placed after supervisor selection may automatically route to the site supervisor. Move it earlier or request a signer email when another site representative must sign.
+
+## Conditional steps
+
+If a requirement applies only in a specific situation:
+
+1. Make it available to every relevant track and level.
+2. Make the form or step optional when the condition cannot be enforced automatically.
+3. Put the condition in the step description.
+4. Repeat the condition inside the form.
+5. Test both the applicable and non-applicable paths.
+
+Example: “Complete this agreement only if you are proposing a new site.”
+
+Redundant instructions are intentional when missing the condition would block a student or send a form to the wrong person.
+
+## Agreements and signer routing
+
+For each agreement, confirm:
+
+- Student signature requirement
+- Site supervisor signature requirement
+- Faculty signature requirement
+- Custom final signer
+- Sequential signing order
+- Whether the signer is selected automatically
+- Whether the student must enter an email
+
+Multi-signer forms move sequentially. A final signer does not receive the request until earlier signers finish.
+
+To investigate a missing signature request:
+
+1. Open **Assignments**.
+2. Find the form and select **View**.
+3. Open **Submissions**.
+4. Find the student and current attempt.
+5. Identify the signer currently blocking the form.
+6. Confirm that the expected person is part of the signer list.
+7. Check the person's FieldX account as well as their inbox.
+
+## Submission windows and extensions
+
+When **Restrict Applications by Submission Window** is enabled, a term can have application open and close dates.
+
+More-specific overrides take precedence:
+
+1. Track-and-level override
+2. All-tracks override for a level
+3. Term-level window
+
+Leave an override blank to fall back to the broader rule. Turning the feature off makes configured dates inactive without deleting them.
+
+Program Admins can grant an individual extension from the clearance and placement area, the term, or the student's member record. An extension unlocks term selection for that student until the stated date; it does not change an existing placement.
+
+## Re-clearance
+
+Programs can require clearance again after:
+
+- Placement level change
+- Track change
+- New term
+
+Before enabling a rule, decide what carries forward. Sites and insurance may remain while agreements or acknowledgements reset.
+
+Level and track changes may block access until clearance is complete. Term-based re-clearance can be configured so an active placement continues while the student sees a reminder.
+
+## Waiving clearance
+
+Use an individual waiver when a student completed equivalent clearance outside FieldX, such as during a migration.
+
+After waiving:
+
+- Manually connect the student to the correct site
+- Confirm the supervisor belongs to that site
+- Link the student and supervisor
+- Verify the student's term, track, and level
+
+A waiver bypasses the flow that normally creates those relationships.
+
+## QA scenarios
+
+Test:
+
+- New student at an established site
+- New student requesting a new site
+- Internship student changing sites
+- Student with a non-supervisor agreement signer
+- Student changing level
+- Student changing track
+- Student applying after a closed submission window with an extension
+- Student whose application is rejected and resubmitted
+- Student whose previously approved application is updated
+
+Use [9. Testing With View as Student](/fieldx/step-0-1-testing-fieldx-with-your-sandbox) and the [Launch Readiness & QA Checklist](/fieldx/launch-readiness-qa).

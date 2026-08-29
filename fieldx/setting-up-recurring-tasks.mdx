@@ -4,21 +4,97 @@ description: "Automate weekly hour logs and evaluation forms so you don't have t
 sidebarTitle: "8. Setting Up Recurring Tasks"
 ---
 
-You don't need to manually assign the same hour log or evaluation every week. FieldX lets you automate this using **Recurring Tasks**.
+Recurring schedules generate assignments automatically throughout a term. Use them for weekly hour logs, supervision reports, evaluations, and other work that repeats on a predictable cadence.
 
-## Using the repeat toggle
+## Decide the policy before building the schedule
 
-When assigning any form or report, you'll see a **Repeat** toggle in the assignment settings. Turning it on lets you define a schedule.
+For every recurring report, confirm with the program:
+
+- **Cadence** — weekly, every two weeks, monthly, or another supported interval
+- **First assignment date**
+- **Due date offset** — how many days the recipient has to complete it
+- **Schedule end date**
+- **Student signature** — required or not
+- **Site supervisor signature** — required or not
+- **Faculty signature** — required or not
+- **Default signing faculty** — program-wide, cohort-specific, or student-specific
+
+<Warning>
+  Do not guess the signature cadence or signers. These decisions affect every student and are among the most common sources of post-launch corrections.
+</Warning>
+
+## Create a recurring schedule
+
+1. Open **Assignments**.
+2. Find the form or report template and select **Assign**.
+3. Choose the target cohort or individuals.
+4. Turn on **Repeat**.
+5. Set the start date.
+6. Choose the frequency.
+7. Set the due date offset.
+8. Set **Repeat until** to the end of the term.
+9. Review the target, dates, and required signers.
+10. Create the schedule.
 
 ![Recurring Task Settings](/images/recurring_tasks.png)
 
-| Setting | Description |
+| Setting | What to verify |
 | --- | --- |
-| **Start date** | When the first task should be assigned to the student |
-| **Frequency** | How often: Weekly, Bi-Weekly, or Monthly |
-| **Due date** | How many days after assignment the student has to complete it |
-| **Repeat until** | When the automation stops (usually the end of the semester) |
+| **Start date** | Usually the academic term start or the first reporting period |
+| **Frequency** | Matches the program's actual sign-off cadence |
+| **Due date** | Gives every required signer enough time |
+| **Repeat until** | Prevents assignments from continuing after the term |
+| **Target** | Correct cohort or selected individuals |
+| **Signers** | Correct student, site supervisor, faculty, and custom roles |
+
+## A schedule is a generator
+
+A recurring schedule is not itself a student assignment. It creates a new assignment on each scheduled date.
+
+Before the first run:
+
+- Look under the cohort's **Assignments → Schedules** segment
+- Do not expect a future assignment to appear in the normal assignment list yet
+- Confirm the next run date and end date
+
+After the first run:
+
+- Confirm that the emitted assignment reached the correct students
+- Open one item and verify its due date and signer sequence
+- Check the submissions view to see who is currently responsible
+
+## Stopping or changing a schedule
+
+You can stop a recurring schedule from the cohort's **Schedules** segment. Stopping it prevents future assignments from being generated; assignments already created remain available.
+
+If the cadence or date range is wrong, stop the schedule and create the corrected one. Review already-emitted assignments separately so students do not receive duplicates.
+
+## Term rollover
+
+Do not assume an hour-log schedule copied into a new cohort. When creating the next term:
+
+1. Create the cohort using **Copy from existing** or a template cohort.
+2. Verify the copied one-time assignments and shifted due dates.
+3. Open **Schedules** in the new cohort.
+4. Recreate the weekly hour-log schedule with the new term's start and end dates.
+5. Confirm the first generated assignment after the schedule runs.
+
+See [Next Semester Setup](/fieldx/step-5-next-semester-setup) for the complete rollover checklist.
+
+## Final QA
+
+Before launch:
+
+- [ ] Correct template selected
+- [ ] Correct cohort selected
+- [ ] Correct first date and frequency
+- [ ] End date is present
+- [ ] Required signers match the program's policy
+- [ ] Default signing faculty is configured where appropriate
+- [ ] No duplicate schedule exists
+- [ ] The first emitted assignment is checked after generation
+- [ ] Reminder behavior is understood by the Program Admin
 
 <Note>
-  Learn how to create the form and report templates used in recurring tasks at [Building forms](/fieldx/building-forms).
+  Next step: run the complete student-perspective and populated-data QA pass in [9. Testing With View as Student](/fieldx/step-0-1-testing-fieldx-with-your-sandbox).
 </Note>

@@ -22,7 +22,7 @@ The create modal asks for:
 | **Track Name** _(required)_ | Descriptive name |
 | **Description** | Optional context |
 | **This is a template cohort** | Marks the cohort as a term-less template used as a copy source for each real intake — see [Template cohorts](#template-cohorts) |
-| **Copy from existing cohort** | Clone one-time assignments, recurring schedules, and settings from another cohort |
+| **Copy from existing cohort** | Clone eligible one-time assignments and settings. Verify schedules separately and recreate hour-log schedules for the new term |
 | **First assignment date** _(when copying)_ | Shifts all source assignment dates by the same offset |
 | **Academic Terms** | Multi-select — student placements are auto-created using this term |
 | **Default Signing Faculty** | Default supervisor name used for report signatures |
@@ -40,7 +40,11 @@ Click **Create Cohort** to save.
 
 ## Template cohorts
 
-Toggle **This is a template cohort** in the create or edit modal to mark a cohort as a template. A template is a term-less cohort you build once and copy from for each real intake — assign your standard forms, recurring schedules, and report templates to it, then use **Copy from existing cohort** each term to stamp out the real cohort.
+Toggle **This is a template cohort** in the create or edit modal to mark a cohort as a template. A template is a term-less cohort you build once and copy from for each real intake — add your standard forms, report templates, and reusable settings, then use **Copy from existing cohort** each term to stamp out the real cohort.
+
+<Warning>
+  **Copy from existing is available only while creating the new cohort.** After creation, verify every copied due date and recreate the term's hour-log schedule with the correct start and end dates.
+</Warning>
 
 Template cohorts follow a few rules:
 
@@ -127,5 +131,5 @@ Archiving hides the cohort from your active dashboard but preserves all student 
 Both actions open a confirmation prompt showing the cohort name before anything changes. **Archive** asks you to confirm and notes the cohort can be restored later. **Permanent delete** warns that the action cannot be undone and uses a red confirm button.
 
 <Note>
-  Next step: Once cohorts are set up, students complete clearance and you approve them. See [Approving Students](/fieldx/step-3-1-approving-students).
+  Next step: review and build the evaluations, agreements, and other paperwork that students will receive. See [6. Building Forms](/fieldx/building-forms).
 </Note>

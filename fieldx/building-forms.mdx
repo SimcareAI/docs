@@ -4,64 +4,132 @@ description: "Create custom evaluations, surveys, and agreements using the Field
 sidebarTitle: "6. Building Forms"
 ---
 
-FieldX includes a robust form builder for creating custom evaluations, surveys, and agreements. All forms are fully HIPAA compliant.
+FieldX forms include evaluations, surveys, agreements, clearance documents, and other structured paperwork. Programs usually begin with forms converted from their existing PDF or Word documents, then review them in the form builder before assigning them.
 
-## Creating a new form
+<Warning>
+  A form is not ready because it merely looks like the source document. Before launch, verify who completes every question, which signatures are required, and the order in which the form moves between people.
+</Warning>
 
-Navigate to the **Assignments** tab and click **Create Form**, then select **Create from Scratch** to open the builder.
+## Start with the source set
 
-## The form builder
+Before editing:
 
-The builder has your form canvas on the left and a toolbox of field types on the right. Drag and drop elements to build your form.
+1. Reconcile the files uploaded during onboarding with the program's complete form list.
+2. Identify anything that was mentioned but not successfully uploaded.
+3. Confirm that each source file is readable and is the current version.
+4. Name the intended respondents and signers for every form.
+5. Mark which forms are required, optional, recurring, or used only for certain tracks or levels.
 
-![FieldX Form Builder Interface](/images/building_forms.png)
+## Create or import a form
+
+Open **Assignments** and select **Create Assignment → Form**.
+
+You can:
+
+- **Build New** — start with a blank form and add fields manually
+- **Upload** — convert an existing PDF or Word document into a FieldX form with AI
+
+After an AI import finishes, treat the result as a draft. Compare it with the source document question by question.
 
 ## Available field types
 
 | Type | Use case |
 | --- | --- |
-| **Text input** | Short answer responses |
+| **Text input** | Short responses and numeric entries |
 | **Text area** | Paragraph responses |
-| **Checkboxes / radio buttons** | Multiple choice |
-| **Signatures** | Add fields for student, site supervisor, or faculty signatures |
-| **Rating scales** | Likert scales or custom rating matrices for evaluations |
-| **Date & time** | Date pickers and time log entries |
-| **File upload** | Let users attach documents or PDFs |
-| **Section headers** | Organize long forms with clear headings and dividers |
-| **Accumulate numbers** | Auto-calculated field that totals numeric answers from earlier questions |
+| **Checkboxes / radio buttons** | Single- or multiple-choice questions |
+| **Rating scales** | Likert scales and evaluation matrices |
+| **Date & time** | Dates and time-based entries |
+| **File upload** | Supporting documents |
+| **Signature** | Student, site supervisor, faculty, or custom signers |
+| **Section header** | Instructions and visual organization |
+| **Accumulate numbers** | Sum, average, minimum, maximum, or count of earlier numeric responses |
+
+## Assign every question to the correct role
+
+Every question must have a person responsible for completing it. Depending on the form, that may be:
+
+- Student
+- Site supervisor
+- Faculty supervisor
+- Program Admin
+- A named custom signer
+
+Use client-facing labels, especially for custom signers. Avoid generic names such as “Signer 2” when the real role is “Field Placement Director” or “Provost.”
+
+<Warning>
+  When you remove a respondent role, review any questions previously assigned to that role. Reassign or delete orphaned questions before saving.
+</Warning>
+
+## Configure signatures and routing
+
+Decide:
+
+- Whether the student signs
+- Whether the site supervisor signs
+- Whether faculty signs
+- Whether a custom person signs
+- The order in which signatures are requested
+- Whether the signer should be selected automatically or entered by the student
+
+Multi-signer workflows are sequential. A final signer will not receive the form until every earlier signer has completed their step.
+
+If an affiliation agreement must be signed by someone other than the student's site supervisor, ask for that person's email explicitly instead of automatically routing to the supervisor.
 
 ## Accumulate numbers
 
-Use the **Accumulate numbers** field when you need a running total (or average, min, max, or count) of numeric answers a respondent has already given elsewhere on the form. Common examples include totaling weekly hours, averaging rating scores, or counting completed items.
+Use **Accumulate numbers** for totals or calculated results based on earlier numeric questions.
 
-The field is read-only for the person completing the form — the value updates automatically as they type numbers into the source questions.
+1. Add the numeric **Text input** questions first.
+2. Add an **Accumulate numbers** field after them.
+3. Select the source questions.
+4. Choose **Sum**, **Average**, **Min**, **Max**, or **Count**.
+5. Set the number of decimal places.
 
-To configure it:
+Only numeric questions above the calculated field can be selected. Blank and non-numeric answers are skipped.
 
-1. Add one or more **Text input** questions earlier in the form to collect the numbers you want to aggregate.
-2. Add an **Accumulate numbers** field below them.
-3. In the field editor, select which source questions to include.
-4. Choose an aggregation: **Sum**, **Average**, **Min**, **Max**, or **Count**.
-5. Set the number of decimal places to display (0–6).
+## Required form QA
 
-<Note>
-  Only **Text input** questions that appear above the accumulate field can be used as sources. Blank or non-numeric answers are skipped rather than counted as zero, so the total reflects only real responses.
-</Note>
+Open every form and check:
 
-## Field properties
+- [ ] The title matches the program's language
+- [ ] Every source question is present
+- [ ] No question was duplicated during import
+- [ ] Every question belongs to the correct respondent
+- [ ] Student signature is present when required
+- [ ] Site supervisor and faculty roles are not reversed
+- [ ] Custom signers have accurate labels
+- [ ] Required fields are actually required
+- [ ] Conditional instructions appear where the user needs them
+- [ ] Rating scales preserve their original labels and order
+- [ ] The form opens cleanly at normal browser zoom
+- [ ] A completed test submission renders correctly as a PDF
+- [ ] Multi-signer status shows the expected next signer
 
-Click any field to customize:
+## Editing a form after assignment
 
-- Mark as **Required**
-- Add help text or instructions
-- Set character limits
+Saving a form updates the reusable template. Existing assignments keep the version originally presented unless you explicitly choose to update live assignments.
 
-## AI import
+When a new required role is added, FieldX asks whether to:
 
-Instead of building from scratch, you can upload an existing PDF or Word document (your current Mid-Term Evaluation, for example) and AI will automatically convert it into a FieldX form.
+- **Save template only** — future assignments use the new role; current assignments stay unchanged
+- **Save and update existing assignments** — current assignments receive the new role, and completed items may reopen until that person responds
 
-Once you save your form, it becomes a reusable template that can be assigned to any cohort or individual user.
+Previously submitted responses are preserved. FieldX versions the question set so older submissions and exports continue to render against the form the respondent originally saw.
 
-<Note>
-  Once you've built your forms, learn how to assign them in [Creating & Assigning Tasks](/fieldx/step-4-create-assign-tasks).
-</Note>
+<Warning>
+  Updating live assignments can turn completed work back into pending work. Notify affected students and signers before choosing that option.
+</Warning>
+
+## Before assigning the form
+
+Confirm whether the form should be:
+
+- Assigned once
+- Assigned on a recurring schedule
+- Assigned to a whole cohort
+- Assigned only to selected individuals
+- Included in a reusable group
+- Added to a template cohort
+
+Then continue to [7. Creating & Assigning Forms & Reports](/fieldx/step-4-create-assign-tasks).
