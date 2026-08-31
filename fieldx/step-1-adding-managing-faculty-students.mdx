@@ -57,7 +57,7 @@ You can see your program's registered domains at the top of **My Program → Ove
 How it works:
 
 - A student self-signs up at [app.simcare.ai/sign-up](https://app.simcare.ai/sign-up) with an email like `student@university.edu`.
-- If `university.edu` is a domain for your program, the new account is enrolled as a student in that program on their very first authenticated request — before they see the pre-application flow.
+- If `university.edu` is a domain for exactly one program (yours), the new account is enrolled as a student in that program on their very first authenticated request — before they see the pre-application flow.
 - The student then continues straight into the standard clearance tasks (see [Approving Students](/fieldx/step-3-1-approving-students)). You'll see them appear in **Members → Students** with clearance status `Not Started`.
 
 Two guardrails protect against accidental re-enrollment:
@@ -65,9 +65,23 @@ Two guardrails protect against accidental re-enrollment:
 - If you previously **removed** a student from your program (via the bulk **Remove** action), they are never re-enrolled by domain match — you must add them back explicitly.
 - If a student is already an active or inactive member of any other program, domain-based enrollment is skipped so they aren't silently moved between programs.
 
-<Note>
-  To register or change the email domain(s) linked to your program, contact your SimCare rep. Adding a new domain is a one-time setup step.
-</Note>
+### Shared domains: the program chooser
+
+More than one program can register the same email domain — common when several departments at one university each run their own FieldX program. When that happens, students on that domain are not enrolled automatically. Instead:
+
+- The first time the student opens Field Experience, they see a **Choose your program** screen listing every program that uses their email domain (with each program's location, when set).
+- The student selects their program and clicks **Continue**. They're enrolled in that program only and proceed into clearance tasks as usual.
+- Students can only pick from programs that actually match their email domain, and the removal guardrail still wins: a student you removed sees an access-removed message instead of the chooser.
+
+### Managing your program's domains
+
+Program admins can edit the registered domains directly:
+
+1. Open **My Program → Overview** and edit the program's basic information (name, location, domain, and image).
+2. In the **Domain** field, enter one or more domains separated by commas, for example `example.com, university.edu`.
+3. Save. Entries that aren't valid hostnames (full URLs, stray characters) block the save with an error listing the bad values — enter just the domain, like `lynn.edu`.
+
+If a domain you save is already registered to another program, the save still succeeds, and SimCare shows a warning naming the other programs that share it. Use the warning to catch typos; if the overlap is intentional, students on that domain will simply be asked to choose their program.
 
 ## Bulk actions
 
