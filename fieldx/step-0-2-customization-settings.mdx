@@ -52,8 +52,32 @@ Student tracks define hour requirements for each kind of placement (e.g., Intern
 - Set required total, direct, indirect, and supervision hours
 - Choose **qualifying activity types** — granular control over which activities count toward each hour bucket
 - Configure site requirements
+- Pool an internship series into one shared hour requirement — see [Pooled hour groups](#pooled-hour-groups)
 
 The track editor is a 4-step modal: **Category Requirements** → **Hour Requirements** → **Site Requirements**, plus any extra steps based on enabled categories.
+
+#### Pooled hour groups
+
+Some level series can share **one combined hour requirement** instead of a separate total per level. Two groups support pooling:
+
+- **Internship I / II / III**
+- **Internship I / II / III – COUC 992/993/994**
+
+When a group is pooled, students distribute hours freely across its levels. FieldX enforces only the combined total — for example, 600 hours across Internship I, II, and III — rather than a separate requirement for each level.
+
+Per-level requirements remain the default. Nothing changes for a track until you turn pooling on.
+
+To pool a group:
+
+1. Open the track editor and go to the **Hour Requirements** step. Levels that belong to a poolable group appear together on one card.
+2. Turn on the pooling toggle on the group's card. A **Pooled** badge appears and the member levels collapse into a single hours card.
+3. Enter the combined required hours — total, direct, indirect, and supervision — for the whole series. If the member levels already have their own totals, FieldX shows their sum as a suggestion you can apply with **Use these**. Review the suggestion before accepting it: if the levels still hold built-in defaults, the sum reflects those defaults rather than numbers your program set.
+
+Keep in mind:
+
+- **Activity-type minimums still apply.** When member levels set different minimums for the same activity, FieldX applies the strictest one across the pool.
+- **Pooled students don't get an On Track or Off Pace verdict.** A single term's elapsed time can't be measured against a multi-term combined total, so their placement status chip stays neutral and they never appear in the Off Pace filter or KPI. Their progress percentage is measured against the pool's combined requirement instead.
+- **Turning pooling off is lossless.** Each member level's own hour requirements are restored exactly as they were.
 
 ### Certificates
 
