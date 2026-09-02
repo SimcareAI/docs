@@ -1,0 +1,81 @@
+---
+title: "Canvas LTI integration"
+description: "How to connect SimCare to a Canvas course, link assignments, sync rosters, and grade from SpeedGrader."
+---
+
+The SimCare LTI integration connects your Canvas course with SimCare AI. It handles automatic account creation for you and your students, syncs your class roster, and lets you grade SimCare simulations directly inside Canvas SpeedGrader.
+
+<Note>
+  This covers the Canvas-connected workflow. If your course isn't connected to Canvas, see [Creating assignments](/simulations/creating-assignments) instead.
+</Note>
+
+## Getting started & logging in
+
+You do not need to create a separate account on SimCare.
+
+<Steps>
+  <Step title="Navigate to your Canvas course">
+    Open the Canvas course you want to connect.
+  </Step>
+  <Step title='Click "Launch SimCare"'>
+    Click the **SimCare** or **Launch SimCare** link in your Course Navigation menu (usually on the left side).
+  </Step>
+</Steps>
+
+![Screenshot 2026 08 27 At 1 39 19 PM](/images/Screenshot-2026-08-27-at-1.39.19-PM.png "Screenshot 2026 08 27 At 1 39 19 PM")
+
+<Steps>
+  <Step title="You're in">
+    This automatically logs you into your SimCare account with **Teacher** permissions. No separate sign-up required.
+  </Step>
+</Steps>
+
+## Creating & linking assignments
+
+The assignment itself is still built in SimCare first (see [Creating assignments](/simulations/creating-assignments) for the full builder walkthrough). Once it exists, link it to a Canvas assignment:
+
+<Steps>
+  <Step title="Create a new Assignment in Canvas">
+    From your Canvas course, create a new **Assignment**.
+  </Step>
+  <Step title="Set the submission type">
+    Scroll to **Submission Type** and select **External Tool** from the dropdown.
+  </Step>
+</Steps>
+
+![Screenshot 2026 08 27 At 1 40 15 PM](/images/Screenshot-2026-08-27-at-1.40.15-PM.png "Screenshot 2026 08 27 At 1 40 15 PM")
+
+<Steps>
+  <Step title="Find SimCare">
+    Click **Find**, then select **SimCare** from the list (it's listed as "Launch SimCare" or something similar).
+
+    ![Screenshot 2026 08 27 At 1 40 51 PM](/images/Screenshot-2026-08-27-at-1.40.51-PM.png "Screenshot 2026 08 27 At 1 40 51 PM")
+  </Step>
+  <Step title="Pick your assignment">
+    The **Assignment Picker** opens, showing every SimCare assignment associated with your account, grouped by course. Select the one you want to link.
+
+    ![Screenshot 2026 08 27 At 1 42 02 PM](/images/Screenshot-2026-08-27-at-1.42.02-PM.png "Screenshot 2026 08 27 At 1 42 02 PM")
+  </Step>
+  <Step title="Save and publish">
+    Click **Save and Publish** on the Canvas assignment. Students will now launch this specific SimCare case from the Canvas assignment link.
+  </Step>
+</Steps>
+
+## Copying courses (Blueprint / Course Copy)
+
+If you're rolling over a course from a previous semester or using a Blueprint shell, SimCare makes it easy to set up your new section.
+
+<Steps>
+  <Step title="Perform the copy">
+    Run the Canvas Course Copy or Blueprint sync as usual.
+  </Step>
+  <Step title="Initialize the new course">
+    Once the copy is complete, open the new course and click any SimCare assignment link yourself.
+
+    **Why this matters:** this tells SimCare the new course is ready. It automatically creates the new course shell on SimCare's platform, copies your assignments over, and sets you as the primary instructor, before students begin working.
+  </Step>
+</Steps>
+
+## Need help?
+
+For questions about setting up your course, contact [**tiko@simcare.ai**](mailto:tiko@simcare.ai).
