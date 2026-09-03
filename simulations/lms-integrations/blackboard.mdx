@@ -1,88 +1,179 @@
 ---
 title: "Blackboard"
-description: "Blackboard–SimCare LTI Integration: Instructor, Builder, and Student Workflow"
-keywords: ["LTI"]
+description: "Set up SimCare in Blackboard, link assignments, test the instructor and student experience, and configure grade passback."
+keywords:
+  - "LTI"
+  - "Blackboard"
+  - "grade passback"
 tag: "LTI"
 ---
 
-<iframe src="https://www.loom.com/embed/70b8e87e588b40859b34bc9aaaae0bed" title="Loom video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+The SimCare LTI integration gives instructors and students direct access to SimCare from a Blackboard course. Instructors can add a general SimCare launch link, link specific assignments, test them before release, review submissions in SimCare, and optionally publish grades back to Blackboard.
 
- 
+## SimCare tools in Blackboard
 
-**1. Open SimCare from Blackboard using the Launch link** [0:13](https://loom.com/share/70b8e87e588b40859b34bc9aaaae0bed?t=13)
+Open a Blackboard course, select **Add Content**, and open the **Content Market**. The two primary SimCare tools are:
 
-- In a Blackboard course, go to **Add Content** and open the **Content Market**.
-- Select the SimCare option called **Launch SimCare**.
-- This creates a simple link that lets instructors or students open SimCare in a new tab and be automatically logged in.
-- After adding it, refresh the course page to see the new launch link.
+| Tool | Purpose |
+| --- | --- |
+| **Launch SimCare** | Opens SimCare in a new browser tab and signs the user in automatically |
+| **SimCare Assignment Picker** | Adds a specific SimCare assignment to the Blackboard course |
 
- 
+The general launch link is useful as a consistent entry point. The assignment picker is used when students should open a particular SimCare activity directly from Blackboard.
 
-**2. Add a SimCare assignment from the Content Market** [1:14](https://loom.com/share/70b8e87e588b40859b34bc9aaaae0bed?t=74)
+## Add the Launch SimCare link
 
-- Go back to the **Content Market** and choose **SimCare Assignment Picker**.
-- This shows assignments tied to your program, including ones created by instructors, course builders, subject matter experts, or others in the program.
-- Select the assignment you want to use, such as **Assignment 3**.
-- Refresh the Blackboard page to confirm the assignment has been added.
+1. Open the Blackboard course.
+2. Select **Add Content**.
+3. Open the **Content Market**.
+4. Select **Launch SimCare**.
+5. Refresh the Blackboard course page if the new link does not appear immediately.
 
- 
+When an instructor or student selects the link, SimCare opens in a new tab and automatically signs that person in.
 
-**3. Launch the assignment as an instructor for testing** [1:45](https://loom.com/share/70b8e87e588b40859b34bc9aaaae0bed?t=105)
+<Note>
+  **Launch SimCare** provides access only. It does not link a specific activity. Use **SimCare Assignment Picker** when the Blackboard item should open a particular assignment.
+</Note>
 
-- Click the added assignment link in Blackboard.
-- It opens in a new tab and launches in **test mode** for the instructor.
-- For this example, the assignment is a **case study** that asks the user to choose a client.
-- This lets instructors verify the assignment flow before students use it.
+## Add a SimCare assignment
 
- 
+1. Open **Add Content → Content Market**.
+2. Select **SimCare Assignment Picker**.
+3. Review the assignments available to the program.
+4. Select the assignment you want to add.
+5. Configure its assignment and grading settings.
+6. Complete the Blackboard item creation.
+7. Refresh the course page if the assignment does not appear immediately.
 
-**4. Student view: launch SimCare and start the assignment** [2:05](https://loom.com/share/70b8e87e588b40859b34bc9aaaae0bed?t=125)
+The picker can include assignments created by instructors, course builders, subject matter experts, or other authorized people in the program.
 
-- On the student side of the same Blackboard course, the student sees both:
-  - the **Launch SimCare** link
-  - the **assignment** link
-- Clicking **Launch SimCare** logs the student into SimCare in a new tab.
-- Clicking the assignment opens the actual assignment so the student can begin work.
+## Configure grade passback
 
- 
+During assignment creation, choose whether the assignment should send grades from SimCare to the Blackboard Gradebook.
 
-**5. Complete the case conversation requirements** [2:41](https://loom.com/share/70b8e87e588b40859b34bc9aaaae0bed?t=161)
+- **Grade passback disabled** — SimCare does not send the assignment grade to Blackboard. Use this when the activity is ungraded, completion-only, or graded separately in Blackboard.
+- **Grade passback enabled** — an instructor can publish the grade from SimCare to Blackboard after reviewing the submission.
 
-- The student must complete at least **four back-and-forth exchanges** with the client for the case to count.
-- In the demo, the student talks with **Emma** several times.
-- Once the conversation is sufficiently complete, the student can end the case.
-- Ending the call marks the assignment as completed and starts feedback generation.
+<Warning>
+  When grade passback is enabled, the **maximum score configured in SimCare syncs to the Blackboard assignment**. Confirm the SimCare maximum score before releasing the assignment so the Blackboard Gradebook uses the intended point value.
+</Warning>
 
- 
+The grade-passback choice is made during assignment creation. Review it alongside the assignment title, availability, due date, and maximum score.
 
-**6. Feedback is generated and sent back to the instructor** [3:24](https://loom.com/share/70b8e87e588b40859b34bc9aaaae0bed?t=204)
+## Test the assignment as an instructor
 
-- After the student ends the conversation, SimCare begins generating feedback.
-- That feedback is sent back to the instructor side for review and grading.
-- The transcript notes that the grading details are handled in SimCare, not directly in Blackboard for this demo.
+After adding the assignment:
 
- 
+1. Select the assignment link from the Blackboard course.
+2. SimCare opens in a new tab.
+3. The activity launches in **test mode** for the instructor.
+4. Follow the initial prompts and confirm that the correct activity, instructions, and client choices appear.
+5. Exit the test without creating a student submission.
 
-**7. Instructor reviews the submission in SimCare** [3:46](https://loom.com/share/70b8e87e588b40859b34bc9aaaae0bed?t=226)
+For case-study assignments, test mode may ask the instructor to select a client. This lets the instructor verify the experience before students begin.
 
-- On the SimCare instructor side, a new class appears with the same name as the Blackboard course.
-- The assignment copied from the master course is linked to the Blackboard course launch.
-- The instructor can also see the student who completed the assignment, such as **John Doe**.
-- From **View Submissions**, the instructor can open **Grade a Case** to review the work.
+## Student access
 
- 
+Students can see the Blackboard items made available to them:
 
-**8. Grade passback is not covered in this video** [4:23](https://loom.com/share/70b8e87e588b40859b34bc9aaaae0bed?t=263)
+- **Launch SimCare** opens the general SimCare application and signs the student in.
+- A linked assignment opens the student version of that specific activity.
 
-- The video does **not** cover the full grade passback process.
-- The intended flow is:
-  - instructor enters a grade in SimCare
-  - instructor clicks **Publish Grade**
-  - grade passback sends the score back to Blackboard
-- The team is still investigating:
-  - the **zeroing issue**
-  - the full **Blackboard Ultra grade passback** workflow
+The student does not need to sign in to SimCare again after launching through Blackboard.
 
-### Link to Loom
+## Student completion flow
 
-[https://loom.com/share/70b8e87e588b40859b34bc9aaaae0bed](https://loom.com/share/70b8e87e588b40859b34bc9aaaae0bed)
+For a conversation-based case:
+
+1. The student opens the assignment from Blackboard.
+2. SimCare launches the assigned case.
+3. The student interacts with the client.
+4. The student completes at least four back-and-forth exchanges so the case counts as a completed attempt.
+5. The student ends the case.
+6. SimCare marks the attempt complete and begins generating feedback.
+
+<Note>
+  Assignment-specific requirements may vary. Students should follow the instructions shown in the assigned activity.
+</Note>
+
+## Course and enrollment synchronization
+
+When a Blackboard-linked assignment is launched, SimCare creates or connects the corresponding course and assignment records.
+
+On the SimCare instructor side:
+
+- The linked class uses the Blackboard course name.
+- The selected assignment appears in that class.
+- Students who launch and complete the activity appear with their submissions.
+- The instructor can open the class to review activity and progress.
+
+This connection allows the instructor to move from the Blackboard course into the matching SimCare class without manually rebuilding the course structure for that assignment.
+
+## Review a submission
+
+After feedback finishes generating:
+
+1. Open the corresponding class in SimCare.
+2. Find the linked assignment.
+3. Select **View Submissions**.
+4. Open the student's attempt.
+5. Review the conversation, generated feedback, and other assignment results.
+6. Select **Grade a Case** when the work is ready to grade.
+
+Feedback is reviewed in SimCare even when the student originally launched the activity from Blackboard.
+
+## Grade and publish
+
+1. Open **View Submissions** in SimCare.
+2. Select the student's completed attempt.
+3. Choose **Grade a Case**.
+4. Enter the student's score.
+5. Review the score against the configured maximum.
+6. Select **Publish Grade**.
+
+If grade passback is enabled, **Publish Grade** sends the score to the linked Blackboard Gradebook column. The Blackboard maximum score reflects the maximum configured for the assignment in SimCare.
+
+If grade passback is disabled, the submission can still be reviewed and graded in SimCare, but SimCare does not publish that grade to Blackboard.
+
+## End-to-end verification
+
+Before releasing the assignment to students, confirm:
+
+- [ ] **Launch SimCare** opens a new tab and signs the instructor in
+- [ ] The assignment picker shows the intended assignment
+- [ ] The assignment appears in Blackboard after creation
+- [ ] Instructor test mode opens the correct activity
+- [ ] Grade passback is intentionally enabled or disabled
+- [ ] If enabled, the SimCare maximum score matches the intended Blackboard point value
+- [ ] The student view shows both the launch link and assignment as intended
+- [ ] A controlled student launch opens the correct activity
+- [ ] The linked Blackboard course appears correctly in SimCare
+- [ ] A completed test submission appears under **View Submissions**
+- [ ] Feedback finishes generating
+- [ ] **Publish Grade** updates Blackboard when grade passback is enabled
+
+## Troubleshooting
+
+**The Blackboard item does not appear after adding it**
+
+Refresh the Blackboard course page. If it still does not appear, reopen the Content Market and confirm the tool completed successfully.
+
+**The assignment is missing from the picker**
+
+Confirm that the assignment belongs to the correct program and that the instructor has permission to use it.
+
+**The instructor cannot find the course or student in SimCare**
+
+Launch the linked assignment from Blackboard, then confirm the Blackboard course name and the student's launch activity.
+
+**The student opens SimCare but not the assignment**
+
+Confirm the student selected the linked assignment rather than the general **Launch SimCare** link.
+
+**A grade does not appear in Blackboard**
+
+Confirm that grade passback was enabled during assignment creation, the student has a completed submission, and the instructor selected **Publish Grade**.
+
+**The Blackboard point value is wrong**
+
+Check the maximum score configured for the assignment in SimCare. When grade passback is enabled, that maximum syncs to Blackboard.
