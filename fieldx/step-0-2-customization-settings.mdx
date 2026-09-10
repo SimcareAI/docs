@@ -4,7 +4,7 @@ description: "Configure academic terms, student tracks, certificates, clearance,
 sidebarTitle: "2. Customization Settings"
 ---
 
-Before you start adding students, take a few minutes to configure FieldX for your program. Click **My Program** in the top-right of any page to open the program settings sidebar.
+Before you start adding students, take a few minutes to configure FieldX for your program. Click **Program Settings** in the top-right of any page to open the program settings sidebar.
 
 ![Customization Overview](/images/customization-1.png)
 
@@ -14,6 +14,7 @@ Before you start adding students, take a few minutes to configure FieldX for you
 | --- | --- |
 | **General Information** | Program name, description, logo |
 | **Terms and Tracks** | Academic terms, student tracks, certificates and hour requirements |
+| **Hour Templates** | Hour-report templates and activity categories |
 | **Clearance Tasks** | The pre-application steps each student must complete before logging hours |
 | **Members** | Students, faculty, and admin roster — with bulk actions, term and track assignment |
 | **Notifications** | Faculty daily digest, insurance expiration alerts, form due-date reminders |
@@ -28,11 +29,13 @@ Set your program name, description, and upload your program logo. The logo appea
 
 ## Terms and Tracks
 
-![Organization Settings](/images/customization-2.png)
+<Frame caption="Use Terms and Tracks to manage academic periods and student requirements.">
+  ![Academic and tracking settings with red arrows pointing to Terms and Tracks and Add Term](/images/fieldx/audit/admin-terms-tracks.png)
+</Frame>
 
 ### Academic terms
 
-Academic terms control how student progress is tracked across a semester. Each term has a start and end date and is labeled **Active**, **Past**, or **Upcoming** automatically.
+Academic terms control how student progress is tracked across a semester. Each term has a start and end date and is labeled **Active**, **Ended**, or **Upcoming** based on its dates. A disabled term is labeled **Inactive**.
 
 Click **\+ Add Term** to create one. You can have multiple terms running side-by-side for cohorts on different schedules.
 
@@ -42,7 +45,7 @@ If your program has **Restrict Applications by Submission Window** turned on und
 
 A closed term is still visible to students during clearance, but they cannot select it for a new application — you'll see an **Applications Closed** chip next to the term status in the table. The submission window is independent of the term's own start and end dates and never affects students already placed in a term.
 
-To adjust several terms' open and close dates at once, open the **Clearance & Placement** tab and click **Manage Submission Windows** in the header.
+To adjust several terms' open and close dates at once, open **Program Settings → Clearance Tasks** (the **Clearance & Placement** page) and click **Manage Submission Windows** in the header.
 
 ### Student tracks
 
@@ -141,7 +144,7 @@ Program-wide behavior toggles:
 Choose which changes require a student to redo the clearance flow. Existing cleared students are not affected — each toggle only applies to changes made after you enable it. All three are off by default.
 
 - **Placement level changes** — when on, moving a student to a new level (for example Practicum → Internship) re-locks that student until they redo clearance for the new level.
-- **Track changes** — when on, moving a student to a new track type (for example CODAC → Clinical Mental Health) re-locks that student until they redo clearance for the new track. See [Changing a student's track](/fieldx/step-1-adding-managing-faculty-students#changing-a-student-s-track).
+- **Track changes** — when on, moving a student to a new track type (for example CODAC → Clinical Mental Health) re-locks that student until they redo clearance for the new track. See [Changing a student's track](/fieldx/step-1-adding-managing-faculty-students#changing-a-students-track).
 - **New term starts** — when on, students are automatically prompted to redo clearance at the start of each new term. Students who are already in an active Practicum or Internship placement are **not** blocked — they see a red dot on their **Clearance Tasks** button as a reminder, but can keep logging hours and accessing their placement. Students who are between placements (for example, cleared for a future term but not yet placed) are blocked until they complete the new term's clearance.
 
 Level and track changes always block until re-clearance is complete. Term changes only block students who are not currently in an active placement.
@@ -156,7 +159,7 @@ If your program uses Learning Contracts, you can define **named variants** — e
 
 ### Defining variants
 
-From **My Program → Settings**, scroll to **Learning Contract Variants** and click **Add variant**. Each variant needs four fields:
+From **Program Settings → Settings**, scroll to **Learning Contract Variants** and click **Add variant**. Each variant needs four fields:
 
 | Field | What it is |
 | --- | --- |

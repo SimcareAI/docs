@@ -1,50 +1,49 @@
 ---
 title: "9. Testing With View as Student"
-description: "Use View as Student to experience FieldX exactly as your students do — without leaving your admin account."
+description: "Preview a student's FieldX experience in read-only mode, and choose the right account for testing changes."
 sidebarTitle: "9. Testing With View as Student"
 ---
 
-The old "sandbox" workflow has been replaced by **View as Student**. Instead of switching between dummy accounts, Program Admins can now impersonate any real student in their program for up to 30 minutes — read-only, safe, and fully audit-logged.
+Use **View as Student** to check what a student in your program can see without leaving your admin account. The preview is read-only and lasts up to one hour.
+
+## Start a student preview
+
+1. Open **Program Settings → Members → Students**.
+2. Find the student and choose **View as Student** from the row's actions.
+3. Confirm that the amber banner shows the intended student and **Read-only**.
+4. Navigate to the pages you want to inspect.
+
+See [View as Student](/fieldx/view-as-student) for other entry points and session details.
+
+<Frame caption="Check the Read-only banner while testing and use Exit Student View when finished.">
+  ![Student preview with red arrows pointing to Read-only and Exit Student View](/images/fieldx/audit/admin-view-student.png)
+</Frame>
+
+## What to check
+
+- **Clearance:** Confirm which steps, agreements, and documents the student can see.
+- **Timesheet:** Check the available activity types, cohorts, sites, and supervisors.
+- **Cohorts:** Verify that the student sees the correct membership and upcoming assignments.
+- **Forms and reports:** Open existing tasks to check their instructions and required signers.
+
+Viewing a page does not complete its workflow. You cannot submit clearance, add hours, enroll in a cohort, invite supervisors, or sign a form while Student View is active.
+
+## Test changes with a test account
+
+For a full submission or invitation test, use a designated test account and test data in the environment your program has approved for testing. Actions from a normal Program Admin account can change program and student data, and invitations or reminders can send email.
+
+A template cohort can help you prepare recurring schedules and forms for reuse. It is still part of your program; it is not an isolated sandbox. See [Template cohorts](/fieldx/step-3-set-up-cohorts#template-cohorts).
+
+## Finish the preview
+
+Click **Exit Student View** in the amber banner to return to your Program Admin account. The session expires after one hour. Preview mode is shared by tabs in the same browser profile, so check the banner before returning to admin work.
+
+## Faculty and site supervisor testing
+
+Use [View as Supervisor](/fieldx/view-as-supervisor) to preview an existing site supervisor's dashboard. Faculty workflows require an appropriate faculty account enrolled in a cohort; there is no dedicated View as Faculty action.
+
+For actual supervisor onboarding, use a designated test supervisor address through the normal invitation flow outside read-only preview mode.
 
 <Note>
-  Looking for the dedicated "View as Student" guide? See [View as Student](/fieldx/view-as-student) for the full reference.
-</Note>
-
-## What it replaces
-
-| Old workflow | New workflow |
-| --- | --- |
-| Sandbox accounts for student, faculty supervisor, site supervisor | **View as Student** (covers the student view directly) |
-| Test cohort in a separate sandbox program | Create a test cohort in your real program — `Show Archived` lets you hide it later |
-| Manual context switching between accounts | One-click impersonation from the Members tab, cohort, or student details |
-
-You can still invite faculty supervisors and site supervisors to your real program — they have their own views and you can join cohorts as faculty whenever you want to test the faculty side.
-
-## Recommended things to try
-
-- **The full clearance flow** — start View as Student on a real student who's in clearance, and walk through what they see step by step. See [Getting started & clearance tasks](/fieldx/students/step-1-getting-started-and-clearance-tasks).
-- **Log hours as a student** — open the Timesheet tab inside View as Student to confirm the agreement modal, activity types, and supervisor options match your program settings.
-- **Create a new cohort** — invite students, generate the join code, and try enrolling. See [Set up cohorts](/fieldx/step-3-set-up-cohorts).
-- **Create and assign a form** — use the Assignments tab to build a form (or use an AI-converted upload). See [Building forms](/fieldx/building-forms).
-- **Trigger a Run Report** — pick HRS-01 (Weekly Activity Ledger) and run it against a placeholder student.
-
-Most importantly — explore! Try the Ask AI tab, the Todos system, the Notifications settings, and the program-management page. Nothing you do as a Program Admin on the program side will affect a student's data unless you're acting through View as Student (which is read-only by design).
-
-## Read-only protections
-
-While View as Student is active, the impersonation banner stays at the top of the screen and **all actions are tagged as impersonation** in your activity log. The student can't tell you logged in as them — the events you see are theirs, not yours.
-
-<Tip>
-  Once you're done testing, click **Exit Student View** in the amber banner at the top of the screen to return to your Program Admin account. Sessions auto-expire after 30 minutes.
-</Tip>
-
-## What about faculty and site supervisor accounts?
-
-There's no "view as faculty" feature. To test those flows:
-
-- **Join a cohort as faculty** by generating the join code from the cohort and pasting it into the **Join Cohort as Instructor** modal under a faculty account
-- **Site supervisor onboarding** happens via the magic-link invite that fires when a student adds a supervisor during clearance — to test it, complete the supervisor step inside View as Student using an email you own
-
-<Note>
-  Next step: With testing in place, customize FieldX for your program. See [Customization Settings](/fieldx/step-0-2-customization-settings) to configure academic terms, hour requirements, and clearance.
+  To adjust academic terms, hour requirements, and clearance, see [Customization Settings](/fieldx/step-0-2-customization-settings).
 </Note>

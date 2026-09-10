@@ -14,11 +14,11 @@ description: "Impersonate any site supervisor in your program — read-only, aud
 
 ## Starting a session
 
-1. Go to **My Program → Members** and open the **Supervisors** tab.
+1. Go to **Program Settings → Members** and open the **Supervisors** tab.
 2. Find the supervisor you want to view as.
 3. In the row actions, click **View as Supervisor**.
 
-A confirmation toast appears, then SimCare opens the supervisor's Field Experience dashboard in your current window.
+SimCare opens the supervisor's Field Experience dashboard in the same browser tab.
 
 ## The amber banner
 
@@ -27,9 +27,13 @@ While impersonation is active, a sticky amber banner stays pinned to the top of 
 - The supervisor's name
 - The **Read-only** label
 - A live **countdown timer** (default 1 hour)
-- An **Exit Supervisor View** button — click to return to your coordinator account immediately
+- An **Exit Supervisor View** button — click to return to the Program Admin **Overview**
 
 You'll see the supervisor's Overview KPIs, tasks, sites, and profile exactly as they would.
+
+<Frame caption="The supervisor preview shows a read-only banner and an Exit Supervisor View action.">
+  ![Supervisor preview with red arrows pointing to Read-only and Exit Supervisor View](/images/fieldx/audit/admin-view-supervisor.png)
+</Frame>
 
 ## What's read-only
 
@@ -44,20 +48,20 @@ If you try, the write is blocked and a small toast explains why.
 
 ## Audit log
 
-Every impersonation session is recorded in your **Activity Log** (My Program → Activity Log):
+Every impersonation session is recorded in your **Activity Log** (Program Settings → Activity Log):
 
 - Who started the session
 - Which supervisor they impersonated
-- Start time and exit time
-- Whether the session timed out or was exited manually
+- Session start time and the supervisor and program being viewed
+- An end event when you exit the view
 
 Coordinators can review past impersonations to satisfy security or accreditation requirements.
 
 ## Session lifetime
 
-- **Auto-expires after 1 hour** — the session ends automatically and you're returned to your coordinator account
-- **Single active session** — starting a new impersonation ends the previous one, whether it was a student or supervisor session
-- **Browser-tab scoped** — the impersonation cookie applies only to the tab you started it in
+- **Expires after 1 hour** — use the countdown in the banner to see the remaining time.
+- **Switching people** — exit the current preview before starting a student or supervisor preview.
+- **Shared across browser tabs** — preview mode uses your browser session. Check the amber banner in other SimCare tabs and exit preview before resuming admin work.
 
 <Tip>
   If your hour runs out and you still need to debug, just click **View as Supervisor** again on the same supervisor. A fresh session starts.
@@ -70,8 +74,8 @@ Both flows use the same read-only, audit-logged pattern, but target different ro
 |  | View as Student | View as Supervisor |
 | --- | --- | --- |
 | Where to start | Members → Students, Cohorts → Members, or Student Details | Members → Supervisors |
-| Session length | 30 minutes | 1 hour |
+| Session length | 1 hour | 1 hour |
 | Read-only | Yes | Yes |
 | Audit-logged | Yes | Yes |
 
-Only one impersonation session can be active at a time — starting one automatically ends the other.
+Exit your current preview before starting another student or supervisor view.

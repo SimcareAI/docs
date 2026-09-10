@@ -15,38 +15,42 @@ Approving student hours as a faculty supervisor is flexible — choose whichever
     On your **Overview** page, click the task-count badge on any student row to jump to their pending items. Alternatively, go to the **Cohorts** tab, open a cohort, and use the **My Tasks** sub-tab to see all pending reports for that group.
   </Step>
   <Step title="Open the action item">
-    Click the action button on any pending report. The **Action Item Panel** opens — a unified side panel that shows the report, the hours attached, your comments, and the signing controls.
+    Click the action button on any pending report. The report dialog opens with the included hours, comments, and signing controls.
   </Step>
   <Step title="Review and sign">
     Review the hours logged. Click **Sign & Approve** to sign in the DocuSeal e-signature flow.
   </Step>
 </Steps>
 
+<Frame caption="Review the individual entries with View Logs, then use Sign & Approve when you are ready to sign.">
+  ![Faculty hours report with red arrows pointing to View Logs and Sign and Approve](/images/fieldx/audit/faculty-hours-report.png)
+</Frame>
+
 <Note>
   The signing flow is fully embedded — no separate window or extra steps. You can also click **View Logs** to see each hour entry on the report (date, type, site, duration, notes).
 </Note>
 
-## Option B: From an email (no login required)
+## Option B: From an email
 
-When a student submits a report, you receive an email notification from `noreply@simcare.ai`. The email includes a direct **Sign & Approve** link — you can approve right from your inbox without logging in.
+When a student submits a report, you receive an email notification from `hello@mail.simcare.ai`. Open the signing link in the email to review and complete your signature. A direct signing link can open the signature flow without first visiting your dashboard.
 
-The link opens a focused DocuSeal page with the report content and signing pad. Once signed, you're done.
+Review the report content and follow the signature prompts. Check the completion message to confirm your part was saved.
 
 ## Option C: Weekly digest
 
-Every Saturday, you'll receive an automated digest email listing every outstanding signature waiting for you. This lets you catch up on all pending approvals in one go without monitoring the dashboard daily.
+A weekly digest lists outstanding signatures waiting for you. This lets you catch up on all pending approvals in one go without monitoring the dashboard daily.
 
 If your program has the **Daily Assignment Digest** enabled, you'll also get a morning email each weekday summarizing what your students completed yesterday.
 
 ## Signing as the faculty witness
 
-Some formal reports (e.g., the Weekly Activity Ledger) require multi-party signatures: student, site supervisor, and you as the faculty witness.
+Some formal reports (e.g., the Weekly Hours Log) require multi-party signatures: student, site supervisor, and you as the faculty witness.
 
-The order of signatures is enforced — the report won't appear in your queue until the parties before you have signed. Once everyone signs, the report moves to **Completed** and a signed PDF is available for download.
+Follow the signature status shown on the report. The required signers and signing order depend on the report configuration; you may need to wait for an earlier signer before completing your part. Once everyone signs, the report moves to **Completed** and a signed PDF is available for download.
 
 ## Viewing your students' submissions on a shared form
 
-For forms with multiple signers (for example, a Weekly Activity Ledger signed by the student, site supervisor, and you), you can review every submission from the students you signed for — without leaving your task list.
+For forms with multiple signers (for example, an evaluation signed by the student, site supervisor, and you), you can review submissions from the students you signed for without leaving your task list.
 
 **Where to find the button:**
 
@@ -62,31 +66,31 @@ If you're a faculty signer on a form but haven't signed any instances yet, the b
 
 ## Downloading or printing a completed form
 
-Assigned forms are different from hour reports: they open in `/assigned-forms` in a new browser tab. Once a form has a saved or submitted response, the task row shows a top-right **Download PDF** button. Click **Download PDF** to open a printable PDF, then print from your browser or PDF viewer.
+Assigned forms are different from hour reports: they open in `/assigned-forms` in a new browser tab. Once a form has a saved or submitted response, look for **Download PDF** on the form. Click **Download PDF** to open a printable PDF, then print from your browser or PDF viewer.
 
 ## Sign & Approve is greyed out
 
-The most common reason **Sign & Approve** is disabled is that the report has **zero approved hours** attached to it.
+The most common reason **Sign & Approve** is disabled is that the report shows **zero hours for its date range**.
 
 <Warning>
-  Click **View Logs** on the report to see the hour entries. If the log is empty or all entries are pending, the student needs to submit hours — or previously approved hours may have been unlocked or deleted.
+  Click **View Logs** to check the entries included in the report. If the report has no hours, ask the student to check the report dates, site, supervisor, and their hour entries. Refresh the report after corrections.
 </Warning>
 
-Entries longer than 1.5 hours are flagged in amber — these aren't auto-rejected, but they may warrant a quick check with the student.
+Programs can flag long entries in amber. The default threshold is 2 hours or more; your program can change or disable the notice. A flag asks you to review the duration and does not automatically reject the entry.
 
 ## Denying a report
 
 If a report needs to be sent back:
 
 <Steps>
+  <Step title="Add a comment">
+    Explain what needs to change in **Comments**. Choose **Everyone** if the student should see the reason; use **Hidden from students** for an internal note.
+  </Step>
   <Step title="Click Deny">
-    This opens the comments section.
+    Click **Deny** to open the confirmation dialog.
   </Step>
-  <Step title="Add your reason">
-    Be specific — the student will see this message. Set visibility to **Everyone** or **Hidden from students** if your note is for program staff only.
-  </Step>
-  <Step title="Confirm">
-    The report moves to the **Rejected** tab and the student is notified.
+  <Step title="Confirm the denial">
+    Click **Deny** in the dialog. The report moves to **Rejected**. Faculty or a Program Admin can arrange a resubmission if needed.
   </Step>
 </Steps>
 
@@ -94,4 +98,4 @@ Comments support threaded replies so you, the student, and the Program Admin can
 
 ## A report is "In Progress" but nothing is happening
 
-**In Progress** means you opened the signing flow but didn't complete it. Return to the Tasks tab, find the report, and resume the signing process. If the signing interface won't load, try a different browser or clear your cache.
+**In Progress** does not mean that opening the signing window completed your signature. Reopen the report and check its signature status. You may have signed your part while another required signature is still outstanding. Return to **Cohorts**, open the cohort, and select **My Tasks** to review the item; contact the outstanding signer or your Program Admin if it needs follow-up.

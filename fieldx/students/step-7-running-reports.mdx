@@ -11,30 +11,40 @@ The **Run Reports** tab lets you generate reports using your own logged data —
 
 ## Available reports
 
-Depending on what your program has enabled, you might see reports like:
+The student catalog includes these reports, scoped to your own records:
 
 | Report | What it shows |
 | --- | --- |
-| **Weekly Activity Ledger** | A week-by-week summary of your logged hours |
-| **Multi-Week Hours Progress** | Your hours logged over a longer stretch of time |
-| **Hours Trend Chart** | A visual chart of how your hours trend over time |
-| **Complete Hours Entry Log** | Every hour entry you've logged, in one list |
+| **Hours Summary** | Total hours by activity type for a term or date range, with optional breakdowns by week, supervisor, site, or cohort |
+| **Hours Log** | Individual hour entries, their status, and approval details |
+| **Hours Trend Chart** | A visual chart of your hours over time |
 
-<Tip>
-  You can also generate a Run Report directly from the Timesheet tab — click **Create Timesheet Report** in the header buttons.
-</Tip>
+**Hours Summary** replaces **Weekly Activity Ledger** and **Multi-Week Hours Progress**. **Hours Log** replaces **Complete Hours Entry Log**. Report availability and options can depend on your program.
+
+<Note>
+  These exports help you review your data. To submit hours for approval, complete your assigned report in [Cohorts](/fieldx/students/step-4-the-cohorts-tab). **Actions → Create personal report** on Timesheet is a separate signature workflow for independent reports.
+</Note>
 
 ## Running a report
 
 <Steps>
-  <Step title="Select the report">
-    Choose the report you want from the list.
+  <Step title="Choose a report">
+    Search the catalog or find the report in the list. Select **Run Report** to open its configuration. The **Preview** shortcut also lets you inspect the report before downloading it.
   </Step>
-  <Step title="Preview it">
-    Click **Preview** to see the information it will include before you generate it.
+  <Step title="Set the period and filters">
+    For **Hours Summary** or **Hours Log**, choose an academic term or enter a custom start and end date. Review **Experience type** and **Approval status**. **Approved only** excludes entries still awaiting approval; choose another status option when you need to inspect those entries too.
+
+    For **Hours Summary**, use **Break down by** if you want separate rows by week, supervisor, site, or cohort. Your population is limited to your own data.
   </Step>
-  <Step title="Run the report">
-    Click **Run Report** to generate it.
+  <Step title="Choose an output and preview">
+    Choose **Excel workbook**, **CSV**, or **PDF**. Select **Preview first 200 rows** to check the result before exporting. The preview is limited to the first 200 rows; it is not the full download.
+
+    <Frame caption="Set the report period, choose an output format, and run the export.">
+      ![Hours Summary configuration with red arrows pointing to the period preset, Excel workbook output, and Run XLSX](/images/fieldx/audit/student-report-configuration.png)
+    </Frame>
+  </Step>
+  <Step title="Generate the report">
+    Select the output button, such as **Run XLSX**, **Run CSV**, or **Run PDF**. The available controls for **Hours Trend Chart** differ from the table reports; use its date and chart options to select the view you need.
   </Step>
 </Steps>
 

@@ -1,69 +1,76 @@
 ---
 title: "Evaluations & Reports"
-description: "Run any of the built-in FieldX reports from the Run Report tab — hours, supervision, sites, competency, audit."
+description: "Find, configure, preview, and export current FieldX reports for hours, supervision, requirements, forms, and sites."
 ---
 
-FieldX makes it easy to visualize student progress and export data through the **Run Report** tab on your main dashboard.
+Open **Run Report** on your FieldX dashboard to review student progress and export program data. Search by report name or the question you want to answer, or browse the report categories.
 
-## Standard reports
+<Frame caption="Search the catalog, read Preview, or select Run report to configure an export.">
+  ![Run Report catalog with red arrows pointing to search, Preview, and Run report](/images/fieldx/audit/admin-reports.png)
+</Frame>
 
-Your program comes with the following standard reports:
+## Choose a report
 
-### Hours reports
+### Hours
 
-| Code | Report | What it shows |
-| --- | --- | --- |
-| **HRS-01** | Weekly Activity Ledger | One student's activities for a single week, signed by student, supervisor, and faculty |
-| **HRS-02** | Multi-Week Hours Progress | Weekly totals per activity over a date range |
-| **HRS-03** | Hours Trend Chart | Interactive visual of progress and activity distribution |
-| **HRS-04** | Complete Hours Entry Log | Full chronological log of every time entry (PDF or CSV) — useful for audits |
-| **HRS-05** | Hours Summary Snapshot | Total hours by activity type and supervisor |
-| **HRS-06** | Assignment Completion Ledger | Every form and report assignment for a student, cohort, or term — with due date and completion status (completed, in progress, or pending) |
+| Report | What it shows |
+| --- | --- |
+| **Hours Summary** | Hours per student and activity type, with optional breakdowns by week, supervisor, site, or cohort |
+| **Hours Log** | Individual hour entries, including their status and approval details |
+| **Hours Trend Chart** | Weekly and cumulative hours with activity breakdowns |
 
-### Supervision reports
+**Hours Summary** combines the former **Weekly Activity Ledger**, **Multi-Week Hours Progress**, and **Hours Summary Snapshot**. **Hours Log** replaces **Complete Hours Entry Log**. You can search the catalog using a former name.
 
-| Code | Report | What it shows |
-| --- | --- | --- |
-| **SUPER-01** | Weekly Supervision Compliance Audit | Per-student, per-week compliance grid |
+### Supervision and requirements
 
-### Site reports
+| Report | What it shows |
+| --- | --- |
+| **Supervision Summary** | Supervision hours by form and provider, including weekly averages |
+| **Weekly Supervision Check** | Weekly supervision gaps against thresholds or a requirement set; formerly Weekly Supervision Compliance Audit |
+| **Requirement Check** | Which configured requirements each student meets, remaining hours, and optional pending-hour impact |
 
-| Code | Report | What it shows |
-| --- | --- | --- |
-| **SITE-01** | Site & Preceptor Credentialing Report | Site and supervisor credentialing status |
-| **QA-01** | Site Quality Assurance | Scores your field sites using site evaluation form data |
+For **Requirement Check**, select an existing requirement set. Use **Manage requirement sets** in the catalog when you need to configure one first.
 
-### Audit & pipeline
+### Forms and evaluations
 
-| Code | Report | What it shows |
-| --- | --- | --- |
-| **AUDIT-01** | Activity Log Export | System audit trail of every action in your program |
-| **COMP-01** | Student Competency Profile | Aggregated KPI/competency data from your evaluation forms |
-| **PIPE-01** | Clearance Funnel Velocity | Student progression through pre-application stages |
+| Report | What it shows |
+| --- | --- |
+| **Assignment Completion Status** | Complete, pending, and overdue assignments, including the role still needed; formerly Assignment Completion Ledger |
+| **Form Export** | Selected form responses in CSV or Excel |
+| **Student Competency Profile** | A narrative based on competency evaluation results for a student, cohort, or term |
+| **Site Quality Assurance Report** | A narrative based on your program's site evaluation results |
 
-## Running a report
+### Sites, supervisors, and system exports
 
-1. Open the **Run Report** tab
-2. Click **Preview** on any report to see a description and required configuration
-3. Click **Run** to open the configuration modal — set the date range, student/cohort scope, and any report-specific filters
-4. The preview modal renders the result; download as **PDF** or **CSV** depending on the report
+| Report | What it shows |
+| --- | --- |
+| **Supervisor Credentials Roster** | Supervisor qualifications, missing items, and expiration status; formerly Site & Preceptor Credentialing Report |
+| **Clearance Funnel Velocity** | Applications waiting in clearance and the time to submit or approve them |
+| **Incomplete Pre-Applications** | Students who started an application but have not submitted it |
+| **Application Site & Supervisor Export** | Site and supervisor details from student applications; availability depends on your institution |
+| **Activity Log Export (System Audit Trail)** | Raw activity records for program audits |
 
-Some reports require additional setup before they're available — those show a **Coming Soon** modal explaining what's needed.
+Your program may also show specialized reports, such as **BBS Weekly Log** and **Practicum Certification Summary**, when the corresponding configuration is enabled. The catalog shows the reports available to your role and program.
 
-<Tip>
-  Reports that support multiple scopes (like **HRS-06**) let you pick **Individual**, **Cohort**, or **Term** in the configuration modal. Cohort and term runs list each student's assignments separately in one PDF.
-</Tip>
+## Configure and run a report
 
-## Custom reports
+1. Click **Preview** on a catalog card to read what the report includes, or **Run report** to configure it.
+2. Choose the **Population** when available: terms, cohorts, sites, supervisors, or individual students.
+3. Set the reporting **Period** and any **Experience type** or **Approval status** filters.
+4. Review the report-specific options, such as **Break down by**, supervision thresholds, or a requirement set.
+5. Choose an **Output** format. Most tabular reports support **Excel**, **CSV**, and **PDF**; individual reports may offer fewer formats.
+6. Click **Preview first 200 rows** to inspect a sample, or generate the full file using the main action.
 
-If the standard reports don't cover a data point or format you need, we can build it for you at no extra cost.
+The preview is a sample. Use **Generate full** with the selected format to download the complete result. Large reports can run in the background and appear under **Recent reports** when ready.
 
-Contact [tiko@simcare.ai](mailto:tiko@simcare.ai) with your requirements and we'll get it set up.
+Some reports, including **Hours Trend Chart** and **Form Export**, have their own configuration screen and result view. Follow the options shown for that report.
+
+## Save settings for next time
+
+In the shared configuration screen, click **Save this configuration**, enter a name, and save it. Saved configurations appear in the report catalog so you can run the same selection again. **Recent reports** also lets you download or rerun previous jobs.
 
 ## Ask AI for reports
 
-The new [**Ask AI**](/fieldx/coordinator-ask-ai) tab can also generate ad-hoc reports — describe what you want in plain English and it will pull the data, render a table, and export to CSV or Google Drive. It's the fastest way to answer one-off compliance questions without leaving the dashboard.
+You can also ask [Ask AI](/fieldx/coordinator-ask-ai) to run a report by name, summarize a table, build a chart, or prepare a custom Word report. Include the term, cohort, date range, and output format in your request.
 
-<Tip>
-  You've covered the core coordinator workflow. Explore advanced topics like [Recurring tasks](/fieldx/setting-up-recurring-tasks) and [Building forms](/fieldx/building-forms) to customize further, or check out [Ask AI](/fieldx/coordinator-ask-ai) and [View as Student](/fieldx/view-as-student) for the newest workflows.
-</Tip>
+For a report your program needs that is not covered here, contact [tiko@simcare.ai](mailto:tiko@simcare.ai) with the required data and format.

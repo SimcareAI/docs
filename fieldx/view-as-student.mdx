@@ -1,9 +1,9 @@
 ---
 title: "View as Student"
-description: "Impersonate any student in your program — read-only, audit-logged, and time-boxed to 30 minutes."
+description: "Impersonate any student in your program — read-only, audit-logged, and time-boxed to 1 hour."
 ---
 
-**View as Student** lets Program Admins see FieldX exactly as a specific student sees it. It replaces the old sandbox-account workflow with one-click impersonation that's safe, audit-logged, and never affects student data.
+**View as Student** lets Program Admins see FieldX exactly as a specific student sees it. Use it to inspect the student experience without submitting changes on their behalf.
 
 ## When to use it
 
@@ -16,21 +16,29 @@ description: "Impersonate any student in your program — read-only, audit-logge
 
 You can launch View as Student from several places:
 
-1. **My Program → Members → Students** — actions menu on any student row → **View as Student**
-2. **Cohorts → cohort → Members** — actions menu on any student row → **View as Student**
+1. **Program Settings → Members → Students** — **View as Student** on the student row
+2. **Cohorts → cohort → Members** — **View as Student** on the student row
 3. **Student Details modal** — the **View as Student** button at the top
 
-A confirmation toast appears, then SimCare opens the student's Field Experience dashboard in your current window.
+SimCare opens the student's Field Experience dashboard in the same browser tab.
+
+<Frame caption="Open Members, select Students, and choose View as Student on the student row.">
+  ![Members screen with red arrows pointing to Students and View as Student](/images/fieldx/audit/admin-view-student-control.png)
+</Frame>
 
 ## The amber banner
 
 While impersonation is active, a sticky amber banner stays pinned to the top of every page. The banner shows:
 
 - The student's name
-- A live **countdown timer** (default 30 minutes)
-- An **Exit Student View** button — click to return to your Program Admin account immediately
+- A live **countdown timer** (default 1 hour)
+- An **Exit Student View** button — click to return to the Program Admin **Overview**
 
 You'll see the student's data exactly as they would — same tabs, same urgent badges, same locked screens if they haven't completed clearance.
+
+<Frame caption="The amber banner identifies read-only preview mode. Exit Student View returns to the admin dashboard.">
+  ![Student preview with red arrows marking Read-only and Exit Student View](/images/fieldx/audit/admin-view-student.png)
+</Frame>
 
 ## What's read-only
 
@@ -42,27 +50,27 @@ View as Student is a strict read-only mode. You can navigate freely, but **you c
 - Approve, reject, or sign anything
 - Modify the student's profile, sites, or supervisors
 
-If you try, the action is silently blocked and a small toast explains why.
+If you try a blocked action, FieldX shows a read-only message.
 
 ## Audit log
 
-Every impersonation session is recorded in your **Activity Log** (My Program → Activity Log):
+Every impersonation session is recorded in your **Activity Log** (Program Settings → Activity Log):
 
 - Who started the session
 - Who they impersonated
-- Start time, exit time, and pages visited
-- Whether the session timed out or was exited manually
+- Session start time and the student and program being viewed
+- An end event when you exit the view
 
 Coordinators can review past impersonations to satisfy security or accreditation requirements.
 
 ## Session lifetime
 
-- **Auto-expires after 30 minutes** — the session ends automatically and you're returned to your coordinator account
-- **Single active session** — starting a new impersonation ends the previous one
-- **Browser-tab scoped** — the impersonation cookie applies only to the tab you started it in
+- **Expires after 1 hour** — use the countdown in the banner to see the remaining time.
+- **Switching students** — exit the current preview before opening another student.
+- **Shared across browser tabs** — preview mode uses your browser session. Check the amber banner in other SimCare tabs and exit preview before resuming admin work.
 
 <Tip>
-  If your 30 minutes runs out and you still need to debug, just click **View as Student** again on the same student. A fresh session starts.
+  If your hour runs out and you still need to debug, just click **View as Student** again on the same student. A fresh session starts.
 </Tip>
 
 ## Faculty and supervisor accounts
