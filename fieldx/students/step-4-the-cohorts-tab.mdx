@@ -3,7 +3,7 @@ title: "Cohorts, Forms & Reports"
 description: "Enroll in cohorts, complete assigned forms, sign reports, and manage your learning contract."
 ---
 
-The **Cohorts** tab is your academic work hub. It surfaces everything that needs your attention — pending forms, reports waiting for your signature, urgent items due soon, and your learning contract for each cohort.
+The **Cohorts** tab is your academic work hub. It surfaces everything that needs your attention — pending forms, reports waiting for your signature, urgent items due soon, and learning contracts when your program enables them.
 
 <Note>
   The Cohorts tab shows a blocked overlay until your clearance is approved. If the tab is locked, go to **My Dashboard → Profile Details → Clearance Tasks** and complete any outstanding items first.
@@ -18,7 +18,7 @@ The **Cohorts** tab is your academic work hub. It surfaces everything that needs
 If your instructor sent you an enrollment code:
 
 <Frame caption="Enrolling in a cohort with an enrollment code.">
-  ![Enroll in a Cohort modal with an enrollment code field](/images/fieldx-enroll-cohort.jpg)
+  ![Enroll in a Cohort modal with red arrows pointing to Enrollment Code and Enroll](/images/fieldx/audit/student-cohort-enrollment.png)
 </Frame>
 
 <Steps>
@@ -41,17 +41,17 @@ If your instructor invited you by email instead, you don't need to do anything �
 
 ## Your learning contract
 
-At the top of the Cohorts tab is your **Learning Contract** card — a per-cohort agreement that defines your goals, expectations, and signature plan for the term. Its state changes as you progress:
+If your program uses learning contracts, open a cohort to find its **Learning Contract** card. The contract records your goals and expectations for that cohort. Its state changes as you progress:
 
 | State | What it means |
 | --- | --- |
 | **Start** | You haven't begun yet — click to start filling it out |
 | **Continue** | You started but didn't finish — pick up where you left off |
-| **Send for Sign-Off** | You finished the draft — send it to your faculty and site supervisor for signature |
-| **Pending** | One or more parties haven't signed yet |
+| **Send for Sign-Off** | You submitted the draft — send it to the selected supervisor for sign-off |
+| **Pending Sign-Off** | Your draft is locked while the selected supervisor completes sign-off |
 | **Signed** | All parties signed — the contract is locked in for the term |
 
-You'll usually complete the learning contract within the first 1–2 weeks of a new cohort.
+Follow your instructor's deadline for completing the contract. Programs that do not use this feature do not show the card.
 
 ## Inside a cohort
 
@@ -67,7 +67,7 @@ Click a cohort card to open it. Your tasks are organized into four tabs:
 Most tasks will be evaluation forms or hour-log reports assigned by your faculty supervisor. This same Pending → In Progress → Completed flow applies to every task type.
 
 <Frame caption="Viewing tasks inside a cohort, organized by status.">
-  ![Cohort task list with Pending, In Progress, Completed, and Rejected tabs](/images/fieldx-cohort-tasks.jpg)
+  ![Cohort task list with red arrows pointing to Pending and the first Get started button](/images/fieldx/audit/student-cohort-tasks.png)
 </Frame>
 
 ## Upcoming tasks panel
@@ -83,18 +83,19 @@ Items due within 3 days display an urgency flag — check this panel regularly s
     In the **Upcoming tasks** panel or inside a cohort's **Pending** tab, locate the form task card.
   </Step>
   <Step title="Open the form">
-    Click the task card or the **Open** button. The form launches in a new browser tab at `/assigned-forms`. Keep your main tab open — you'll return to it after submitting.
+    Click **Get Started** in Upcoming tasks, or open the form from its cohort task row. The form launches in a new browser tab at `/assigned-forms`. Keep your main tab open — you'll return to it after submitting.
   </Step>
   <Step title="Fill it out">
     Complete every required field — required fields are marked with a red asterisk.
   </Step>
-  <Step title="Save or submit">
-    - **Save Draft** keeps your progress without submitting
-    - **Submit** finalizes the form and notifies whoever needs to review or sign it next
+  <Step title="Submit your part">
+    Select **Submit Form** when your required fields are complete. For a revised response, the button may say **Submit Update**.
+
+    Check the form's saving message before leaving. Some forms save automatically; others state that answers are not saved until you submit. An autosaved draft still needs to be submitted to finish your part.
   </Step>
 </Steps>
 
-Once submitted, the task moves to **Completed** in your cohort view.
+After you submit, the task moves to **In Progress** if another person still needs to act. It moves to **Completed** when all required submissions and signatures are finished.
 
 **Need to make changes after submitting?** Look for a **Review / Resubmit** option on the submitted form. If that option isn't available, the form has been locked — ask your Program Admin to reset the assignment so you can resubmit.
 
@@ -133,17 +134,19 @@ One common assignment is an **Hours Report** — a summary of your logged hours 
 If you haven't logged any hours for the period yet, the report will show that no hours were found — go log them on the Timesheet tab first.
 
 <Frame caption="An Hours Report, showing the date range, site, supervisor, and total hours.">
-  ![Hours Report detail with date range, site, supervisor, and total hours annotated](/images/fieldx-hours-report-detail.jpg)
+  ![Hours Report detail with red arrows pointing to Date Range, View logs, and Sign Report](/images/fieldx/audit/student-report-detail.png)
 </Frame>
 
 <Warning>
-  Logging an hour on your Timesheet doesn't automatically make it approved. Hours only count toward your requirements once you sign the Hours Report that includes them, and every other required signer has signed too.
+  Logging an hour on your Timesheet doesn't automatically make it approved. Complete the required report submission and signatures for those hours. Sign the report yourself when requested; your program can configure reports that do not require a student signature. Hours still need to satisfy your program's approval and activity requirements.
 </Warning>
 
 ### Submitting an Hours Report
 
-<Frame caption="Signing and completing an Hours Report.">
-  ![Sign Site Report modal with a signature field and Sign and Complete button](/images/fieldx-sign-report.jpg)
+For a report that asks for your signature, follow these steps.
+
+<Frame caption="Review the report period, then use SIGN NOW to begin signing.">
+  ![Sign Site Report window with red arrows pointing to the document date range and SIGN NOW](/images/fieldx/audit/student-report-signing.png)
 </Frame>
 
 <Steps>
@@ -154,14 +157,17 @@ If you haven't logged any hours for the period yet, the report will show that no
     Check that the reporting period matches what you expect.
   </Step>
   <Step title="Confirm your hours appear">
-    Make sure every hour you logged for that period shows up correctly. Once you sign, you won't be able to edit those entries unless a Program Admin reopens the report — so check carefully before moving on.
+    Make sure every hour you logged for that period shows up correctly. Entries become locked as they complete approval, so check carefully before signing.
   </Step>
-  <Step title="Sign and complete">
-    Add your signature and select **Sign and Complete** to submit your part.
+  <Step title="Open the signing document">
+    Select **Sign Report**. In **Sign Site Report**, review the document and select **SIGN NOW** to enter the signing flow.
+  </Step>
+  <Step title="Complete your signature">
+    Complete the required signature fields and follow the document's final submission control. The button label can vary with your program's report template. Close the signing window after completion and check the task status.
   </Step>
 </Steps>
 
-Your signature is just the first of several. The report typically goes to your site supervisor next, then your faculty supervisor, then back to you for final acknowledgement — you'll see it move from **Pending** to **In Progress** to **Completed** as each person signs.
+The required signers and their order depend on your program's report configuration. Check the report's signature status to see who still needs to act, and follow any remaining task shown to you.
 
 <Note>
   If a report is waiting on someone else, you can't speed it up from your end. Check My Dashboard → Profile Details → Timesheet Reports to see what's outstanding.

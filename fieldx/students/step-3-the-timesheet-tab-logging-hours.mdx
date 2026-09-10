@@ -17,61 +17,56 @@ Across the top of the Timesheet tab you'll find quick-access buttons:
 
 | Button | What it does |
 | --- | --- |
-| **Todos** | Open your Todos modal (count badge shows open items assigned to you) |
-| **My Notes**_(orange)_ | Open the journal modal — private journals and supervision notes |
+| **My Notes**_(orange)_ | Create journal entries with a chosen visibility and review supervision notes |
 | **Clearance Tasks** | Jump back to your clearance flow (insurance renewals, supervisor updates) |
-| **Create Timesheet Report** | Generate a Run Report on your own data — Weekly Activity Ledger or others enabled for you |
+| **Support** | Open the available help and support options |
 
 ## Logging hours
 
 <Warning>
-  You can only log hours after your clearance is approved. If the Log Hours button does nothing or shows an error, your clearance hasn't been approved yet. Check **My Dashboard → Profile Details → Clearance Tasks** for your status.
+  You can only log hours after your clearance is approved. If logging is blocked, check **My Dashboard → Profile Details → Clearance Tasks** for your status.
 </Warning>
 
-<Frame caption="Logging an hour entry.">
-  ![Log Hours modal with fields for cohort, activity type, date, time, site, and supervisor](/images/fieldx-log-hours-modal.jpg)
+<Frame caption="Choose the cohort and activity type, then select the site for this entry.">
+  ![Log Hours modal with red arrows pointing to Cohort, Activity Type, and Site](/images/fieldx/audit/student-log-manual.png)
 </Frame>
 
 <Steps>
   <Step title="Open the Timesheet tab">
-    Click the **Timesheet** tab from your Field Experience dashboard. The default view shows the current term. Use the **period dropdown** in the toolbar to switch to a different term if needed.
+    Click the **Timesheet** tab from your Field Experience dashboard. Use the **Viewing:** dropdown above the totals to choose the term for your hours summary. The table has separate date and filter controls.
   </Step>
-  <Step title="Click 'Log Hours'">
-    Click the **Log Hours** button (sometimes labeled **Add Hour Logs**) in the toolbar.
+  <Step title="Click Add Hour Logs">
+    Click **Add Hour Logs** in the toolbar, then use **Manual Entry**.
 
     If this is your first time logging hours, the one-time **Timesheet Logging Agreement** modal appears. Read it carefully and click **Accept** to continue — you can't log hours until you accept.
   </Step>
   <Step title="Fill in the entry">
     The modal asks for:
 
-    - **Activity** — what were you doing? (e.g., Direct Service, Supervision, Documentation)
+    - **Activity Type** — what were you doing? (e.g., Direct Service, Supervision, Documentation)
     - **Date** — when did it happen?
     - **Start & end time** — duration is calculated automatically
     - **Site** — which placement site were you at?
     - **Supervisor** — who supervised this activity?
     - **Cohort** — which class should these hours count toward?
-    - **Notes** _(optional)_ — additional context about the session
+    - **Additional Notes** _(optional)_ — additional context about the session
+
+    The form may pre-fill selections from your last entry. Check each value before saving. For an eligible university-supervision activity, the form uses your cohort's faculty supervisor and does not require a placement site.
   </Step>
   <Step title="Save the entry">
-    Click **Save**. The entry appears in your timesheet table with an **Unapproved** status until your supervisor signs off on a report that includes it.
+    Click **Log Hours** at the bottom of the modal. The entry appears in your timesheet table as **Unapproved** until the required approval process is complete.
   </Step>
 </Steps>
 
-## Logging multiple entries at once (weekly pattern)
+## Reusing a weekly pattern
 
-If your placement follows the same schedule every week, you can speed up logging using the **weekly pattern** mode in the log modal:
+After you have enough consistent logging history, the manual-entry form may show **Draft this week from your pattern**. Select **Review** to turn the suggested entries into an editable batch. Check every date, activity, duration, site, and supervisor before saving.
 
-1. Open the Log Hours modal
-2. Switch to **Weekly Pattern**
-3. Set the days of the week, start time, end time, activity, site, supervisor, and cohort
-4. Pick the date range (e.g., the whole term)
-5. Click **Save** — FieldX creates one entry per matching day in one go
-
-Use this for recurring class hours, supervision sessions, or set placement shifts.
+This suggestion appears only when FieldX can identify a pattern in your prior entries. If it is absent, use **Manual Entry** or **Log With AI**.
 
 ## If your supervisor isn't in the dropdown
 
-You can still log the hours, but they won't have a supervisor attached until you add one. You don't have to use the Timesheet Tools menu.
+For a site-supervised activity, select a site first. The supervisor dropdown then lists supervisors linked to that site. You must choose a supervisor before you can save the entry.
 
 ### Add them from My Sites
 
@@ -81,38 +76,44 @@ You can still log the hours, but they won't have a supervisor attached until you
 
 That's the same invite as **Add Supervisor** on Timesheet — it just lives on the site card.
 
-### Or use Timesheet Tools
+### Or use Timesheet Actions
 
-Click the three-dots icon on the timesheet toolbar, choose **Add Supervisor**, and enter their name and email.
+Click **Actions** on the timesheet toolbar, choose **Add Supervisor**, and follow the form to add them to the correct site.
 
-### If Add Supervisor isn't in Tools
+### If Add Supervisor is missing
 
-Some programs hide **Add Supervisor** (and the **Add** button on My Sites). **Switch Supervisor** stays in Tools — it only works for people already linked to you.
+Some programs hide **Add Supervisor** (and the **Add** button on My Sites). **Switch Supervisor** stays in **Actions** — it only works for people already linked to you.
 
 To invite someone new, go to **Clearance Tasks**. If you're already approved, click **Update Application**, then on **Add Supervisors** click **Add new** and **Invite Site Supervisor**. Details: [Managing Site Information](/fieldx/students/step-5-my-sites#adding-a-supervisor-to-a-site) and [Getting Started & Clearance Tasks](/fieldx/students/step-1-getting-started-and-clearance-tasks#updating-an-approved-application).
 
 ## Logging hours with AI
 
-For ad-hoc batch entry, the **Log with AI** option lets you paste a paragraph describing what you did (e.g., from your own notes) — the AI parses it into one or more timesheet entries you can review and confirm before saving.
+For ad-hoc batch entry, the **Log With AI** option lets you paste a paragraph describing what you did (e.g., from your own notes) — the AI parses it into one or more timesheet entries you can review and confirm before saving.
 
 ## The timesheet table
 
-Below the toolbar is the full timesheet table:
+Use **Table** and **Calendar** to switch between the entry list and a calendar. In the table:
 
-- **Filters** — date range, activity type, site, supervisor, status (Approved / Unapproved)
-- **Bulk actions** — select multiple rows to delete or assign to a report
-- **Per-row actions** — view, edit, delete
+- Use search and **Filters** to narrow the entries you see.
+- Open a row's three-dot menu to select **See notes**, **Edit**, **Duplicate**, or **Delete** an entry. Availability depends on its approval status.
+- Use **Actions** for supervisor tools and **Create personal report**.
 
-Each row shows the date, activity, duration, site, supervisor, cohort, and status.
+The calendar lets you browse your schedule by week or month. Open an entry to inspect it. When logging is available, selecting time on the calendar can pre-fill a new entry.
+
+### Personal reports
+
+**Actions → Create personal report** creates a report for your supervisor to sign. Read the explanation in the dialog before continuing: personal reports are independent of your program's assigned reports and do not count toward cohort goals. Use the reports assigned in **Cohorts** for your program's normal approval process.
+
+To download an analysis of your own hours, use the separate [Run Reports](/fieldx/students/step-7-running-reports) tab.
 
 ## Approved vs. unapproved
 
 Each entry has one of two statuses:
 
 - **Unapproved** — logged but not yet signed off on by your supervisor
-- **Approved** — included on a supervisor-signed report and counts toward your requirements
+- **Approved** — the required approval process for the entry is complete
 
-Hours don't count toward graduation requirements until they're approved. Hours that were once approved can be "unlocked" by a Program Admin if a report is reopened — they revert to Unapproved until re-signed.
+Approval requires all signatures configured for the report, which can include your site supervisor and faculty. Your program also determines which activities count toward each requirement. A Program Admin can reopen a report for corrections; affected hours must complete approval again.
 
 ## Hour totals
 
@@ -149,7 +150,7 @@ Some programs combine a level series — for example, Internship I / II / III �
 
 ## Editing & deleting entries
 
-Click any entry in the table to edit or delete it. **Once an entry is approved (included on a signed report), it's locked** — you can't edit or delete it until a Program Admin unlocks the report.
+Open an entry's three-dot menu and select **Edit** or **Delete**. Use **Duplicate** to start a separate entry with similar details. Approved entries are locked against editing and deletion until a Program Admin unlocks them. Review your changes before selecting **Save Changes**.
 
 <Note>
   See also: [Cohorts, Forms & Reports](/fieldx/students/step-4-the-cohorts-tab) for how cohort tasks and your learning contract work.
@@ -159,6 +160,6 @@ Click any entry in the table to edit or delete it. **Once an entry is approved (
 
 | Problem | What to do |
 | --- | --- |
-| Supervisor isn't in the Log Hours dropdown | Add them from **My Sites** → site card → **Add**, or Timesheet Tools → **Add Supervisor**. |
-| There's no Add Supervisor in the Tools menu | Your program hid student supervisor invites on Timesheet and My Sites. Go to **Clearance Tasks** (use **Update Application** if you're already approved) → **Add Supervisors** → **Add new**. |
-| I need a different supervisor on future hours | Timesheet Tools → **Switch Supervisor**. That only lists people already linked to you. |
+| Supervisor isn't in the Log Hours dropdown | Add them from **My Sites** → site card → **Add**, or Timesheet **Actions** → **Add Supervisor**. |
+| There's no Add Supervisor in the Actions menu | Your program hid student supervisor invites on Timesheet and My Sites. Go to **Clearance Tasks** (use **Update Application** if you're already approved) → **Add Supervisors** → **Add new**. |
+| I need a different supervisor on future hours | Timesheet **Actions** → **Switch Supervisor**. That only lists people already linked to you. |

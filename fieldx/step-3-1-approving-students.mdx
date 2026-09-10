@@ -10,15 +10,15 @@ Once a student completes all their required **Clearance Tasks** (liability forms
 
 A few ways to find students waiting for approval:
 
-1. **Overview tab → Pending Tasks KPI card** — click to filter the student table
+1. **Overview tab → Tasks button on a student row** — open that student's pending tasks
 2. **Overview tab → student row** — students with a pending clearance status are flagged in the table
-3. **Activity Log** (My Program → Activity Log) — filter by **Type: Application Forms**
+3. **Activity Log** (Program Settings → Activity Log) — filter by **Type: Application Forms**
 
 You can also filter the Overview student table by **Application Status** (under **More filters**) to see every student in a specific stage — App: Not Started, App: Started, App: Pending Approval, App: Approved, or App: Rejected.
 
 ## Reviewing a student's submission
 
-Click any student to open their **Student Details** modal, then go to the **Documents** tab. The full pre-application appears with every field they entered and every document they uploaded during clearance, including:
+Click any student to open their **Student Details** modal, then go to **Documents → Application** and open the application row. The full pre-application appears with every field they entered and every document they uploaded during clearance, including:
 
 - Track selection
 - Signed agreements
@@ -30,7 +30,7 @@ Click any student to open their **Student Details** modal, then go to the **Docu
 
 ## Taking action
 
-If the application is in `Pending` status, the Documents tab shows two buttons:
+If the application is in `Pending` status, the application view shows two buttons:
 
 - **Approve** — grants the student full access to begin logging hours and participating in their assigned cohorts
 - **Reject** — sends the application back. You'll be prompted to leave a note explaining what needs to be fixed
@@ -51,19 +51,19 @@ If your program uses [submission windows](/fieldx/step-0-2-customization-setting
 
 You can start a grant from three places:
 
-- **Clearance & Placement tab → Grant Extension** — pick the term, the student, and a deadline.
-- **My Program → Terms and Tracks → term row → Extensions** — pre-fills the term; pick the student and deadline.
-- **My Program → Members → student row → ⋮ → Manage Clearance** — pre-fills the student; pick the term and deadline.
+- **Program Settings → Clearance Tasks → Grant Extension** — pick the term, the student, and a deadline.
+- **Program Settings → Terms and Tracks → term row → Extensions** — pre-fills the term; pick the student and deadline.
+- **Program Settings → Members → student row → ⋮ → Manage Clearance** — pre-fills the student; pick the term and deadline.
 
 Set an **Extended Until** date — the student can select or continue that term through end of day on that date. Only one active extension can exist per student per term; granting a new one replaces the old.
 
-To end an extension early, open the same modal, switch to the **Past** list, and revoke it. Revoked and expired extensions stay in the list as an audit trail.
+To end an extension early, open the same modal, switch to the **Active** list, and use the revoke action. Revoked and expired extensions stay in the list as an audit trail.
 
 Extensions never affect students already placed in the term — they only unlock term selection during a new pre-application.
 
 ## Managing submission windows in bulk
 
-To adjust several terms' open and close dates without editing each term individually, open the **Clearance & Placement** tab and click **Manage Submission Windows** in the header. Every active term appears with editable date fields and a **Save** button per row. Both buttons only appear when **Restrict Applications by Submission Window** is enabled under **My Program → Settings**.
+To adjust several terms' open and close dates without editing each term individually, open **Program Settings → Clearance Tasks** (the **Clearance & Placement** page) and click **Manage Submission Windows** in the header. Every active term appears with editable date fields and a **Save** button per row. Both buttons only appear when **Restrict Applications by Submission Window** is enabled under **Program Settings → Settings**.
 
 ## Per-level and per-track submission windows
 
@@ -71,7 +71,7 @@ By default, a term's submission window applies to every program level (pre-pract
 
 To set per-level windows:
 
-1. Open **My Program → Terms and Tracks** and click a term to open **Manage Term**.
+1. Open **Program Settings → Terms and Tracks** and click a term to open **Manage Term**.
 2. Save the term first if it's new — per-level windows can only be edited on an existing term.
 3. In the **Submission Window** section, switch the mode toggle from **Same for all levels** to **Set per level**.
 4. Click **Manage Level Windows** to open the level-window editor.
@@ -83,7 +83,7 @@ The editor resolves in a fixed precedence: a track-and-level override wins over 
 Switching back to **Same for all levels** and saving the term does not clear existing level-window overrides — reopen **Manage Level Windows** and clear the rows you no longer want.
 
 <Note>
-  Per-level and per-track windows only take effect when **Restrict Applications by Submission Window** is enabled under **My Program → Settings**. Until then, every level in every term is open regardless of the dates you set.
+  Per-level and per-track windows only take effect when **Restrict Applications by Submission Window** is enabled under **Program Settings → Settings**. Until then, every level in every term is open regardless of the dates you set.
 </Note>
 
 In the **Terms and Tracks** list, a term where at least one level is closed but others are still open displays a **Some Levels Closed** badge so you can spot the mismatch at a glance.
@@ -92,7 +92,7 @@ In the **Terms and Tracks** list, a term where at least one level is closed but 
 
 For programs with large cohorts coming through clearance at the same time:
 
-- Use the **Members** tab in My Program to sort students by clearance status
+- Use **Program Settings → Members** to sort students by clearance status
 - Group students by track or term and review them in batches
 - The Activity Log gives you a sortable, exportable history of every approval decision
 

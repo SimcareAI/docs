@@ -1,81 +1,74 @@
 ---
 title: "Ask AI"
-description: "Chat with an AI assistant that knows your program data — ask questions, generate reports, and surface compliance issues without writing a query."
+description: "Use program data, reports, spreadsheets, and reviewed admin actions in one FieldX conversation."
 ---
 
-The **Ask AI** tab puts a natural-language assistant on top of your entire program. It can read your students, cohorts, sites, hours, forms, and reports — and answer questions, build ad-hoc reports, and flag compliance issues in seconds. No SQL or spreadsheet skills required.
-
-<Note>
-  Ask AI is available to Program Admins only. The tab appears with a **New** badge in your navigation.
-</Note>
+**Ask AI** helps Program Admins look up program data, run reports, analyze spreadsheets, and prepare administrative changes.
 
 ## Opening Ask AI
 
-Click the **Ask AI** tab in your FieldX navigation. A chat interface opens with a text input at the bottom and suggested prompts above it.
+Click **Ask AI** in your FieldX navigation. Choose a suggested prompt, type in the message box, or click **What can I ask?** to open the capability guide.
 
-## What you can ask
+<Frame caption="Use the Ask AI tab, capability guide, and + menu to start a question or report.">
+  ![Program Admin Ask AI screen with red arrows marking the tab, What can I ask, and plus menu](/images/fieldx/audit/admin-ask-ai.png)
+</Frame>
 
-Ask AI is grounded in your program's live data. Examples:
+## Ask about your program
 
-- "Which students are off pace this term?"
-- "Show me everyone in the Spring 2026 cohort who hasn't completed clearance."
-- "Which sites have the highest pending sign-off counts?"
-- "How many students are missing liability insurance in the next 30 days?"
-- "Generate a Weekly Activity Ledger for Jordan Lee for the last 4 weeks and export as PDF."
-- "Build a table of every student, their site, faculty supervisor, and total approved hours — export to CSV."
-- "Find any students with hour logs longer than 1.5 hours in the past 7 days."
-- "Draft a supervision report assignment for all Fall 2025 cohort students due November 15."
+Include the relevant term, cohort, student, site, or date range. For example:
 
-When the answer is a table, Ask AI renders it inline and gives you export options.
+- "Which students are below half of their required direct hours for this term?"
+- "Which students have assigned forms that are still pending, and what are the due dates?"
+- "List every active supervisor with their credentials and how many students they supervise."
+- "Which students are stuck in clearance, and at which step?"
+- "Which active sites have affiliation agreements expiring in the next 90 days?"
 
-## Suggested prompts
+Ask AI uses the program associated with the conversation. State the term explicitly when it matters; do not assume a filter on another dashboard tab supplies it.
 
-When you open a new conversation, Ask AI shows suggested prompts based on your program's current state — e.g., "Who is behind on hours?" or "Show clearance status for all students." Click any to use it directly.
+Use follow-up messages to narrow an answer, change a breakdown, or request a bar, line, or pie chart. Review the returned records and ask for more detail if the result seems incomplete.
+
+## Run a built-in report
+
+Ask for a report by its current name, such as **Hours Summary**, **Hours Log**, **Supervision Summary**, **Weekly Supervision Check**, **Requirement Check**, or **Assignment Completion Status**.
+
+For example: "Run the Hours Summary for the current term, broken down by cohort, as an Excel spreadsheet."
+
+Ask AI requests any missing report settings before generating the file. See [Evaluations & Reports](/fieldx/step-6-evaluations-reports-information) for the report catalog.
 
 ## Exporting results
 
-| Format | How to get it |
+| Result | Available actions |
 | --- | --- |
-| **CSV** | Ask "export as CSV" or click the export button on any table result |
-| **Google Drive** | Ask "export to Google Drive" — saves directly to your connected Drive |
-| **PDF** | Ask "generate a PDF report" |
-| **Word (.doc)** | Ask "download as Word document" |
+| **Table answer** | Filter and sort rows, copy the table, or click **Export CSV** |
+| **Built-in report** | Download the formats supported by the report, such as **Excel (.xlsx)**, **CSV**, or **PDF** |
+| **Custom report** | Download **Word (.docx)**; open in **Google Docs** when your Google Drive connection is available |
 
-<Note>
-  Excel (.xlsx) is not supported. Use CSV and open it in Excel.
-</Note>
+To create a custom report, open the **+** menu and choose **Generate Report**. Choose **Internal** or **CACREP** format and describe what to include. Ask AI uses the conversation's data to build the document. If you want reports saved to Google Docs, use the Google Drive connection option on the report card.
 
-## Tips for better answers
+## Attach a spreadsheet
 
-- **Be specific** — "all students in Spring 2026" beats "my students"
-- **Mention the term** when you want a specific window
-- **Ask for a format** — say "as a table" or "as a list" if it matters
-- **Follow up** — the conversation persists, so you can ask "now filter to off-pace only" after the first result
-- **Ask it to show its work** — say "show your SQL" to see the exact query it ran
+Drag up to five Excel or CSV files onto the chat, or use the **+** menu. Then ask a question about the files, such as:
+
+- "Summarize the attached file and flag anything unusual."
+- "Compare this spreadsheet with our roster and show who is missing from FieldX."
+- "Total hours per student in this file and compare them with the hours logged this term."
+
+## Review proposed admin changes
+
+Ask AI can draft member invitations, cohort creation and enrollment changes, placement-level changes, and form assignments.
+
+1. Describe the change, or attach a roster.
+2. Review the draft card. Check each person, email address, role, cohort, and date. Fix or skip rows as needed.
+3. Click **Approve** only when the draft matches the change you want.
+
+Approving applies the changes and records the approval under your account. For invitation drafts, also review whether welcome emails should be sent.
+
+Ask AI does not remove members from the entire program, change a student's specialty, or edit an existing form. Use the relevant admin screen for those changes.
 
 ## Managing conversations
 
-Each chat thread is saved. You can:
+Chats are saved between sessions. Use the conversation list to return to a previous result, **Pin**, **Rename**, or **Delete** a conversation. Use the new-conversation button to start a separate topic.
 
-- **Pin** a conversation to keep it at the top of your list
-- **Rename** a conversation to something descriptive
-- **Delete** a conversation when you no longer need it
-- **Start a new conversation** with the pencil icon
+## When an answer needs another look
 
-Conversations persist between sessions — return to a previous query at any time.
-
-## Privacy
-
-Conversations stay private to your account. They aren't shared with students, faculty, or other Program Admins, and they aren't used to train SimCare's models. Every query is scoped to **your program only** — Ask AI cannot see other programs' data.
-
-## Common issues
-
-**Ask AI isn't showing data I expect.** Make sure your Overview tab is set to the correct term — Ask AI uses the same term scope. Switch the term dropdown and try again.
-
-**The response seems wrong or incomplete.** Try rephrasing with more specifics (cohort name, date range, student type). Ask it to "show your SQL" to verify what query ran. If the data itself looks wrong, flag it inline or email [tiko@simcare.ai](mailto:tiko@simcare.ai).
-
-**"Ask AI is unavailable" message.** This occasionally happens during high load. Wait a moment and try again.
-
-<Note>
-  Ask AI is in active development. If you'd like a new capability added, email [tiko@simcare.ai](mailto:tiko@simcare.ai).
-</Note>
+If a response is wrong or incomplete, include a specific name, cohort code, term, or date range and ask again. Check the underlying student or assignment record when the data itself looks incorrect. For help, email [tiko@simcare.ai](mailto:tiko@simcare.ai).

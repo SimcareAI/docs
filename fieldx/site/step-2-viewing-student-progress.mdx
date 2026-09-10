@@ -12,14 +12,14 @@ At the top of the Overview tab, three summary cards give you a quick health chec
 | Card | What it counts |
 | --- | --- |
 | **Total Documents** | All reports and forms tied to your students, across all statuses |
-| **Pending Signatures** | Items actively waiting for your signature — includes both Pending (not yet opened) and In Progress (already in the signing flow) |
-| **Completed Documents** | Documents that have been fully signed by all required parties |
+| **Pending Signatures** | Items in Pending or In Progress that still need action |
+| **Completed Documents** | Items recorded as complete for your role |
 
 These numbers update in real time as students submit work and signatures are collected.
 
 ## Student table
 
-Below the KPI cards is a table listing every student assigned to you. The table sorts automatically — students with the most pending tasks appear at the top so your highest-priority work is always visible first.
+Below the KPI cards is a table listing the students connected to your reports and forms. The table sorts automatically — students with the most pending tasks appear at the top so your highest-priority work is always visible first.
 
 Each row shows:
 
@@ -36,11 +36,11 @@ The Tasks tab is where you sign reports and complete forms. It has four sub-tabs
 | Sub-tab | What appears here |
 | --- | --- |
 | **Pending** | Items submitted by a student, waiting for your review and signature |
-| **In Progress** | Items you have opened in the signing flow but not yet completed |
-| **Completed** | Fully signed documents — downloadable as PDFs |
+| **In Progress** | Items with work started but still incomplete, such as an unfinished form |
+| **Completed** | Items complete for your role; finalized documents can be downloaded from the report panel |
 | **Rejected** | Items you have denied |
 
-You can filter the Tasks tab by student name, track, or document type (Forms vs Reports).
+Use **All Students** and **All Types** to filter the task list, or search by task or student.
 
 <Tip>
   If you supervise students at multiple sites, all of their tasks appear aggregated in one Tasks tab. Use the student name filter to focus on one person at a time.
@@ -55,18 +55,18 @@ Before signing a report, you can review the individual timesheet entries that ma
     Click **Tasks** in the top navigation.
   </Step>
   <Step title="Open the report">
-    Click any report in the Pending sub-tab. Reports open in a panel on the right side of the dashboard. Forms open in a new browser tab.
+    Click any report in the Pending sub-tab. Reports open in a dialog. Forms open in a new browser tab.
   </Step>
   <Step title="Click View Logs">
     Inside the report panel, click **View Logs**. You will see each individual time entry with its date, activity type, site, duration, and any notes the student added.
   </Step>
   <Step title="Review flagged entries">
-    Any entry longer than 1.5 hours is flagged in amber. This is a prompt to double-check — it does not block approval, but it is worth confirming with the student that the duration is correct before signing.
+    Your program can flag long entries in amber. The default threshold is 2 hours or more, but your program can change or disable it. Read the notice above the logs and confirm unexpected durations with the student.
   </Step>
 </Steps>
 
 <Warning>
-  The **Sign & Approve** button will be greyed out if the report has zero approved hours. This means the student has not yet had any hours approved, or previously approved hours were unlocked or deleted. Click **View Logs** to confirm — if hours are missing, ask the student to log and submit their hours before you can sign the report.
+  The **Sign & Approve** button will be greyed out if the report has zero hours in its date range. Click **View Logs** to check the entries included in the report. If hours are missing, ask the student to verify the dates, site, supervisor, and their hour entries before you sign.
 </Warning>
 
 ## Denying a report
@@ -74,14 +74,14 @@ Before signing a report, you can review the individual timesheet entries that ma
 If something is incorrect and you cannot approve the report:
 
 <Steps>
-  <Step title="Click Deny">
-    Inside the report panel, click the **Deny** button.
-  </Step>
   <Step title="Add a reason">
-    Type your explanation in the **Comments** section. This is sent to the student so they know what to fix.
+    Explain what needs to change in **Comments**. Choose **Everyone** if the student should see the reason.
+  </Step>
+  <Step title="Click Deny">
+    Click **Deny** in the report panel to open the confirmation dialog.
   </Step>
   <Step title="Confirm">
-    Confirm the denial. The report moves to your **Rejected** tab and the student is notified.
+    Click **Deny** in the dialog. The report moves to **Rejected**. Faculty or a Program Admin can arrange a resubmission.
   </Step>
 </Steps>
 
@@ -99,9 +99,13 @@ The **Students** tab gives you a read-only view of every hour entry a student ha
     Use the student dropdown at the top right of the table. Only students you actively supervise appear in the list. The first student loads automatically.
   </Step>
   <Step title="Review their entries">
-    Each row shows the entry's date, activity type, site, track, duration, and approval status. Click **See notes** on a row to read any notes the student added.
+    Each row shows the activity, duration, site, supervisor, and date and time. Use the row's available note action to read any notes the student added.
   </Step>
 </Steps>
+
+<Frame caption="Choose a student, then switch to Calendar to review their entries by date. This example uses an administrator's read-only supervisor view.">
+  ![Supervisor Students timesheet with red arrows pointing to the student selector and Calendar, with an administrator read-only banner](/images/fieldx/audit/supervisor-students.png)
+</Frame>
 
 You can switch between two views:
 
@@ -129,25 +133,25 @@ From each card you can upload a site logo, edit site details, or remove yourself
 
 You do not need to log in to stay on top of your queue:
 
-- **Email notification** — when a student submits a report or form, you receive an email from `noreply@simcare.ai`. You can sign the document directly from the email link without logging into the dashboard.
-- **Weekly digest** — every Saturday you receive a summary of all outstanding signatures. Use it as a weekly checklist.
+- **Email notification** — when a student submits a report or form, you receive an email from `hello@mail.simcare.ai`. You can sign the document directly from the email link without logging into the dashboard.
+- **Weekly digest** — a summary of outstanding signatures helps you plan your reviews. Use it as a weekly checklist.
 
 <Tip>
-  If you prefer to batch your signing, the Saturday digest is a reliable prompt. If you prefer to sign as items come in, the individual submission emails make that easy too.
+  If you prefer to batch your signing, use the weekly digest as a prompt. If you prefer to sign as items come in, the individual submission emails make that easy too.
 </Tip>
 
 ---
 
 ## Common issues
 
-**Sign & Approve is greyed out and I cannot click it.** The report has zero approved hours. Open the report, click **View Logs**, and check whether any hours are listed. If the log is empty or all entries show as unapproved, the student needs to log their hours and resubmit before you can sign. Ask the student to check their own dashboard.
+**Sign & Approve is greyed out and I cannot click it.** The report has zero hours in its date range. Click **View Logs** and ask the student to verify the dates, site, supervisor, and hour entries. Refresh after corrections; contact your Program Admin if the total still looks wrong.
 
-**I am not receiving email notifications.** Check your spam or junk folder. All emails come from `noreply@simcare.ai` — add this address to your contacts or safe-senders list so future messages are not filtered.
+**I am not receiving email notifications.** Check your spam or junk folder. All emails come from `hello@mail.simcare.ai` — add this address to your contacts or safe-senders list so future messages are not filtered.
 
 **I cannot find a specific student.** Use the search box on the Overview tab or the Tasks tab. Type the student's name, their program track, or the site name. If the student still does not appear, they may not have added you as their supervisor yet — ask them to confirm your name is listed on their placement.
 
 **My Site tab is empty.** No students have selected you as their supervisor yet. Once a student adds you during their placement setup, your site will appear automatically.
 
-**I accidentally denied a report.** Contact the student and let them know. They will need to resubmit the report so it re-appears in your Pending tab for approval. You cannot undo a denial yourself from the dashboard.
+**I accidentally denied a report.** Contact the student's faculty supervisor or Program Admin to arrange a resubmission. You cannot undo a denial yourself from the dashboard.
 
 **A student's task count says 0 but I know they submitted something.** Try refreshing the page. If the task still does not appear, ask the student to confirm they clicked **Submit** and not just **Save**. Drafts saved by the student are not sent to you until they explicitly submit.

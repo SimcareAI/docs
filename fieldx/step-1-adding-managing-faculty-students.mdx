@@ -4,42 +4,31 @@ description: "How to invite Program Admins, faculty supervisors, and students to
 sidebarTitle: "3. Adding & Managing Faculty & Students"
 ---
 
-All program members (students, instructors, and admins) are managed from the **Members** tab inside **My Program**.
+All program members (students, instructors, and admins) are managed from the **Members** tab inside **Program Settings**.
 
 ## Opening the Members tab
 
-Click **My Program** in the top-right of any page.
+Click **Program Settings** in the top-right of any page.
 
-<Frame>
-  ![Members1](/images/members1.png "Members1")
-</Frame>
+Select the **Members** tab in the sidebar.
 
-Select the **Members** tab in the sidebar
-
-<Frame>
-  ![Members2](/images/members2.png "Members2")
-</Frame>
-
-The Members area splits into two sub-tabs:
+The Members area has three sub-tabs:
 
 - **Students** — every student in your program with their track, term, clearance status, insurance status, and last activity
 - **Instructors/Admin** — faculty and admin accounts with an inline role selector
+- **Supervisors** — site supervisor accounts, with profile, export, and **View as Supervisor** actions
 
-Use the search bar, sort menu (Last Name, First Name, Email), and the **Show/Hide Insurance** and **Show/Hide Clearance** column toggles to focus the view.
-
-<Frame>
-  ![Members3](/images/members3.png "Members3")
-</Frame>
+Use **Search by name or email**, **Filters**, and the sort control beside **Member** to focus the roster.
 
 ## Adding new users
 
-Click **Add Users** in the top right.
+Click **Add Student** on the Students tab or **Add Instructor/Admin** on the Instructors/Admin tab.
 
 <Frame>
   ![Screenshot 2026 08 19 At 12 16 50 PM](/images/Screenshot-2026-08-19-at-12.16.50-PM-1.png "Screenshot 2026 08 19 At 12 16 50 PM")
 </Frame>
 
-The **Add Users** modal lets you:
+The member invitation modal lets you:
 
 - Paste a list of emails (comma, semicolon, or newline separated)
 - Or **upload a CSV or text file** — AI parses it so any format works
@@ -52,7 +41,7 @@ The modal shows per-email results when it runs (success / error / warning) so yo
 
 Students whose email address matches one of your program's registered domains are enrolled automatically the first time they sign up — no invite, no join code. This is the fastest onboarding path for large first-year cohorts where you don't want to pre-load every student in advance.
 
-You can see your program's registered domains at the top of **My Program → Overview**, in the **Domain** card of the program header.
+You can see your program's registered domains at the top of **Program Settings → General Information**, in the **Domain** card of the program header.
 
 How it works:
 
@@ -84,7 +73,7 @@ Select multiple students using the row checkboxes to open the bulk action bar:
 
 Students cannot change their selected track on their own after it has been set. A program admin can update it from the Members view:
 
-1. Go to [app.simcare.ai/program](https://app.simcare.ai/program) or click **My Program** in SimCare.
+1. Go to [app.simcare.ai/program](https://app.simcare.ai/program) or click **Program Settings** in SimCare.
 2. Open **Members** and stay on the **Students** sub-tab.
 3. Find the student, select the checkbox for their row, then choose **Assign Track** from the bulk action bar.
 4. Pick the correct student track and confirm.
@@ -104,13 +93,17 @@ What happens when it fires:
 
 The trigger only runs when the new placement differs from the current one and the student was previously approved. Students who have not yet cleared, or whose approved placement already matches the new one, are unaffected.
 
+<Frame caption="A student row includes View Profile and View as Student actions.">
+  ![Members screen with red arrows pointing to Students and View as Student](/images/fieldx/audit/admin-view-student-control.png)
+</Frame>
+
 ## Per-row actions
 
-Click any student row's actions menu for:
+Student rows provide **View Profile**, **View as Student**, and removal actions. Use the additional actions menu for other tools:
 
 - **Create To-do** — assign a task to that student
 - **View Profile** — open the full Student Details modal (Overview, Insights, Sites, Timesheet, Learning Contract, Journal, Documents, Run Report)
-- **View as Student** — impersonate the student read-only for up to 30 minutes ([more →](/fieldx/view-as-student))
+- **View as Student** — impersonate the student read-only for up to one hour ([more →](/fieldx/view-as-student))
 - **Remove** — remove from program
 
 ## Switching a user's role
@@ -121,7 +114,7 @@ In the Instructors/Admin sub-tab, use the inline **Role** dropdown to flip a use
 
 For members you invited with **Send credentials email to new accounts** on, but who haven't logged in yet, the **Members** table surfaces a quick way to nudge them:
 
-- Open **My Program → Members** and click **Filter**. Under **Sign-in status**, choose **Never logged in** to narrow the table to just those accounts.
+- Open **Program Settings → Members** and click **Filters**. Under **Sign-in status**, choose **Never logged in** to narrow the table to just those accounts.
 - On any row for a student, instructor, or admin who has never signed in, click **Resend Credentials**. SimCare generates a fresh temporary password, invalidates the old one, and emails the member a new welcome message with the updated credentials.
 
 Use this when a member says they never received the original invite, lost the email, or can't get past the sign-in screen. Because the previous password stops working the moment you resend, only click **Resend Credentials** if you actually want the old one revoked.
@@ -144,12 +137,12 @@ When you add a site supervisor (either manually or when a student requests them 
 
 Key details supervisors need to know:
 
-- The invitation subject line is **"You've Been Added as a Supervisor"**
-- Clicking the link creates their account and gives them immediate dashboard access
-- Once a supervisor has signed in, the invitation link expires — resending creates a new link
-- **Re-send:** You can resend the invitation from the Pending Invitations widget in the cohort view. There is a **24-hour cooldown** between resends.
+- The invitation subject line is **"Welcome to SimCare - You've Been Added as a Supervisor"**
+- The initial invitation includes sign-in credentials; the supervisor should follow the instructions in that email
+- Use the available resend or reminder action for a supervisor who has not signed in
+- A student-triggered resend has a **24-hour cooldown**; admin reminder actions may differ
 
-If a supervisor says they never got an email: ask them to search for "SimCare" in their inbox and spam folder. If they find nothing after 24 hours, resend the invitation from the cohort view.
+If a supervisor says they never got an email: ask them to search for "SimCare" in their inbox and spam folder. If they find nothing, use the available resend action and follow any cooldown message shown.
 
 ## Recommended onboarding order for new programs
 
