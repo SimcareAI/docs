@@ -1,0 +1,51 @@
+---
+title: "Program client visibility"
+description: "Control which AI clients students in your program see on the Discover page using an allow list, a block list, or the full open catalog."
+---
+
+Program client visibility lets a program limit which AI clients its students can browse and start on the **Discover** page. Use it to keep a program's catalog aligned with its curriculum, for example hiding advanced clients from an intro program or curating a short list for a specific course of study.
+
+By default, nothing is filtered. Every program starts with the full catalog, and students only see a restricted catalog after a visibility mode is configured for their program.
+
+## Visibility modes
+
+Each program has one of three modes:
+
+| Mode | What students see |
+| --- | --- |
+| **Unrestricted** (default) | The full client catalog. Nothing is filtered. |
+| **Block list** | The full catalog except the specific clients on the program's block list. |
+| **Allow list** | Only the clients on the program's allow list. |
+
+<Warning>
+  In allow list mode, an empty list means students see no clients at all. Make sure the allow list is populated before switching a program to this mode.
+</Warning>
+
+## Where the filter applies
+
+When a program restricts visibility, hidden clients disappear everywhere students browse for practice:
+
+- The **Discover** page and its client cards
+- The **Presenting Issues** browse page
+- The client picker when building or filtering **[focused scenarios](/guides/focused-scenarios)**
+- Direct links to a hidden client (`/case-link/...`). Opening one redirects to the Discover page instead of the client.
+
+## How visibility is resolved
+
+- **No program membership means the full catalog.** Students who don't belong to a program, or whose programs are all unrestricted, see everything, exactly as before.
+- **Multiple programs combine permissively.** If you belong to several programs, a client is visible when *any* of your programs shows it. Joining an additional program never shrinks your catalog.
+- **School admins always see the full catalog**, regardless of program settings.
+
+<Note>
+  Program visibility works alongside custom client sharing. A custom client built in the [Client Builder](/simulations/client-builder) still follows its own sharing rules; program visibility only decides whether a client appears in your program's catalog.
+</Note>
+
+## Setting it up
+
+Visibility modes and allow or block lists are configured per program by the SimCare team. To restrict the catalog for your program, contact [hello@simcare.ai](mailto:hello@simcare.ai) with:
+
+1. The program to configure
+2. The mode you want (block list or allow list)
+3. The clients to block or allow
+
+See [Get Support](/support) for other ways to reach the team.
