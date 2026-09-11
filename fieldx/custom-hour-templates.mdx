@@ -1,0 +1,144 @@
+---
+title: "Custom Hour Templates & Group Supervision"
+description: "Build activity templates, assign them to cohorts, and configure how site and university group supervision are logged, counted, and signed."
+---
+
+An hour template defines the activities students can select when logging hours and the categories used on their hours document. Open **Program Settings → Hour Templates** (`/program#hourTemplates`) to build and manage templates.
+
+Required hour totals are configured separately under **Terms and Tracks**. Creating an activity called “Group Supervision” does not, by itself, set a minimum number of group supervision hours.
+
+## Build a custom hour template
+
+1. Open **Templates** and select **New template**.
+2. Choose a starting point:
+   - **Describe your program** creates an AI draft for you to review.
+   - **Start from a SimCare template** copies a provided activity structure.
+   - **Start from scratch** opens a starting structure you can customize.
+3. Enter a **Template name** that identifies its purpose, such as “CMHC Practicum Hours.”
+4. In **Sections & activities**, organize the activities students will log. Add definitions that explain what qualifies and distinguish easily confused activities.
+5. Check both previews: **Student view** shows the activity choices and definitions; **Hours document** shows the document structure.
+6. Select **Create template**. When editing an existing template, select **Save changes**.
+
+<Note>
+Review every AI-drafted activity before saving. The draft does not establish your program’s hour requirements or decide which supervision your program accepts.
+</Note>
+
+### Sections, activities, and definitions
+
+Sections organize the template; the activities at the ends of the structure are the choices students log against. Place supervision activities within a supervision category so they are counted as supervision. Use explicit labels and definitions, for example:
+
+| Section | Activity | Example definition |
+| --- | --- | --- |
+| Direct | Individual counseling | Direct client contact during an individual counseling session. |
+| Indirect | Documentation | Time completing clinical documentation outside a client session. |
+| Supervision | Site Group Supervision | Group supervision delivered by the placement site's supervisor. |
+| Supervision | University Group Supervision | Group supervision delivered by the student's assigned cohort faculty. |
+
+For the last example, also select **University supervision** on the activity. Naming an activity “University” or “Group” alone does not enable the faculty-supervised workflow.
+
+### Optional Track Hours Log layout
+
+If your program uses the **Track Hours Log** report format, the builder also offers **Track Hours Log layout**. It lets you set the document title, accent color, PNG or JPEG institution logo, table headings and order, whether the site table appears, and whether zero-hour activities appear. You can also organize display labels and groups and map activities into them.
+
+Display grouping changes how the document presents activities. Use **Sections & activities** to change what students can log. Signing roles still come from the report template.
+
+Layout edits apply to untouched reports until their first signing document is created. Existing signing documents keep their saved layout. The preview uses sample content; actual PDF page breaks are determined when the document is generated.
+
+## Assign the template to cohorts
+
+Saving a template makes it available to your program. To use it, choose it when creating a cohort or open an existing cohort's **Cohort Settings** and change its hour template.
+
+The **Cohort Assignments** view on the Hour Templates page is a reference list. Search by cohort or template and filter by term or active/archived cohort status. It shows each cohort's assigned template and whether that template is active. A cohort without a custom assignment shows **Default (system template)**.
+
+<Tip>
+After assigning the template, check that a student in the intended cohort sees the expected activity choices. A template saved in your program but not assigned to that cohort will not replace its activity list.
+</Tip>
+
+## Group Supervision Hours
+
+Group supervision describes the format of supervision. The person providing it determines whether the student uses a placement site or the university-supervision workflow.
+
+### Site group supervision versus university group supervision
+
+| | Site group supervision | University group supervision |
+| --- | --- | --- |
+| Who supervises? | A placement site's supervisor | The student's assigned faculty for the selected cohort |
+| Template setup | A supervision activity with **University supervision** unchecked | A supervision activity with **University supervision** checked |
+| Site when logging | Select the placement site | No placement site is selected |
+| Supervisor when logging | The site's supervisor | The resolved cohort faculty is selected automatically |
+| Document routing | Site-supervisor document, with faculty countersigning if required | Faculty-supervised document; faculty signs as the supervising party |
+| Required-hour counting | Included as site supervision | Controlled by the program's university-supervision counting setting |
+
+Both individual and group faculty-supervised activities can use **University supervision**. It is not a group-only setting.
+
+### Configure a faculty-led supervision group
+
+1. Create a separate supervision activity, such as **University Group Supervision**, and select its **University supervision** checkbox.
+2. Keep site group supervision as a separate activity if students also receive supervision at their placements.
+3. Assign the hour template to the cohort that represents the supervision group.
+4. Confirm each student has one resolvable faculty supervisor. FieldX checks the student's faculty assignment first, then the cohort's designated signing faculty, then a sole faculty member in the cohort.
+5. Open **Program Settings → Settings** and set **University supervision counts toward required hours** to match your program policy.
+6. If you use supervision breakdown reports, configure **Supervision activity classification** in Settings: classify the activity's format as group and select the appropriate provider. This reporting classification is separate from the template's **University supervision** checkbox.
+
+A cohort with multiple faculty and no applicable assignment or designated signing faculty is ambiguous. Assign the appropriate faculty before asking students to log university supervision. Adding faculty as a site supervisor does not resolve this cohort assignment.
+
+### What students do
+
+Students open **Log Hours**, select the supervision cohort, and choose the university-supervision activity. FieldX clears the placement-site selection and assigns the cohort's resolved faculty as supervisor. The student supplies the date, duration, and other entry details.
+
+University supervision requires a cohort and an assigned faculty member. It cannot be logged through the “without cohort” path. The entry date must also fit the cohort's term rules.
+
+The entry may display **University Supervision** where a site label normally appears. This is a label for faculty-supervised hours; it does not create a placement site. Students do not need to add their university as a site for this workflow.
+
+### How these hours count
+
+**University supervision counts toward required hours** is on by default.
+
+- **On:** university supervision contributes to counted supervision and total required-hour progress.
+- **Off:** university supervision remains recorded and visible in **Total supervision**, but is excluded from counted supervision, counted total hours, and pace calculations that use the policy.
+
+For example, a student logs 10 direct hours, 5 indirect hours excluding supervision, 2 site-supervision hours, and 3 university group-supervision hours:
+
+| Figure | Setting on | Setting off |
+| --- | --- | --- |
+| Total supervision logged | 5 | 5 |
+| Supervision counted toward requirements | 5 | 2 |
+| Total hours logged | 20 | 20 |
+| Total hours counted toward requirements | 20 | 17 |
+
+Where a display says **Indirect (including supervision)**, its supervision is already included. Do not add the supervision figure again when calculating the total.
+
+The setting does not delete entries or remove their signing requirements. An hour template also does not automatically establish a group-supervision minimum. Configure the relevant hour requirements or reporting requirement set separately.
+
+### How faculty approve university supervision
+
+Logging hours does not approve them. Approval happens through the report-signing workflow.
+
+For reports that separate documents by supervising party, university-supervised entries route to a faculty-supervised document. The faculty member signs as the supervising party and does not sign that same document a second time as a faculty countersigner. Student signatures still follow the report's requirements.
+
+Site-supervised entries follow their site document's required signing chain. A report containing both types may therefore need signatures on both site and university-supervision documents before the covered entries become approved. Turning university-hour counting off does not skip this process.
+
+### Troubleshoot group supervision
+
+| Problem | What to check |
+| --- | --- |
+| Students cannot find the custom activity | Confirm the template is assigned to the cohort they selected. |
+| The activity still asks for a placement site | Confirm it is a supervision activity and its **University supervision** checkbox is selected. A name alone is insufficient. |
+| University supervision is disabled | Select a cohort, check its term dates, and resolve the student's faculty assignment. |
+| University hours appear but do not increase required-hour progress | Check **University supervision counts toward required hours**. |
+| A group activity appears under Other supervision in reports | Check **Supervision activity classification**. |
+| Old logs still show the university as a placement site | Existing site-attributed logs are not automatically converted by adding or assigning a new template. Contact support about correcting historical records. |
+
+## Edit, duplicate, or deactivate a template
+
+Template cards show usage, status, and a read-only **Preview**. Use **Duplicate** for your own template or **Duplicate to my program** for a provided SimCare template.
+
+Once logged entries depend on a template, safe-edit restrictions protect historical records. You can still rename activities, update definitions, and add activities or sections. Existing sections and activities cannot be deleted, existing activities cannot move into a different top-level section, and top-level section names are locked.
+
+A used activity's **University supervision** classification is also locked. Create a new activity for a different classification. Duplicating a template preserves its activity identities, so a copy is not a way to reclassify historical activity types.
+
+For a larger redesign, duplicate the template and assign the revised copy to future cohorts.
+
+**Deactivate** hides a template from new cohorts without deleting it. Cohorts already using it keep logging against it and retain their documents. Turn on **Show deactivated** to find it again and select **Reactivate**.
+
+See also [Setting Up Cohorts](/fieldx/step-3-set-up-cohorts) and [Logging & Tracking Your Hours](/fieldx/students/step-3-the-timesheet-tab-logging-hours).

@@ -1,0 +1,125 @@
+---
+title: "Notification Settings"
+description: "Configure faculty digests, insurance alerts, due-date reminders, student site-change alerts, faculty email copies, and admin recipients."
+---
+
+Open **Program Settings → Notifications** (`/program#notifications`) to configure program email automation. Choose your settings, then select **Save Settings** and wait for **Settings saved.** Changes are not saved merely by toggling a switch.
+
+The six automation switches are off by default. Each has its own recipients and purpose; **Notification Recipients** is not a master mailing list for every email.
+
+## Daily Assignment Digest
+
+Turn on **Daily Assignment Digest** to send cohort faculty a morning summary of their students' activity from the previous day, grouped by student.
+
+Configure:
+
+- **Send time:** 6:00, 7:00, 8:00, 9:00, or 10:00 AM. The default selection is 8:00 AM.
+- **Completed assignments:** include completed student assignments.
+- **Completed clearance forms:** include completed clearance forms.
+
+Both content options are selected by default. Faculty receive a digest for their own students; faculty with no qualifying activity from the previous day are not emailed. This is a completion summary, not a reminder to sign an individual document.
+
+The page does not expose a timezone selector.
+
+## Insurance Expiration Alerts
+
+Turn on **Insurance Expiration Alerts** for student insurance documents approaching expiration. The configured alert milestones are:
+
+- 30 days before expiration.
+- 7 days before expiration.
+- On the expiration date.
+
+The setting describes alerts to students and program admins. It does not offer custom intervals or an editor for the insurance expiration date. Check the student's insurance record if the date is missing or incorrect.
+
+This setting concerns student insurance, not the expiration badges on uploaded site agreements.
+
+## Form Due-Date Reminders
+
+Turn on **Form Due-Date Reminders** to schedule reminder emails 7, 3, and 1 day before a form's deadline.
+
+The reminder targets the person currently blocking the form's progress: for example, the student who must complete the first step or the signer whose turn has arrived. Program coordinators are not included simply because they administer the program.
+
+A form needs a due date for these deadline-based reminders. As participants complete their steps, the person who needs to act can change.
+
+## Report Due-Date Reminders
+
+Turn on **Report Due-Date Reminders** for the equivalent report workflow: reminder emails 7, 3, and 1 day before the report's deadline, directed to the person currently blocking it.
+
+Form reminders and report reminders are separate switches. Enabling one does not enable the other. The program's notification recipient selection does not replace the report's signing order.
+
+## Site & Supervisor Change Alerts
+
+Turn on **Site & Supervisor Change Alerts** to email the selected admin notification recipients immediately when a student:
+
+- Adds a placement site.
+- Removes a placement site.
+- Adds their own supervisor.
+
+These are student self-service alerts. Admin-driven changes do not trigger this setting. The setting does not list supervisor removal as a trigger.
+
+Use **Notification Recipients** below to decide which active program admins should receive these alerts.
+
+## Copy Faculty Supervisors
+
+Turn on **Copy Faculty Supervisors** to send the student's assigned faculty supervisor a separate copy of supported emails sent to the student or their site supervisor.
+
+Copies are separate emails with their own delivery tracking and email-log entry. The original recipient can see who was copied.
+
+### Which emails to copy
+
+| Option | What it covers | Initial selection when enabled |
+| --- | --- | --- |
+| **Signature & completion requests** | Supported report-signature and form-completion request/reminder emails | Selected |
+| **Rejections & send-backs** | Report rejection and form send-back emails | Selected |
+| **Comment notifications** | Supported comments on a student's report or form | Not selected |
+
+This does not copy every email the platform sends. Assignment announcements and unrelated platform messages are outside these options.
+
+If you clear all three options, no copies are sent even while the main switch remains on.
+
+### Exclude a faculty member
+
+Under **Faculty who should not receive copies**, search for and select a faculty member to exclude. Remove their chip to allow copies again, then select **Save Settings**.
+
+An exclusion applies to these copies. It is not a switch for their daily digest or emails they receive because they are a required signer.
+
+### When a copy is sent
+
+A supported email must concern one identifiable student, and FieldX must resolve that student's assigned faculty supervisor in the relevant cohort context. The selected email category must be enabled and the faculty member must not be excluded. A faculty member already receiving the original message is not sent a duplicate copy.
+
+If no faculty recipient can be resolved, no copy is sent. FieldX does not fall back to copying all program admins. This setting adds visibility; it does not change who must complete or sign the work.
+
+## Notification Recipients
+
+Use **Search and choose admins** to select the admins who receive general admin notifications for student comments and activity, including the site-change alerts above.
+
+- By default, all active program admins are included.
+- A specific selection limits these notifications to those selected users who are still active program admins.
+- An empty selection means **all active program admins**, not “send to nobody.”
+
+To stop an optional automation, turn off that automation's switch and save. Clearing the recipient list is not a way to disable emails.
+
+## Related notification controls
+
+Some email controls live outside this page:
+
+| Control | Where it applies |
+| --- | --- |
+| Application approval notification recipients | A separate program setting; it does not use this page's general recipient selection |
+| Personal comment-email preference | A user's own opt-out from comment emails |
+| Site **Follow / Unfollow** | Site-note emails, managed in the site's Notes tab when enabled |
+| Required signing roles | The report or form workflow; choosing admin recipients does not change these roles |
+
+See [Site Details & Documents](/fieldx/site-details-and-documents) for site following and [Creating & Assigning Tasks](/fieldx/step-4-create-assign-tasks) for task setup.
+
+## Troubleshoot email settings
+
+| What you notice | What to check |
+| --- | --- |
+| Changes did not persist | Select **Save Settings**, wait for success, and reopen the page to confirm. |
+| A faculty digest did not arrive | Confirm the digest is enabled, at least one content option is selected, and the faculty's students had qualifying activity the previous day. |
+| A deadline reminder did not arrive | Confirm the correct form/report switch is on, the item has a due date, and that person is currently responsible for the next step. |
+| No alert followed a site edit | This automation covers student self-service additions/removals and supervisor additions; admin edits do not trigger it. |
+| A faculty member received no copy | Check their assignment, the email category, exclusions, and whether the message concerns one identifiable student. |
+| Admins still receive notifications after the list was cleared | Empty means all active admins. Select a specific subset or disable the relevant automation. |
+| A site agreement is expiring but no insurance alert arrived | Insurance Expiration Alerts concerns student insurance. Site-document expiration badges are a different feature. |

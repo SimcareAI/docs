@@ -106,7 +106,11 @@
               "fieldx/step-5-next-semester-setup",
               {
                 "group": "Configuration & Site Management",
-                "pages": []
+                "pages": [
+                  "fieldx/custom-hour-templates",
+                  "fieldx/site-details-and-documents",
+                  "fieldx/notification-settings"
+                ]
               },
               "fieldx/step-6-evaluations-reports-information",
               "fieldx/view-as-student",
