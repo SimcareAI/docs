@@ -104,6 +104,14 @@
               "fieldx/step-0-1-testing-fieldx-with-your-sandbox",
               "fieldx/step-3-1-approving-students",
               "fieldx/step-5-next-semester-setup",
+              {
+                "group": "Configuration & Site Management",
+                "pages": [
+                  "fieldx/custom-hour-templates",
+                  "fieldx/site-details-and-documents",
+                  "fieldx/notification-settings"
+                ]
+              },
               "fieldx/step-6-evaluations-reports-information",
               "fieldx/view-as-student",
               "fieldx/view-as-supervisor",
