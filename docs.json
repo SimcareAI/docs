@@ -116,8 +116,7 @@
               "fieldx/view-as-student",
               "fieldx/view-as-supervisor",
               "fieldx/coordinator-ask-ai",
-              "fieldx/todos",
-              "fieldx/canvas-lti-integration"
+              "fieldx/todos"
             ]
           },
           {
@@ -174,6 +173,11 @@
           "anchor": "Documentation",
           "href": "/",
           "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Documentation",
+          "icon": "book-open-cover",
+          "href": "/"
         }
       ]
     }
