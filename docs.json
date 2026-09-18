@@ -198,6 +198,11 @@
           "anchor": "Documentation",
           "icon": "book-open-cover",
           "href": "/"
+        },
+        {
+          "anchor": "Documentation",
+          "icon": "book-open-cover",
+          "href": "/"
         }
       ]
     }
