@@ -11,6 +11,18 @@ Need to create the class, invite students, or change class defaults first? See [
   If the class is connected to Canvas, students often launch and get graded from Canvas. The assignment is still built here. See [Canvas LTI integration](/simulations/canvas-lti-integration).
 </Tip>
 
+## Start from a client card
+
+If your account shows **Case actions** on a client card, you can begin from the simulation library:
+
+1. Open **Simulations** and find the client.
+2. Open the card's **Case actions** menu and select **Create assignment**.
+3. In **Pick a class**, use **Search classes** if needed and select the intended class. The picker has a **Continue** button for the next step.
+
+This shortcut starts assignment setup; opening the class picker does not create or publish an assignment. Review the assignment settings before saving.
+
+**No Case actions menu or missing class?** Check that you are signed into the account you use to teach that class. You can also start from **Courses** → **My Courses** → the class → **Assignments** → **Create Assignment**. If the class is missing there too, ask its owner or your program administrator to check your membership.
+
 ## Pick an assignment type
 
 | Tab | What's here |
@@ -18,11 +30,11 @@ Need to create the class, invite students, or change class defaults first? See [
 | **Assignments** | All assignments in the class, with attempt counts |
 | **Members** | Students and co-instructors |
 | **Analytics** | Completion, grades, and competency performance |
-| **Settings** | Class name, enrollment, LMS connection |
+| **Settings** | Defaults for new case assignments: video, archiving attempts, and reflection |
 
 ## Adding students to a class
 
-From inside a class's **Settings** tab, you can invite students three ways:
+Open the class's **Members** tab, then click **Invite** → **Add Student** for **Join Code** or **Email Invite**. Enrollment options include:
 
 - **Email invitation** — students receive a link that takes them straight to the **Join class** page. If they don't have a SimCare account yet, they create one on the way in and land in your class automatically.
 - **Enrollment code** — share the class's enrollment code directly (in person, over email, in an LMS announcement). Students enter it from inside their own SimCare account, so they need to already have an account and be signed in — there's no way to redeem a code from the sign-up screen.
@@ -32,14 +44,15 @@ From inside a class's **Settings** tab, you can invite students three ways:
   If your students haven't created SimCare accounts yet, use email invitations rather than the enrollment code. The code only works for students who can already log in — it can't be used to join preemptively before an account exists.
 </Tip>
 
-## Joining a class as a co-instructor
+## Choose an assignment type
+
 Click **Create assignment** and choose:
 
 | Type | What students do |
 | --- | --- |
 | **Case** | Live session with an AI client (walkthrough below) |
 | **Quiz** | Multiple choice, true/false, and written questions |
-| **Document** | Read a file or URL, and optionally upload their own file |
+| **Reading/ Document Submission** | Read a file or URL, and optionally upload their own file |
 | **Form** | Complete a form you already created. See [Forms](/simulations/forms) |
 | **Peer review** | Review a classmate's case. See [Peer review assignments](/simulations/peer-review-assignments) |
 
@@ -52,7 +65,7 @@ The case builder has these steps:
     Browse and select the AI client. This includes built-in SimCare cases, faculty-created cases from your school, and any [custom clients](/simulations/client-builder) you've built. Use **Find clients with AI** to describe what you want to practice and let the AI suggest matching clients.
   </Step>
   <Step title="Details">
-    Set the assignment title and any instructions students should see. Add **Learning Outcomes** — these power the competency reporting in your Analytics tab.
+    Set the assignment title and instructions, an optional due date, and an optional module.
   </Step>
   <Step title="Settings">
     Configure the assignment behavior:
@@ -61,11 +74,11 @@ The case builder has these steps:
     | --- | --- |
     | **Publish Immediately** | Make the assignment visible to students now (or keep as draft) |
     | **Require Camera** | Students must turn on their camera during the session |
-    | **Make Feedback Visible to Students** | Release AI feedback automatically (or hold for instructor review) |
+    | **Release AI Feedback Automatically** | Release AI feedback automatically (or hold for instructor review) |
     | **Limit Assignment Attempts** | Cap how many times students can retry |
     | **Allow Students to Archive Attempts** | Lets students hide attempts they don't want graded |
     | **Set Time Limit** | Enforce a maximum session duration |
-    | **Require Student Upload** | Students must upload a file with the submission (with size and type limits) |
+    | **Score Out Of** | Set the maximum score for the assignment (default 100) |
   </Step>
   <Step title="Assessments">
     Pick written tasks students complete after the session, before they can see feedback:
@@ -77,15 +90,8 @@ The case builder has these steps:
     - **Treatment Planning**
     - **SOAP Note**
     - **Reflection**
-  </Step>
-  <Step title="Evaluation">
-    Choose how the AI scores the session. You have three mutually exclusive options:
-
-    - **General Counseling Skills Assessment** _(default)_ — case-specific feedback generated for this client.
-    - **Microskills** — turn off the general assessment toggle to reveal a tiered list of counseling skills (for example, _Basic Attending & Empathy_ → _Minimal Encouragers_). Pick the skills and individual microskills you want evaluated; each is scored against a shared rubric and checklist. Click **Preview** on any skill to see the rubric students will be graded against.
-    - **Custom evaluation template** — pick a saved rubric/checklist template from your program. Click **Preview** to open the template in a new tab before assigning. If none is selected, the default case-specific feedback format is used.
-
-    Microskills and custom templates can't be used together on the same assignment.
+    - **Self-Annotated Transcript**
+    - **Add your own** for a custom task
   </Step>
   <Step title="Evaluation">
     Choose how the AI scores student performance. Pick one of the modes below — they're mutually exclusive.
@@ -117,7 +123,7 @@ The case builder has these steps:
     Selecting a saved template hides the microskills picker and replaces the default per-case feedback in the next step.
   </Step>
   <Step title="Feedback">
-    Choose which feedback components appear on student Case Reviews:
+    The controls available here depend on the case and evaluation configuration. The current case builder includes a **Theory Analysis** toggle. Where component options are shown, these can include:
 
     - **Annotated Transcript**
     - **Basic Skills** (Evaluation Checklist)
@@ -125,7 +131,7 @@ The case builder has these steps:
     - **Checklist**
     - **Advanced Skills**
 
-    Pick a **therapy theory** for Theory Analysis — over 30 are supported across Beginner, Intermediate, and Difficult tiers (Motivational Interviewing, CBT, Narrative, Gestalt, Adlerian, Bowen Family Systems, Strategic, Structural, Solution-Focused, DBT, Psychoanalytic, and more).
+    If a theory selector is available, pick a **therapy theory** for Theory Analysis — over 30 are supported across Beginner, Intermediate, and Difficult tiers (Motivational Interviewing, CBT, Narrative, Gestalt, Adlerian, Bowen Family Systems, Strategic, Structural, Solution-Focused, DBT, Psychoanalytic, and more).
 
     When a saved evaluation template is selected in the previous step, this step is reduced to the theory picker — the template controls the rubric and checklist sections automatically.
   </Step>
@@ -153,7 +159,7 @@ Document assignments do not use attempt limits — students can re-upload if you
 
 ## Trying an assignment
 
-After you create an assignment, open it from the **Assignments** tab and click the **⋯** menu, then **Try assignment**. You can run the case, quiz, or document yourself without affecting student data. A purple **Teacher Preview Mode** banner appears throughout the session.
+After you create an assignment, use **Try assignment** in its row on the **Assignments** tab (it may also appear under **⋯**). You can run the case, quiz, or document yourself without affecting student data. A purple **Teacher Preview Mode** banner appears throughout the session.
 
 ## Follow-up / longitudinal cases
 
@@ -161,7 +167,7 @@ Follow-ups let students return to the same client across multiple sessions. Each
 
 ### Turning on follow-up mode
 
-In the case assignment builder's **Avatar** step, toggle **This is a follow-up** after selecting a case. Two new fields appear:
+In the case assignment builder's **Avatar** step, use **Create "Follow-up" Assignment (Optional)**. Two new fields appear:
 
 - **Parent assignment** — the previous assignment in this class that students must complete first.
 - **Follow-up scenario** — the storyline for this session.
