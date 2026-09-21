@@ -166,61 +166,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "/",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "/"
-        },
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "/"
-        },
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "/"
-        },
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "/"
-        },
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "/"
-        },
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "/"
-        },
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "/"
-        },
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "/"
-        },
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "/"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
