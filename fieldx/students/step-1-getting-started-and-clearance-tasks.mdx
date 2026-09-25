@@ -173,13 +173,23 @@ Some steps have **fixed custom signers** pre-set by your Program Admin (for exam
 
 ### Submitting the form
 
-After you fill in your section and pick your signers, click **Submit & Notify Signers**. SimCare emails each signer a link to the section they own. You'll then land on the **Waiting for signer(s)** screen, which lists each site, each signer, whether they've completed their portion, and when their invitation was sent.
+After you fill in your section and pick your signers, click **Submit & Notify Signers**. SimCare emails each signer a link to the section they own. If the form has a signing order, SimCare emails each signer only when it's their turn. You'll then land on the **Waiting for signer(s)** screen, which lists each site, each signer, whether they've completed their portion, and when their invitation was sent.
 
 <Note>
   You can move on to other clearance steps while you wait, but you can't submit your final application until every required signer has completed their part.
 </Note>
 
 The waiting page refreshes automatically as signers finish, so you don't need to reload it manually.
+
+### Signers marked "Up next"
+
+Some forms have a signing order, for example you, then your supervisor, then a Site Director. On these forms, SimCare emails a later signer only after the signer before them finishes. Until then, the later signer's row shows an **Up next** chip and a message naming who they're waiting on.
+
+An **Up next** signer hasn't been emailed yet. That's expected, not a delivery failure. You don't need to resend anything, and **Resend email** is hidden on that row. SimCare emails the signer automatically when their turn comes.
+
+<Warning>
+  Don't use **Change signer** to "fix" an **Up next** signer whose details are correct. It won't move them forward in the order. Only use it to fix a wrong name or email.
+</Warning>
 
 ### Multi-site (staggered) forms
 
@@ -191,9 +201,9 @@ If your placement includes more than one site and the step requires a signer per
 
 ### Fixing signers after you submit
 
-From the **Waiting for signer(s)** screen, each pending signer row has three actions:
+From the **Waiting for signer(s)** screen, each pending signer row has these actions:
 
-- **Resend email** — sends a fresh invitation link to the signer. Use this if they say they never received it or the link expired.
+- **Resend email** — sends a fresh invitation link to the signer. Use this if they say they never received it or the link expired. This action isn't available for [**Up next**](#signers-marked-up-next) signers, who haven't been emailed yet.
 - **Change signer** — replace the pending signer with a different person. For supervisor slots you can pick a different supervisor from your site or enter a new name/email; for custom slots you enter a new name/email. The old invitation is invalidated and a new one is sent.
 - **Clear signer** — remove the signer from this form. If they're the only signer on that form instance, the whole instance is reset; you'll be warned before this happens.
 - **Add signer** — appears on a custom signer row that is required by the step but has no one assigned yet (for example, if an external signer slot didn't get invited when you submitted). Enter a name and email to fill the slot and send the invitation.
@@ -250,6 +260,8 @@ Once you've submitted, use **View Submission** (or **Review / Edit** after every
 ### Common signer issues
 
 **My supervisor never got the email.** Ask them to check spam, then use **Resend email** on the signer's row. If they still don't see it, use **Change signer** to re-enter their email in case there's a typo.
+
+**A signer shows "Up next" and hasn't gotten an email.** They're waiting for an earlier signer to finish. SimCare emails them automatically when it's their turn. See [Signers marked "Up next"](#signers-marked-up-next).
 
 **I picked the wrong faculty member.** Use **Change signer** on that row and pick the correct person from the list. The wrong signer's invitation link stops working.
 
