@@ -135,6 +135,15 @@ The case builder has these steps:
 
     When a saved evaluation template is selected in the previous step, this step is reduced to the theory picker — the template controls the rubric and checklist sections automatically.
   </Step>
+  <Step title="Grading Forms">
+    Optional. Attach forms you fill out for each attempt while grading, such as a rubric or an observation checklist. Students see the filled forms only after you publish the grade.
+
+    Use **Search forms** to filter the list, then select each form to attach it. Each form is labeled **Owned** or **Shared**. The list includes forms you created and forms shared with your programs. See [Forms](/simulations/forms) to create one.
+
+    - You can attach up to 10 grading forms.
+    - Grading forms must be single-person forms with at least one question.
+    - To detach a form, click the **X** on its chip. A form another teacher attached shows as **Attached by another teacher**. You can keep or remove it.
+  </Step>
 </Steps>
 
 ## Quiz assignments
@@ -289,6 +298,18 @@ If the student has more than one attempt, use the **attempt switcher** at the to
 **Re-grade** runs a fresh AI analysis of that submission. Give it up to a minute; if it's still stuck, email [hello@simcare.ai](mailto:hello@simcare.ai).
 
 **Unpublish Grade** hides the grade again so you can revise.
+
+#### Grading forms
+
+If the assignment has grading forms attached, the grading view adds a **Grading Forms** step after grading.
+
+- Each form shows a status: **Not started**, **In progress**, or **Complete**. The step shows **!** while an attached form still has required questions unanswered.
+- Your answers save automatically. The form header shows **Saving…** or **Unsaved changes** while a save is pending.
+- **Publish Grade** saves all pending form changes first. If a save fails, SimCare doesn't publish the grade.
+- After you publish, the forms are read-only. To edit them, click **Unpublish Grade**, make your changes, and publish again.
+- If you detach a form after filling it out, its saved answers stay visible as read-only and are labeled **No longer attached**.
+
+Once the grade is published, students see the filled forms in a **Grading Forms** step of their feedback report. If you unpublish the grade, students lose access to the forms.
 
 **Reset Submission** (on the student row) lets the student start over.
 
