@@ -45,6 +45,7 @@
               "simulations/course-catalog",
               "simulations/find-clients-with-ai",
               "simulations/program-client-visibility",
+              "simulations/student-activity-visibility",
               "simulations/forms",
               "simulations/program-courses",
               "simulations/creating-assignments",
