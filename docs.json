@@ -162,8 +162,23 @@
             "pages": [
               "meet/participants-and-invites",
               "meet/past-sessions",
+              "meet/reviewing-a-session",
               "meet/sharing-documents-and-comments",
               "meet/uploading-a-recorded-session"
+            ]
+          },
+          {
+            "group": "Assignments & Oversight",
+            "pages": [
+              "meet/recorded-session-assignments",
+              "meet/program-oversight"
+            ]
+          },
+          {
+            "group": "Privacy",
+            "pages": [
+              "meet/privacy-and-security",
+              "meet/privacy-and-redaction"
             ]
           }
         ]

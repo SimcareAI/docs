@@ -1,0 +1,42 @@
+---
+title: "Hiding Identifying Details"
+description: "Replace names, dates, places, and contact details in a transcript so reviewers and AI don't see them."
+---
+
+A session can have its transcript **redacted**. Names, dates, places, contact details, and other identifiers are replaced with placeholders for everyone reviewing it, AI feedback included. The person who recorded the session, the owner, can still see the originals.
+
+<Warning>
+  Redaction is not full de-identification. Automatic detection can miss nicknames, unusual names, and mumbled speech. The audio and video still contain everything that was said, so names are still audible.
+</Warning>
+
+## Turn it on
+
+| Where | Who | How |
+| --- | --- | --- |
+| Program default | Program admin | **Program Management**, then **Student Visibility**, or **Meet**, then **Settings** |
+| One session | The host | Turn on **Hide identifying details** on the pre-join screen, or on the upload form |
+
+New sessions start from the program default. Scheduling a meeting for someone else uses the host's program default.
+
+## What reviewers see
+
+- Identifiers become consistent placeholders, such as **[NAME_1]**. The same name always gets the same placeholder.
+- Speakers appear as **Counselor** or **Speaker 2**, not real names.
+- Medical terms such as medications, doses, and conditions stay visible.
+- Lines that were never scanned show **[Not yet redacted]** and their text stays hidden.
+
+This applies to graders, peers, admins, and faculty, and to AI feedback.
+
+## What the owner can do
+
+- Turn on **Show identifying details** to see the original text. Each time you do, it's recorded in the audit log.
+- Hide a phrase the detector missed, everywhere it appears.
+- Restore something that was hidden by mistake.
+
+If you re-transcribe the recording, the lines are replaced and your corrections are lost.
+
+## Things to know
+
+- Only the owner can rename speakers on a redacted session.
+- If you turn redaction on for a session that already has a live transcript, its lines show **[Not yet redacted]** until you re-transcribe from the recording.
+- Redaction doesn't cover text people type, such as comments.
