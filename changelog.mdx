@@ -12,19 +12,19 @@ description: "New features, updates, and fixes shipped to SimCare."
 
 </Update>
 
-<Update label="November 6, 2026">
-
-## Updates
-
-- **Approval for student-added supervisors.** A new program setting, **Require approval for student-added supervisors**, holds supervisors that students add in clearance tasks as **Pending** until a Program Admin approves them. It's off by default. See [Customization settings](/fieldx/step-0-2-customization-settings#settings).
-
-</Update>
-
 <Update label="November 7, 2026">
 
 ## Updates
 
 - **Practice sessions in Meet.** Hosts can turn on **Practice session, no real client** on the pre-join screen for roleplays, so guests don't need to consent to transcription separately. See [Scheduling and starting a meeting](/meet/scheduling-and-starting-a-meeting) and [Privacy & security](/meet/privacy-and-security).
+
+</Update>
+
+<Update label="November 6, 2026">
+
+## Updates
+
+- **Approval for student-added supervisors.** A new program setting, **Require approval for student-added supervisors**, holds supervisors that students add in clearance tasks as **Pending** until a Program Admin approves them. It's off by default. See [Customization settings](/fieldx/step-0-2-customization-settings#settings).
 
 </Update>
 
@@ -60,6 +60,41 @@ description: "New features, updates, and fixes shipped to SimCare."
 
 </Update>
 
+<Update label="October 2026">
+
+## New features
+
+- **Faculty-only forms.** Build a form that only the faculty supervisor completes about a student, with no student step. See [Building forms](/fieldx/building-forms).
+- **Shared question editing.** Mark a question so more than one signer can edit the answer. See [Building forms](/fieldx/building-forms).
+- **Competency profiles.** Students get a competency profile built from their assessed simulation sessions, with a shareable public page and verification link.
+- **Tavus Memories.** AI patients can now recall earlier sessions in a follow-up series, with the memory seeded from the attempt the student chooses.
+- **Student PDF export of case forms.** Students can export the forms they submitted on a case as a PDF.
+- **Faculty and admins can sign for a pending faculty step.** Program admins can complete a pending faculty signature themselves on a report.
+- **Early report submission.** Recurring report schedules can let students submit before the period ends, and can omit due dates. See [Setting up recurring tasks](/fieldx/setting-up-recurring-tasks).
+- **Hide established sites from students.** A new program setting hides established sites in student site lists. See [Managing established sites](/fieldx/step-2-managing-established-sites).
+
+## Updates
+
+- **Log hours with a start time.** **Log Hours** now lets you pick a start time, defaulting to the end of your last entry that day. See [Logging hours](/fieldx/students/step-3-the-timesheet-tab-logging-hours).
+- **Cohort hours chart.** The chart now shows stacked category bars with a key and hover breakdown.
+- **Assign term and level can target past terms,** and **Bulk Assign Track** creates missing placements.
+- **Past applications update as amendments.** Updating a past application no longer replaces the live one.
+- **Student Documents tab.** It now shows submission status, **View details**, a full-screen view, and rejected reports.
+- **Social Work grading rubrics** are available for case assignments, plus a **No Rubric or AI Feedback** option.
+- **Pre-application help.** A **Supervisors not signing?** help popup appears while you wait for signers, and students are told when an invited supervisor already has an account.
+- **Email reminders.** Students are emailed when a recurring form copy is created, and weekly digests list forms awaiting signature.
+
+## Bug fixes
+
+- **Large PDF reports no longer hang** when generated from the Run Report tab.
+- **Blank-form PDFs and Firefox printing** now produce clean, full-length output.
+- **Pre-application form uploads** are now attached to the right form step.
+- **LTI launches** now route to the correct class, and copied follow-up assignments chain to the right parent.
+- **Signed-in users** are no longer redirected incorrectly on sign-in actions.
+- **Recordings** for sessions that ended in the last 20 minutes now appear once ready.
+
+</Update>
+
 <Update label="October 13, 2026">
 
 ## New features
@@ -80,15 +115,98 @@ description: "New features, updates, and fixes shipped to SimCare."
 
 </Update>
 
-<Update label="June 16, 2026">
+<Update label="September 2026">
 
 ## New features
 
-- **In-session chat in Meets.** You can now send real-time text messages to everyone in a Meets session from a new chat panel in the meeting room. Useful when you want to share a code word, ask a therapist to pause, or pass along information silently without anyone in the room's physical surroundings overhearing.
-  - Open the chat panel from the new chat button in the meeting control bar.
-  - A badge on the button shows unread messages when the panel is closed, and resets when you open it.
-  - Notifications are visual only — no sounds — so chats stay discreet.
-  - Messages are visible to everyone in the meeting room and exist only for the duration of the session.
+- **Site duplicate management.** Admins can review and merge duplicate sites. See [Managing established sites](/fieldx/step-2-managing-established-sites).
+- **Bulk site add from CSV.** Add up to 500 people at once, including by CSV upload.
+- **Tag-driven hour reporting.** Admins can split Direct, Indirect, and Supervision hours into custom categories. See [Custom hour templates](/fieldx/custom-hour-templates).
+- **Assignment reminders.** Students receive reminders for assigned LMS work.
+- **Autosave in assigned forms.** Forms save your answers as you go. See [Building forms](/fieldx/building-forms).
+- **Students can create a stuck signer's login** during pre-application.
+- **Dual-role members.** Faculty and adjuncts can also take part as students.
+
+## Updates
+
+- **Co-teacher access.** Co-teachers now have full class access, and classes can have an image.
+- **Track filter** in application progress.
+- **Form reminder review.** Review reminders before they go out.
+- Advanced Care scoring supports case-specific **Not applicable** elements.
+- Supervisors are told when a form is waiting on the student.
+
+## Bug fixes
+
+- **Hours graphs** show accurate figures.
+- **Case assignment form uploads** now work reliably.
+- **Overall ACMA report scores** display as percentages.
+
+</Update>
+
+<Update label="August 2026">
+
+## New features
+
+- **SBMH placement level.** FieldX supports a new SBMH level. See [Custom hour templates](/fieldx/custom-hour-templates).
+- **Auto-approve clearance tasks.** Programs can approve clearance tasks automatically.
+- **Cohort enrollment for program members** and level changes or removals within a cohort. See [Setting up cohorts](/fieldx/step-3-set-up-cohorts).
+- **Reflection session review.** Review a reflection session with video, and see the rubric before completing an assignment.
+- **Custom hour-template builder** foundations, including category descriptions.
+- **Add a reviewer to a custom form step.**
+
+## Updates
+
+- **Faculty can add students to sites** end to end, and admins can remove sites from students.
+- **Pre-application gate for hour logging.**
+- **Archived option for bulk site creation.**
+- **Course copy and enrollment via LTI** are more reliable.
+
+## Bug fixes
+
+- **Supervisor field editor** no longer loses focus while typing.
+- **Form reminders** are sent correctly.
+- **Assign report modal** fixes.
+
+</Update>
+
+<Update label="July 2026">
+
+## New features
+
+- **Peer review assignments.** Students can review each other's sessions. See [Peer review assignments](/simulations/peer-review-assignments).
+- **Report due-date schedules** for recurring reports. See [Setting up recurring tasks](/fieldx/setting-up-recurring-tasks).
+- **Off-pace status** for students, and custom signer flows that work end to end.
+- **Domain enrollment at sign up** by level.
+- **Admins can place students at a site** from the **Site Students** tab and remove supervisors from sites.
+- **Weighted matrix form component** and a floating progress pill while completing forms.
+- **Accumulating numbers in forms.**
+- **Exclude a student from a form.**
+
+## Updates
+
+- **Request to Add Site** replaces **Add to My Sites** when approval is required. See [My sites](/fieldx/students/step-5-my-sites).
+- **Edit sites during clearance tasks.**
+- **Supervisor email** delivery is more reliable.
+
+## Bug fixes
+
+- **Student assignment modal and learning contract** fixes, and reactivated site students show correctly.
+- **Teacher student table** fixes.
+
+</Update>
+
+<Update label="June 2026">
+
+## New features
+
+- **Signer collection.** Students choose supervisors and multiple reviewer sets in a new signer modal, and chosen signers are emailed.
+
+## Updates
+
+- **Category breakdown** for timesheet logs in action items.
+- **Admin email visibility** can be controlled.
+- **Compact layout** on short, wide screens for task views.
+
 </Update>
 
 <Update label="June 18, 2026">
@@ -106,6 +224,17 @@ description: "New features, updates, and fixes shipped to SimCare."
 - **Smarter score review experience.** After you submit answers on a licensure prep case, the new score summary shows your total, lists each question with a correct/incorrect indicator, and lets you reopen the case in review mode to see your selections and explanations.
 - **Your progress is saved as you go.** Answers on a licensure prep case now auto-save in the background, so you can leave and come back without losing your place. Reopening a completed attempt drops you straight into review mode with the score summary.
 
+</Update>
+
+<Update label="June 16, 2026">
+
+## New features
+
+- **In-session chat in Meets.** You can now send real-time text messages to everyone in a Meets session from a new chat panel in the meeting room. Useful when you want to share a code word, ask a therapist to pause, or pass along information silently without anyone in the room's physical surroundings overhearing.
+  - Open the chat panel from the new chat button in the meeting control bar.
+  - A badge on the button shows unread messages when the panel is closed, and resets when you open it.
+  - Notifications are visual only — no sounds — so chats stay discreet.
+  - Messages are visible to everyone in the meeting room and exist only for the duration of the session.
 </Update>
 
 <Update label="June 11, 2026">
