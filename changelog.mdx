@@ -3,12 +3,69 @@ title: "Changelog"
 description: "New features, updates, and fixes shipped to SimCare."
 ---
 
+<Update label="November 11, 2026">
+
+## New features
+
+- **Reset signatures only.** Next to **Reset entire form**, a new **Reset signatures only** action regenerates a form and keeps each role's previous answers, clearing only signatures and signing dates.
+- **Remove a form from a group.** Inside an open form group, you can now remove a form from the group without deleting it.
+
+## Updates
+
+- **Clear students once.** A new program setting lets you clear students once: a student with an approved clearance can't pick or submit a different term or track. Updates and added sites or supervisors still work. See [Customization settings](/fieldx/step-0-2-customization-settings#settings).
+- **Forms sent after submission.** In the clearance step editor, a form step can be set to send **After the student submits**. Students don't see it, and it never holds up their submission. Only forms the student takes no part in qualify.
+- **Delayed assignment emails.** "New form to complete" emails can wait until a set number of days before the due date (default 7). Set it under **Notifications**.
+- **Approval emails by placement level.** Choose who receives application approval emails for each placement level; a level with nobody chosen uses the program-wide list.
+- **Pre-filled answers are labeled.** Application steps now show where a filled-in answer came from.
+- **Student agreements carry across clearance cycles.** Agreements a student already completed are retained when they start a new clearance.
+
+## Bug fixes
+
+- **Approval emails when all admins are selected.** Selecting every admin for approval emails no longer results in nobody being emailed.
+- **Scheduled recurring forms for several people.** Fixed schedules that assign a form to more than one person.
+- **Silent pauses in feedback.** Feedback scoring now attributes the "did not respond" pauses to the student rather than the client.
+
+</Update>
+
 <Update label="November 10, 2026">
+
+## New features
+
+- **Week numbers in report names.** Scheduled reports now carry their period, such as **Weekly Report (Week 3)**. See [Create and assign tasks](/fieldx/step-4-create-assign-tasks#advanced-settings-for-repeating-reports).
 
 ## Updates
 
 - **Additional form copies.** When you assign a form to an individual who already has it, you can now give them an additional copy. See [Create and assign tasks](/fieldx/step-4-create-assign-tasks).
 - **Peer review grades in your LMS.** The grade you give a reviewer is now sent to the linked LMS gradebook, and written feedback stays available when **Grading** is off. See [Peer review assignments](/simulations/peer-review-assignments).
+- **Start New Application button text.** A new program setting renames the button students use to start their next clearance. See [Customization settings](/fieldx/step-0-2-customization-settings#settings).
+- **Get Started for every application.** Starting a new clearance application always opens **Get Started** first, and the program logo now appears on the student pre-application page.
+- **School counseling supervisor details.** A new setting collects extra details when students invite a school counseling supervisor. See [Customization settings](/fieldx/step-0-2-customization-settings#settings).
+- **Ask AI formatting.** Chat answers now show numbered and nested lists, headings, and line breaks correctly.
+- **Resetting a rejected report document.** Resetting a rejected report's document reopens it as pending so the student can sign the replacement.
+
+## Bug fixes
+
+- **Deleting a draft application.** Deleting a draft no longer leaves the submitted application's forms showing as not started.
+- **Cohort copies without due dates.** Copying a cohort now moves dates correctly when due dates are off and keeps early submission.
+- **Conditional signers.** A supervisor a student's answer removes from a form is no longer emailed to sign it.
+
+</Update>
+
+<Update label="November 9, 2026">
+
+## New features
+
+- **Blur your background in Meet.** Turn on **Blur background** on the pre-join screen or in meeting settings. See [Scheduling and starting a meeting](/meet/scheduling-and-starting-a-meeting).
+- **Duplicate questions in the form builder.** Each question has a **Duplicate** button, and a **+** between questions inserts a new one exactly where you click. See [Building forms](/fieldx/building-forms).
+
+## Updates
+
+- **Signer timeline on forms.** Form **View details** now shows when each signer started and signed, plus an **Activity** log of opens, submissions, and actions such as sending a form back or changing a signer.
+- **One Run report button for custom reports.** Choose the term, track, cohort, student, or date range and the file type (Excel or PDF) in one pop-up. Hours can be split by site or week. See [Custom reports](/fieldx/step-6-evaluations-reports-information#custom-reports).
+
+## Bug fixes
+
+- **Form documents in applications.** Documents attached to a form now show above the questions in the student application step.
 
 </Update>
 
