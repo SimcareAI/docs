@@ -36,6 +36,12 @@ Sections organize the template; the activities at the ends of the structure are 
 
 For the last example, also select **University supervision** on the activity. Naming an activity “University” or “Group” alone does not enable the faculty-supervised workflow.
 
+### Move a section or group
+
+Use the up and down arrows to reorder items within their section. To put a group under a different section, or to make it a top-level section, click its **Move** action, choose a destination, and click **Move**.
+
+Moving keeps the group's activities, definitions, and how their hours count. FieldX only offers destinations that don't change how hours count, so you can't, for example, move direct activities under indirect. A supervision group can be its own top-level section; its activities still count as supervision and still roll into the indirect total.
+
 ### Optional Track Hours Log layout
 
 If your program uses the **Track Hours Log** report format, the builder also offers **Track Hours Log layout**. It lets you set the document title, accent color, PNG or JPEG institution logo, table headings and order, whether the site table appears, and whether zero-hour activities appear. You can also organize display labels and groups and map activities into them.
@@ -43,6 +49,10 @@ If your program uses the **Track Hours Log** report format, the builder also off
 Display grouping changes how the document presents activities. Use **Sections & activities** to change what students can log. Signing roles still come from the report template.
 
 Layout edits apply to untouched reports until their first signing document is created. Existing signing documents keep their saved layout. The preview uses sample content; actual PDF page breaks are determined when the document is generated.
+
+The **Hours document** preview always shows the document your program actually generates. If a saved layout exists but **Track Hours Log** is off for your program, the preview shows the standard document and notes that the saved layout isn't used.
+
+In the layout editor, **Remove** deletes a display group. Its sub-rows move up a level, and hours for its activities appear under **Other recorded hours**, so totals don't change. Deleting a category in **Sections & activities** removes its display groups from the layout, and renaming one updates a display group label you haven't customized.
 
 ## Assign the template to cohorts
 
@@ -79,6 +89,14 @@ Both individual and group faculty-supervised activities can use **University sup
 4. Confirm each student has one resolvable faculty supervisor. FieldX checks the student's faculty assignment first, then the cohort's designated signing faculty, then a sole faculty member in the cohort.
 5. Open **Program Settings → Settings** and set **University supervision counts toward required hours** to match your program policy.
 6. If you use supervision breakdown reports, configure **Supervision activity classification** in Settings: classify the activity's format as group and select the appropriate provider. This reporting classification is separate from the template's **University supervision** checkbox.
+
+### Record whether supervision was in person or virtual
+
+To track how each supervision session was delivered, open **Program Settings → Settings → Hours & Reports** and turn on **Track supervision delivery format**. It's off by default.
+
+When it's on, students must choose **In person** or **Virtual** each time they log a supervision activity, whether they log manually, in bulk, as a recurring entry, or with AI. Nothing is preselected. The **Hours Log** report shows the format for each entry, and hours summaries and hours documents split supervision into **In person**, **Virtual**, and **Unspecified**, which always add up to the supervision total.
+
+Entries logged before you turned the setting on stay **Unspecified**. Already-signed documents aren't changed. Turning the setting off stops asking for the format but keeps formats already recorded.
 
 A cohort with multiple faculty and no applicable assignment or designated signing faculty is ambiguous. Assign the appropriate faculty before asking students to log university supervision. Adding faculty as a site supervisor does not resolve this cohort assignment.
 
