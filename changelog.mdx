@@ -3,6 +3,55 @@ title: "Changelog"
 description: "New features, updates, and fixes shipped to SimCare."
 ---
 
+<Update label="November 17, 2026">
+
+## Updates
+
+- **Extend hours for one student.** On a cohort's **Students** list, **Extend Hours** lets one student log hours after the cohort's term ends, for a date range you choose and with an optional reason. You can revoke it at any time. See [Set up cohorts](/fieldx/step-3-set-up-cohorts).
+- **Rate students from Canvas.** For a form assignment where the teacher has a part, instructors can open a **Rate students** roster, and instructors who launch such an assignment from Canvas land on that roster. Student launches are unchanged.
+- **Supervisor documents.** The general document upload now sits at the top of the supervisor **Documents** window.
+
+## Bug fixes
+
+- **Assessments in the grading view.** The Assessments panel no longer gets cropped on narrow screens, and long student responses now wrap.
+- **Patient Builder.** Fixed a case where generating a patient failed with "Failed to ensure folder" when the patient's folder name was already taken.
+
+</Update>
+
+<Update label="November 16, 2026">
+
+## New features
+
+- **Student progress tab.** Admins can add a **Student progress** tab to their Field Experience tabs by turning on **Show Student progress in my Field Experience tabs** above the student progress grid in **Program Settings → Clearance Tasks**. The setting is per account and off by default. See [Customization settings](/fieldx/step-0-2-customization-settings#student-progress).
+- **Add a catalog course to an existing course.** **Use this course** now lets instructors choose **Add to an existing course**, including one linked to Canvas or D2L, instead of creating a new one. Due dates count from the start date you pick, and assignments already copied from that template are skipped. See [Course catalog](/simulations/course-catalog).
+- **Record supervision as in person or virtual.** With the new **Track supervision delivery format** setting on, students choose **In person** or **Virtual** when they log supervision hours, and hours reports split supervision by format. It's off by default. See [Custom hour templates](/fieldx/custom-hour-templates#record-whether-supervision-was-in-person-or-virtual).
+
+## Updates
+
+- **Move hour categories between sections.** In the hour template builder, a new **Move** action puts a group under another section or at the top level, without changing how its hours count. A supervision group can now be a top-level section. See [Custom hour templates](/fieldx/custom-hour-templates#move-a-section-or-group).
+- **Hours document preview matches your real document.** The **Hours document** preview now shows a saved Track Hours Log layout only when that format is on for your program, and the layout editor can remove a display group without changing totals. See [Custom hour templates](/fieldx/custom-hour-templates#optional-track-hours-log-layout).
+- **Breakout room changes wait for the current reply.** In group cases, joining or leaving a breakout room now takes effect after the client finishes speaking, and you can cancel a pending change. See [Talking to the avatar](/simulations/talking-to-the-avatar#breakout-rooms).
+- **Notice when a client disconnects.** If the client leaves a simulation partway through, a banner now says SimCare is reconnecting, and offers **Leave** if the client can't be brought back. See [Talking to the avatar](/simulations/talking-to-the-avatar#if-the-client-disconnects).
+- **Graded document submissions are locked.** Uploading a replacement after removing every file now marks a document submission submitted again, and graded submissions can no longer be changed. See [Creating assignments](/simulations/creating-assignments).
+
+## Bug fixes
+
+- **Student progress grid.** Fixed an "Unable to load student progress" error in the student progress grid.
+- **Assigning multi-person forms to students without a cohort.** Assigning a multi-person form to an individual student who isn't in a cohort no longer gets stuck on "Still working out who signs this form".
+- **Course form items kept on save.** Saving a course from the **Courses** page no longer clears its form items or case follow-up links.
+- **Reports with several signing documents.** Clicking **Sign** again while the next document was being prepared no longer recreates the first document, so each supervisor gets their own copy to sign.
+- **Peer review pairs.** **Auto-assign** in an existing peer review assignment no longer creates duplicate pairs.
+
+</Update>
+
+<Update label="November 15, 2026">
+
+## Bug fixes
+
+- **Replace files after submitting a document assignment.** Students can now upload more files or remove files on a document assignment after submitting, until the due date. Removing every file reopens the submission. See [Creating assignments](/simulations/creating-assignments).
+
+</Update>
+
 <Update label="November 13, 2026">
 
 ## Updates
